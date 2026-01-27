@@ -101,6 +101,50 @@ body {
     background: rgba(255, 255, 255, 0.3);
 }
 
+html.dark-mode .navbar {
+    background: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.dark-mode-toggle .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-link {
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
 .menu-toggle {
     display: none;
     background: none;
