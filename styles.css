@@ -86,6 +86,12 @@ body {
     opacity: 0.8;
 }
 
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-orange);
+    opacity: 1;
+}
+
 .dark-mode-toggle {
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid white;
@@ -540,19 +546,42 @@ html.dark-mode .navbar {
     }
     .nav-links {
         display: none;
-        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
-        gap: 1rem;
-        padding: 1rem 0;
-        border-top: 2px solid rgba(255, 255, 255, 0.2);
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        background: var(--primary-blue); /* Default mobile menu bg */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
+    
+    html.dark-mode .nav-links {
+        background: #1f1f1f;
+        border-bottom: 1px solid #333;
+    }
+
     .nav-links.active {
         display: flex;
     }
     .nav-links a,
     .nav-links button {
-        padding: 0.75rem;
+        padding: 1rem 1.5rem;
         width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: left;
+    }
+    
+    .nav-links li {
+        width: 100%; /* Ensure list items take full width */
+    }
+
+    .nav-links a.active {
+        background: rgba(255, 255, 255, 0.15);
+        border-left: 4px solid var(--primary-orange);
+        padding-left: calc(1.5rem - 4px); /* Adjust padding to keep alignment */
+        font-weight: bold;
     }
     /* Hero Section */
     .hero {
