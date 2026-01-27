@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask an Expert - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="expert.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Click-Safe Logo">
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="../resources/index.html">Resources</a></li>
+                <li><a href="index.html">Ask Expert</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header expert-theme">
+        <div class="container">
+            <h1>❓ Ask an Expert</h1>
+            <p>Get answers to your cybersecurity questions from our expert community</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <!-- Question & Answer Section -->
+            <div class="qa-container">
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>🔐 What's the difference between a password and a passphrase?</h3>
+                    </div>
+                    <div class="answer">
+                        <p><strong>Password:</strong> A typical combination of characters (letters, numbers, symbols) like "Tr0pic@l92!"</p>
+                        <p><strong>Passphrase:</strong> A sequence of words like "Purple Mountain Dancing Tiger" that's easier to remember but equally secure when long enough.</p>
+                        <p>Passphrases are increasingly popular because they're easier to remember while maintaining good security. The key is length - a passphrase with 16+ characters is very strong.</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>🛡️ Should I use antivirus software?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Yes, antivirus software is an important part of a layered security approach. Modern operating systems include built-in protection (Windows Defender, macOS security), but additional antivirus can provide extra protection.</p>
+                        <p><strong>Recommended approach:</strong></p>
+                        <ul>
+                            <li>Use your OS's built-in security features</li>
+                            <li>Keep everything updated</li>
+                            <li>Consider additional antivirus for high-risk usage</li>
+                            <li>Regular backups are just as important</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>📱 Is public Wi-Fi safe to use?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Public Wi-Fi is generally not safe for sensitive activities. Hackers can easily intercept data on unsecured networks.</p>
+                        <p><strong>Safe practices:</strong></p>
+                        <ul>
+                            <li>Avoid public Wi-Fi for banking, shopping, or sensitive work</li>
+                            <li>Use a VPN (Virtual Private Network) if you must access public Wi-Fi</li>
+                            <li>Disable auto-connect features</li>
+                            <li>Use mobile hotspot from your phone when possible</li>
+                            <li>Enable two-factor authentication for important accounts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>🚨 How do I know if my account has been hacked?</h3>
+                    </div>
+                    <div class="answer">
+                        <p><strong>Warning signs:</strong></p>
+                        <ul>
+                            <li>Unexpected emails about password changes</li>
+                            <li>Unable to log in to your account</li>
+                            <li>Unfamiliar activity in your account</li>
+                            <li>Email forwarding rules you didn't set</li>
+                            <li>Money missing from linked accounts</li>
+                        </ul>
+                        <p><strong>Immediate steps:</strong></p>
+                        <ol style="padding-left: 1.5rem;">
+                            <li>Change your password immediately</li>
+                            <li>Enable two-factor authentication</li>
+                            <li>Review account activity and remove unauthorized access</li>
+                            <li>Check linked accounts (email, banking, social media)</li>
+                            <li>Run antivirus scans on your devices</li>
+                            <li>Monitor accounts for fraudulent activity</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>💾 How often should I back up my data?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Backup frequency depends on how important your data is and how often it changes:</p>
+                        <ul>
+                            <li><strong>Daily:</strong> Business critical data, active work files</li>
+                            <li><strong>Weekly:</strong> Important personal files, documents</li>
+                            <li><strong>Monthly:</strong> Photos, less frequently used files</li>
+                        </ul>
+                        <p><strong>Best practice:</strong> Use automated backup solutions that back up continuously or daily. Follow the 3-2-1 rule: Keep 3 copies of important data, on 2 different media types, with 1 copy offsite.</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>👶 How do I protect my children online?</h3>
+                    </div>
+                    <div class="answer">
+                        <p><strong>Multi-layer approach:</strong></p>
+                        <ul>
+                            <li>Set up parental controls on devices</li>
+                            <li>Establish clear internet use rules</li>
+                            <li>Have regular conversations about online safety</li>
+                            <li>Know your children's online friends</li>
+                            <li>Monitor without invading privacy</li>
+                            <li>Create a safe environment to report uncomfortable situations</li>
+                            <li>Use age-appropriate content filters</li>
+                        </ul>
+                        <p>Prevention and communication are more effective than surveillance alone.</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>🏢 What should a small business do first for security?</h3>
+                    </div>
+                    <div class="answer">
+                        <p><strong>Top priority actions:</strong></p>
+                        <ol style="padding-left: 1.5rem;">
+                            <li><strong>Assess:</strong> Understand what data you have and its value</li>
+                            <li><strong>Passwords:</strong> Enforce strong passwords and password manager use</li>
+                            <li><strong>Updates:</strong> Keep all systems and software updated</li>
+                            <li><strong>Backups:</strong> Implement regular automated backups</li>
+                            <li><strong>Training:</strong> Train employees on security basics</li>
+                            <li><strong>Monitoring:</strong> Implement basic security monitoring</li>
+                        </ol>
+                        <p>Start with these fundamentals, then progressively enhance security based on your risk assessment.</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>🔒 What is two-factor authentication (2FA)?</h3>
+                    </div>
+                    <div class="answer">
+                        <p>Two-factor authentication adds a second layer of verification when logging in:</p>
+                        <ul>
+                            <li><strong>Factor 1:</strong> Something you know (password)</li>
+                            <li><strong>Factor 2:</strong> Something you have (phone, authenticator app) or are (fingerprint)</li>
+                        </ul>
+                        <p><strong>Methods:</strong> SMS code, authenticator apps, security keys, biometric</p>
+                        <p>Security keys are the most secure option, followed by authenticator apps, then SMS.</p>
+                        <p><strong>Action:</strong> Enable 2FA on critical accounts (email, banking, social media).</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>🌐 How do I know if a website is secure?</h3>
+                    </div>
+                    <div class="answer">
+                        <p><strong>Look for these signs:</strong></p>
+                        <ul>
+                            <li><strong>HTTPS:</strong> URL starts with "https://" not "http://"</li>
+                            <li><strong>Lock icon:</strong> Usually appears in the address bar</li>
+                            <li><strong>Certificate:</strong> Click the lock to view security certificate details</li>
+                            <li><strong>Domain name:</strong> Verify the domain matches the organization</li>
+                        </ul>
+                        <p><strong>Warning signs:</strong> Mismatched domains, expired certificates, missing HTTPS</p>
+                        <p>HTTPS encrypts data in transit but doesn't guarantee the site isn't malicious. Always verify you're on a legitimate site before entering sensitive information.</p>
+                    </div>
+                </div>
+
+                <div class="qa-item">
+                    <div class="question">
+                        <h3>🎣 How can I identify phishing emails?</h3>
+                    </div>
+                    <div class="answer">
+                        <p><strong>Red flags:</strong></p>
+                        <ul>
+                            <li>Suspicious sender email address</li>
+                            <li>Urgent language or threats</li>
+                            <li>Requests for passwords or personal information</li>
+                            <li>Unexpected attachments or links</li>
+                            <li>Poor spelling or grammar</li>
+                            <li>Generic greeting instead of your name</li>
+                            <li>Mismatched or suspicious links</li>
+                        </ul>
+                        <p><strong>What to do:</strong> Don't click links or download attachments. Verify through official channels. Report to your IT department or the company's security team.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Question Form -->
+            <div class="submit-question">
+                <h2>Didn't find your answer?</h2>
+                <p>Submit your cybersecurity question and our experts will respond within 48 hours.</p>
+                <form class="question-form" onsubmit="handleQuestionSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Category</option>
+                            <option value="personal">Personal Security</option>
+                            <option value="family">Family & Home</option>
+                            <option value="business">Small Business</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Question..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Question</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function handleQuestionSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your question! We\'ll respond within 48 hours.');
+            event.target.reset();
+        }
+    </script>
+</body>
+
+</html>

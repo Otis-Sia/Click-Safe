@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Security - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="section.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Click-Safe Logo">
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="../resources/index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header personal-security-theme">
+        <div class="container">
+            <h1>🔐 Personal Security</h1>
+            <p>Protect yourself and your personal information online</p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="section-nav">
+        <div class="container">
+            <ul class="tabs">
+                <li><a href="index.html" class="tab-active">Overview</a></li>
+                <li><a href="passwords.html">Passwords 101</a></li>
+                <li><a href="devices.html">Phone & Computer Basics</a></li>
+                <li><a href="social-media.html">Social Media Privacy</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Welcome to Personal Security</h2>
+            <p>Cybersecurity starts with you. Learn how to protect yourself, your devices, and your personal information from online threats.</p>
+
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>📱 Passwords 101</h3>
+                    <p>Master the art of creating strong, unique passwords and understanding password management best practices.</p>
+                    <a href="passwords.html" class="card-link">Learn More →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>📝 Create Unbreakable Passwords</h3>
+                    <p>You don't need 50 complicated passwords—you just need a system. Learn the simple 3-step method that actually works.</p>
+                    <a href="create-passwords.html" class="card-link">Read Article →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>💻 Phone & Computer Basics</h3>
+                    <p>Discover essential security practices for your devices, including updates, antivirus, and safe browsing habits.</p>
+                    <a href="devices.html" class="card-link">Learn More →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>👥 Social Media Privacy</h3>
+                    <p>Understand privacy settings, recognize phishing attempts, and share safely on social media platforms.</p>
+                    <a href="social-media.html" class="card-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="key-takeaways">
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>Use unique, strong passwords for each account</li>
+                    <li>Keep your devices updated with the latest security patches</li>
+                    <li>Be cautious with the information you share online</li>
+                    <li>Enable two-factor authentication when available</li>
+                    <li>Verify website security before entering sensitive information</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
+<script src="../script.js"></script>
+</body>
+
+</html>

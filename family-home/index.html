@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family & Home Security - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="section.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Click-Safe Logo">
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="../resources/index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header family-home-theme">
+        <div class="container">
+            <h1>👨‍👩‍👧‍👦 Family & Home</h1>
+            <p>Secure your family and your smart home devices</p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="section-nav">
+        <div class="container">
+            <ul class="tabs">
+                <li><a href="index.html" class="tab-active">Overview</a></li>
+                <li><a href="parents-guide.html">Parent's Guide</a></li>
+                <li><a href="smart-home.html">Smart Home Security</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Welcome to Family & Home Security</h2>
+            <p>Protecting your family goes beyond physical safety. Learn how to secure your connected devices and teach your children safe internet habits.</p>
+
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>👨‍👩‍👧 Parent's Guide</h3>
+                    <p>Learn how to protect your children online and establish healthy digital habits for the entire family.</p>
+                    <a href="parents-guide.html" class="card-link">Learn More →</a>
+                </div>
+
+                <div class="content-card">
+                    <h3>🏠 Smart Home Security</h3>
+                    <p>Secure your connected devices including smart speakers, cameras, locks, and other IoT devices.</p>
+                    <a href="smart-home.html" class="card-link">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="key-takeaways" style="border-color: #27ae60; background: var(--card-bg);">
+                <h3 style="color: #229954;">Key Takeaways</h3>
+                <ul>
+                    <li>Establish clear internet rules with your children</li>
+                    <li>Monitor your children's online activities appropriately</li>
+                    <li>Use parental controls on devices</li>
+                    <li>Secure all smart home devices with strong passwords</li>
+                    <li>Create a family cybersecurity plan</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

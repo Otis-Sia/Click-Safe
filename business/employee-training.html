@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Training - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="section.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Click-Safe Logo">
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="index.html">Small Business</a></li>
+                <li><a href="../resources/index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header business-theme">
+        <div class="container">
+            <h1>👥 Employee Training</h1>
+            <p>Build a security-aware workforce</p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="section-nav">
+        <div class="container">
+            <ul class="tabs">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="employee-training.html" class="tab-active">Employee Training</a></li>
+                <li><a href="data-protection.html">Data Protection</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Employee Training: Your First Line of Defense</h2>
+
+            <div class="content-section">
+                <h3>Why Employee Training Matters</h3>
+                <p>Employees are the most vulnerable link in your security chain. A single employee click on a phishing link can compromise your entire organization. Regular training significantly reduces the risk of successful attacks.</p>
+            </div>
+
+            <div class="content-section">
+                <h3>Essential Training Topics</h3>
+
+                <div class="subsection">
+                    <h4>🎣 Phishing & Social Engineering</h4>
+                    <p>Teach employees to recognize and report phishing attempts:</p>
+                    <ul>
+                        <li>Suspicious email addresses (misspelled domains)</li>
+                        <li>Urgent language or threats</li>
+                        <li>Requests for passwords or personal information</li>
+                        <li>Unexpected attachments or links</li>
+                        <li>Grammar and spelling errors</li>
+                        <li>How to report suspicious emails</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🔐 Password Security & Authentication</h4>
+                    <ul>
+                        <li>Creating strong, unique passwords</li>
+                        <li>Password storage best practices (password managers)</li>
+                        <li>Multi-factor authentication (MFA) importance</li>
+                        <li>Never sharing passwords</li>
+                        <li>Securing credentials in writing or electronically</li>
+                        <li>Changing passwords when leaving the company</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>💻 Device & Network Security</h4>
+                    <ul>
+                        <li>Keeping devices locked when unattended</li>
+                        <li>Using VPN on public networks</li>
+                        <li>Not downloading suspicious software</li>
+                        <li>Connecting only to trusted Wi-Fi networks</li>
+                        <li>Reporting lost or stolen devices immediately</li>
+                        <li>Installing security updates promptly</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>📧 Email & Communication Security</h4>
+                    <ul>
+                        <li>Checking sender email addresses carefully</li>
+                        <li>Verifying requests through alternative channels</li>
+                        <li>Being cautious with attachments</li>
+                        <li>Not forwarding sensitive information unnecessarily</li>
+                        <li>Understanding email retention policies</li>
+                        <li>Using encryption for sensitive communications</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>📱 Remote Work Security</h4>
+                    <ul>
+                        <li>Using VPN when working remotely</li>
+                        <li>Securing the home network</li>
+                        <li>Being aware of screen visibility</li>
+                        <li>Securing devices and documents when away</li>
+                        <li>Using secure video conferencing platforms</li>
+                        <li>Locking devices when stepping away</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🤝 Social Engineering Awareness</h4>
+                    <ul>
+                        <li>Not trusting unsolicited calls or visitors</li>
+                        <li>Verifying the identity of callers</li>
+                        <li>Not holding doors open for "tailgating"</li>
+                        <li>Questioning unusual requests</li>
+                        <li>Understanding pretexting tactics</li>
+                        <li>Reporting suspicious interactions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Creating a Training Program</h3>
+                <div class="highlight-box" style="background: var(--card-bg); border-left-color: #9b59b6;">
+                    <p><strong>Recommended Training Schedule:</strong></p>
+                    <ul>
+                        <li><strong>Onboarding:</strong> All new employees receive security training</li>
+                        <li><strong>Annual:</strong> Minimum annual refresher training for all staff</li>
+                        <li><strong>Quarterly:</strong> Short updates on emerging threats</li>
+                        <li><strong>Ad-hoc:</strong> Training after security incidents or policy changes</li>
+                        <li><strong>Role-Specific:</strong> Additional training for high-risk roles (IT, HR, Finance)</li>
+                    </ul>
+                </div>
+
+                <h4>Training Methods:</h4>
+                <ul>
+                    <li><strong>Classroom Training:</strong> In-person or virtual instructor-led sessions</li>
+                    <li><strong>E-Learning:</strong> Self-paced online courses</li>
+                    <li><strong>Simulations:</strong> Phishing simulations and tabletop exercises</li>
+                    <li><strong>Resources:</strong> Security posters, emails, and newsletters</li>
+                    <li><strong>Testing:</strong> Quizzes to verify understanding</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Phishing Simulation Program</h3>
+                <p>Regular phishing simulations help identify vulnerable employees and reinforce training:</p>
+                <ul>
+                    <li>Send test phishing emails to employees</li>
+                    <li>Track who clicks on suspicious links</li>
+                    <li>Provide immediate feedback and training</li>
+                    <li>Measure improvement over time</li>
+                    <li>Use results to identify training gaps</li>
+                    <li>Consider non-punitive approach to encourage reporting</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Creating a Reporting Culture</h3>
+                <p>Encourage employees to report security incidents without fear of punishment:</p>
+                <ul>
+                    <li>Create clear reporting procedures</li>
+                    <li>Provide multiple reporting channels</li>
+                    <li>Make reporting easy and anonymous if desired</li>
+                    <li>Thank employees who report incidents</li>
+                    <li>Share lessons learned from reported incidents</li>
+                    <li>Recognize employees who help prevent attacks</li>
+                </ul>
+            </div>
+
+            <div class="key-takeaways" style="border-color: #9b59b6;">
+                <h3 style="color: #7d3c98; border-left-color: #9b59b6;">Quick Checklist</h3>
+                <ul>
+                    <li>☐ Develop a security training program</li>
+                    <li>☐ Train all employees annually</li>
+                    <li>☐ Include phishing awareness training</li>
+                    <li>☐ Test employees with phishing simulations</li>
+                    <li>☐ Create a reporting mechanism</li>
+                    <li>☐ Keep training materials current</li>
+                    <li>☐ Measure training effectiveness</li>
+                    <li>☐ Make security training mandatory</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

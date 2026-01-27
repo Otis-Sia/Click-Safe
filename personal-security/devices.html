@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Security Essentials - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="section.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Click-Safe Logo">
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="../resources/index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header personal-security-theme">
+        <div class="container">
+            <h1>💻 Phone & Computer Basics</h1>
+            <p>Essential security practices for your devices</p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="section-nav">
+        <div class="container">
+            <ul class="tabs">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="passwords.html">Passwords 101</a></li>
+                <li><a href="devices.html" class="tab-active">Phone & Computer Basics</a></li>
+                <li><a href="social-media.html">Social Media Privacy</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Phone & Computer Basics: Protect Your Devices</h2>
+
+            <div class="content-section">
+                <h3>Why Device Security Matters</h3>
+                <p>Your phone and computer are gateways to all your personal information. Ensuring they're secure is crucial to protecting your identity, financial information, and privacy.</p>
+            </div>
+
+            <div class="content-section">
+                <h3>Essential Security Practices</h3>
+
+                <div class="subsection">
+                    <h4>🔄 Keep Software Updated</h4>
+                    <div class="highlight-box">
+                        <p>Updates include critical security patches that fix vulnerabilities. Don't ignore update notifications.</p>
+                        <ul>
+                            <li>Enable automatic updates in your device settings</li>
+                            <li>Update your operating system regularly</li>
+                            <li>Keep all applications up-to-date</li>
+                            <li>Update browser and plugins</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4>🛡️ Use Antivirus & Anti-Malware</h4>
+                    <p>Protect your devices from malicious software:</p>
+                    <ul>
+                        <li>Install reputable antivirus software (Windows Defender, Norton, McAfee)</li>
+                        <li>Run regular scans for malware</li>
+                        <li>Keep antivirus definitions updated</li>
+                        <li>Be cautious when downloading files from unknown sources</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🔐 Enable Device Locks</h4>
+                    <p>Prevent unauthorized physical access to your devices:</p>
+                    <ul>
+                        <li>Set a strong PIN or password for device unlock</li>
+                        <li>Use biometric security (fingerprint, face recognition)</li>
+                        <li>Enable lock screen that activates after 5 minutes of inactivity</li>
+                        <li>Lock your computer when stepping away</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🌐 Safe Browsing Habits</h4>
+                    <ul>
+                        <li>Check for HTTPS (lock icon) before entering sensitive information</li>
+                        <li>Avoid clicking links in unsolicited emails or messages</li>
+                        <li>Download files only from trusted sources</li>
+                        <li>Don't open email attachments from unknown senders</li>
+                        <li>Use a password manager to auto-fill credentials (avoids phishing sites)</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🔌 Network Security</h4>
+                    <ul>
+                        <li>Use a strong password for your home Wi-Fi router</li>
+                        <li>Avoid public Wi-Fi for sensitive transactions</li>
+                        <li>Use a VPN (Virtual Private Network) on public networks</li>
+                        <li>Disable auto-connect to Wi-Fi networks</li>
+                        <li>Keep your router firmware updated</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>What to Do If Compromised</h3>
+                <div class="warning-box">
+                    <ol>
+                        <li>Disconnect from the internet immediately</li>
+                        <li>Change all important passwords from a different device</li>
+                        <li>Run a full antivirus scan</li>
+                        <li>Check for unauthorized accounts or changes</li>
+                        <li>Consider professional help if needed</li>
+                        <li>Monitor accounts for fraudulent activity</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="key-takeaways">
+                <h3>Quick Checklist</h3>
+                <ul>
+                    <li>☐ Enable automatic updates</li>
+                    <li>☐ Install antivirus software</li>
+                    <li>☐ Set up device lock with strong PIN/password</li>
+                    <li>☐ Use HTTPS and check for secure connections</li>
+                    <li>☐ Secure your Wi-Fi with a strong password</li>
+                    <li>☐ Consider using a VPN for public networks</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

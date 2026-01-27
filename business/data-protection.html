@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Protection - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="section.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Click-Safe Logo">
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="index.html">Small Business</a></li>
+                <li><a href="../resources/index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header business-theme">
+        <div class="container">
+            <h1>📊 Data Protection</h1>
+            <p>Safeguard your business and customer data</p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="section-nav">
+        <div class="container">
+            <ul class="tabs">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="employee-training.html">Employee Training</a></li>
+                <li><a href="data-protection.html" class="tab-active">Data Protection</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Data Protection: Safeguarding Your Business Assets</h2>
+
+            <div class="content-section">
+                <h3>Why Data Protection Matters</h3>
+                <p>Data is one of your most valuable business assets. Protecting customer information, financial records, and trade secrets is not only a business necessity but often a legal requirement. Data breaches can result in financial loss, legal
+                    liability, and damage to your reputation.</p>
+            </div>
+
+            <div class="content-section">
+                <h3>Data Classification & Management</h3>
+
+                <div class="subsection">
+                    <h4>📂 Classify Your Data</h4>
+                    <p>Start by understanding what data you have and its sensitivity:</p>
+                    <ul>
+                        <li><strong>Public:</strong> Information safe to share with anyone</li>
+                        <li><strong>Internal:</strong> Confidential information for employees only</li>
+                        <li><strong>Sensitive:</strong> Financial data, personal information, trade secrets</li>
+                        <li><strong>Restricted:</strong> Highly sensitive data requiring strict access controls</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>📋 Data Inventory</h4>
+                    <ul>
+                        <li>Document all data your business collects and stores</li>
+                        <li>Identify where data is stored (servers, cloud, local computers)</li>
+                        <li>Map data flows throughout your organization</li>
+                        <li>Identify who has access to each type of data</li>
+                        <li>Document data retention requirements and schedules</li>
+                        <li>Update inventory regularly</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🔐 Access Control</h4>
+                    <p>Implement the principle of least privilege:</p>
+                    <ul>
+                        <li>Grant employees only the access they need</li>
+                        <li>Use role-based access controls</li>
+                        <li>Regularly review and update access permissions</li>
+                        <li>Remove access immediately when employees leave</li>
+                        <li>Require strong authentication for sensitive data access</li>
+                        <li>Monitor and log data access</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🔒 Encryption</h4>
+                    <ul>
+                        <li><strong>In Transit:</strong> Use HTTPS/TLS for all web communications</li>
+                        <li><strong>At Rest:</strong> Encrypt sensitive data in databases and storage</li>
+                        <li><strong>End-to-End:</strong> Consider end-to-end encryption for communication</li>
+                        <li>Use strong encryption standards (AES-256)</li>
+                        <li>Manage encryption keys securely</li>
+                        <li>Encrypt backups as well</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>💾 Data Backups</h4>
+                    <div class="highlight-box" style="background: var(--card-bg); border-left-color: #9b59b6;">
+                        <p><strong>Backup Best Practices:</strong></p>
+                        <ul>
+                            <li>Regular automated backups (daily or more frequently)</li>
+                            <li>Test backup restoration regularly</li>
+                            <li>Keep backups in multiple locations</li>
+                            <li>Use the 3-2-1 rule: 3 copies, 2 different media, 1 offsite</li>
+                            <li>Encrypt backup files</li>
+                            <li>Document backup procedures and recovery processes</li>
+                            <li>Protect backup media from unauthorized access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4>🧹 Data Deletion</h4>
+                    <ul>
+                        <li>Delete data when no longer needed</li>
+                        <li>Use secure deletion methods (data cannot be recovered)</li>
+                        <li>Document data deletion procedures</li>
+                        <li>Securely dispose of physical media containing data</li>
+                        <li>Follow legal retention requirements</li>
+                        <li>Implement automated deletion for temporary data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Compliance & Regulations</h3>
+                <p>Depending on your industry and location, you may need to comply with data protection regulations:</p>
+                <ul>
+                    <li><strong>GDPR:</strong> General Data Protection Regulation (EU)</li>
+                    <li><strong>CCPA:</strong> California Consumer Privacy Act</li>
+                    <li><strong>HIPAA:</strong> Health Insurance Portability and Accountability Act</li>
+                    <li><strong>PCI-DSS:</strong> Payment Card Industry Data Security Standard</li>
+                    <li><strong>SOC 2:</strong> Service Organization Control</li>
+                    <li>Industry-specific regulations for your sector</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Third-Party & Vendor Management</h3>
+                <p>Protect data shared with external vendors and services:</p>
+                <ul>
+                    <li>Vet vendors before sharing data</li>
+                    <li>Include data protection requirements in contracts</li>
+                    <li>Verify vendors' security practices</li>
+                    <li>Limit data sharing to what's necessary</li>
+                    <li>Monitor vendor compliance with security standards</li>
+                    <li>Have a process to revoke data access</li>
+                    <li>Understand where data is stored geographically</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Incident Response Plan</h3>
+                <p>Prepare for potential data breaches:</p>
+                <div class="highlight-box" style="background: var(--card-bg); border-left-color: #9b59b6;">
+                    <p><strong>Key Components:</strong></p>
+                    <ol style="padding-left: 1.5rem;">
+                        <li><strong>Detection:</strong> How to identify a breach</li>
+                        <li><strong>Containment:</strong> Immediate steps to limit damage</li>
+                        <li><strong>Notification:</strong> How and when to notify affected parties</li>
+                        <li><strong>Investigation:</strong> Determine what happened and why</li>
+                        <li><strong>Recovery:</strong> Restore systems and data</li>
+                        <li><strong>Prevention:</strong> Prevent future incidents</li>
+                    </ol>
+                </div>
+
+                <h4>Preparation Steps:</h4>
+                <ul>
+                    <li>Document the incident response plan</li>
+                    <li>Designate an incident response team</li>
+                    <li>Establish communication procedures</li>
+                    <li>Keep contact information updated</li>
+                    <li>Conduct regular drills and exercises</li>
+                    <li>Ensure legal/PR is part of the plan</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3>Security Infrastructure</h3>
+                <ul>
+                    <li><strong>Firewalls:</strong> Control inbound/outbound traffic</li>
+                    <li><strong>Intrusion Detection:</strong> Monitor for suspicious activity</li>
+                    <li><strong>Antivirus/Malware Protection:</strong> Scan systems regularly</li>
+                    <li><strong>VPNs:</strong> Secure remote connections</li>
+                    <li><strong>Security Patches:</strong> Keep all systems updated</li>
+                    <li><strong>Logging & Monitoring:</strong> Track security events</li>
+                    <li><strong>Penetration Testing:</strong> Regular security assessments</li>
+                </ul>
+            </div>
+
+            <div class="key-takeaways" style="border-color: #9b59b6;">
+                <h3 style="color: #7d3c98; border-left-color: #9b59b6;">Quick Checklist</h3>
+                <ul>
+                    <li>☐ Create a data inventory</li>
+                    <li>☐ Classify data by sensitivity</li>
+                    <li>☐ Implement access controls</li>
+                    <li>☐ Encrypt sensitive data</li>
+                    <li>☐ Set up automated backups</li>
+                    <li>☐ Test backup restoration</li>
+                    <li>☐ Establish data deletion procedures</li>
+                    <li>☐ Create an incident response plan</li>
+                    <li>☐ Review vendor security practices</li>
+                    <li>☐ Monitor regulatory compliance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

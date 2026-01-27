@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Checklists - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="resources.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Click-Safe Logo" />
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="../personal-security/index.html">Personal Security</a>
+                </li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+              🌙
+            </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header resources-theme">
+        <div class="container">
+            <h1>✅ Security Checklists</h1>
+            <p>Downloadable checklists for implementing security best practices</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Security Implementation Checklists</h2>
+
+            <div id="personal" class="checklist-section">
+                <h3>Personal Security Checklist</h3>
+                <div class="checklist">
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Create unique, strong passwords for all accounts</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Set up a password manager</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Enable two-factor authentication on email</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Enable two-factor authentication on banking</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Enable two-factor authentication on social media</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Update all devices to latest OS version</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Enable automatic security updates</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Install antivirus software</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Set up a backup system</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Review privacy settings on social media</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Check and tighten home Wi-Fi security</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Set device lock with strong PIN/password</span>
+            </label>
+                </div>
+                <button class="download-btn" onclick="downloadChecklist('Personal Security Checklist')">
+            ⬇️ Download PDF
+          </button>
+            </div>
+
+            <div id="family" class="checklist-section">
+                <h3>Family Security Checklist</h3>
+                <div class="checklist">
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Set up parental controls on all devices</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Establish clear internet use rules</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Have initial online safety conversation</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Review children's social media accounts</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Know children's online friends</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Set screen time limits</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Secure smart home devices with strong passwords</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Enable two-factor auth on all family accounts</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Create family Wi-Fi network with strong password</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Establish reporting mechanism for concerns</span>
+            </label>
+                </div>
+                <button class="download-btn" onclick="downloadChecklist('Family Security Checklist')">
+            ⬇️ Download PDF
+          </button>
+            </div>
+
+            <div id="business" class="checklist-section">
+                <h3>Business Security Checklist</h3>
+                <div class="checklist">
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Create a data inventory</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Classify data by sensitivity</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Implement access controls</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Implement strong password policy</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Enable multi-factor authentication</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Set up automated backup system</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Test backup restoration</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Train all employees on security</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Conduct phishing simulations</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Create incident response plan</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Vet third-party vendors</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Keep systems and software updated</span>
+            </label>
+                </div>
+                <button class="download-btn" onclick="downloadChecklist('Business Security Checklist')">
+            ⬇️ Download PDF
+          </button>
+            </div>
+
+            <div id="workfromhome" class="checklist-section">
+                <h3>Work from Home Security Checklist</h3>
+                <div class="checklist">
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Secure your home Wi-Fi with strong password</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Use VPN for work connections</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Keep all devices updated</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Use strong password for work accounts</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Enable two-factor authentication</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Lock device when stepping away</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Be aware of screen visibility</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Use secure video conferencing platform</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Secure physical documents with sensitive info</span>
+            </label>
+                    <label class="checklist-item">
+              <input type="checkbox" />
+              <span>Avoid public Wi-Fi for work</span>
+            </label>
+                </div>
+                <button class="download-btn" onclick="downloadChecklist('Work from Home Security Checklist')">
+            ⬇️ Download PDF
+          </button>
+            </div>
+
+            <div class="checklist-note">
+                <p>
+                    💡 <strong>Tip:</strong> Print these checklists and post them where you'll see them regularly. Check off items as you complete them and review quarterly.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2026 Click-Safe. All rights reserved. |
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function downloadChecklist(title) {
+            alert(
+                `Downloading ${title}...\n\nIn a real application, this would generate and download a PDF file.`,
+            );
+        }
+    </script>
+</body>
+
+</html>

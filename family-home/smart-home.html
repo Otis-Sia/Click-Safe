@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Security - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="section.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Click-Safe Logo">
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="../resources/index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header family-home-theme">
+        <div class="container">
+            <h1>🏠 Smart Home Security</h1>
+            <p>Secure your connected devices and IoT products</p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="section-nav">
+        <div class="container">
+            <ul class="tabs">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="parents-guide.html">Parent's Guide</a></li>
+                <li><a href="smart-home.html" class="tab-active">Smart Home Security</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Securing Your Smart Home</h2>
+
+            <div class="content-section">
+                <h3>The Smart Home Ecosystem</h3>
+                <p>Smart home devices—from speakers to security cameras to smart thermostats—offer convenience but also create potential security vulnerabilities. Each connected device is a potential entry point for attackers to access your home network
+                    and personal information.</p>
+            </div>
+
+            <div class="content-section">
+                <h3>Smart Home Security Principles</h3>
+
+                <div class="subsection">
+                    <h4>🔐 Strong Passwords for All Devices</h4>
+                    <ul>
+                        <li>Use unique, strong passwords for each smart home device</li>
+                        <li>Change default passwords immediately after setup</li>
+                        <li>Use a password manager to keep track of them all</li>
+                        <li>Never use the same password for multiple devices</li>
+                        <li>Avoid simple passwords like "123456" or "password"</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🌐 Secure Your Home Network</h4>
+                    <div class="highlight-box">
+                        <p><strong>Key Network Security Steps:</strong></p>
+                        <ul>
+                            <li>Change the default Wi-Fi router password</li>
+                            <li>Use WPA3 encryption (or WPA2 if WPA3 unavailable)</li>
+                            <li>Disable WPS (Wi-Fi Protected Setup)</li>
+                            <li>Enable router firewall</li>
+                            <li>Keep router firmware updated</li>
+                            <li>Create a separate guest network for visitors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h4>🔄 Keep Firmware Updated</h4>
+                    <ul>
+                        <li>Enable automatic updates when available</li>
+                        <li>Check manufacturer websites for updates regularly</li>
+                        <li>Updates often include critical security patches</li>
+                        <li>Don't delay updates—apply them promptly</li>
+                        <li>Subscribe to manufacturer security notifications</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>📱 Smart Home Devices & Best Practices</h4>
+
+                    <h5>Smart Speakers (Alexa, Google Home, Siri)</h5>
+                    <ul>
+                        <li>Review and adjust microphone settings</li>
+                        <li>Regularly check what information is being collected</li>
+                        <li>Use voice commands only in private spaces</li>
+                        <li>Delete voice history regularly</li>
+                        <li>Enable PIN protection for purchases</li>
+                    </ul>
+
+                    <h5>Security Cameras</h5>
+                    <ul>
+                        <li>Use unique, strong passwords for camera access</li>
+                        <li>Enable two-factor authentication</li>
+                        <li>Position cameras to respect privacy</li>
+                        <li>Use HTTPS for video feeds</li>
+                        <li>Check who has access to camera footage</li>
+                    </ul>
+
+                    <h5>Smart Locks</h5>
+                    <ul>
+                        <li>Use strong access codes</li>
+                        <li>Enable notifications for lock activity</li>
+                        <li>Regularly review who has access codes</li>
+                        <li>Remove access for former residents/guests</li>
+                        <li>Keep a non-smart backup key hidden</li>
+                    </ul>
+
+                    <h5>Smart Thermostats & Other Devices</h5>
+                    <ul>
+                        <li>Change default credentials</li>
+                        <li>Limit app permissions</li>
+                        <li>Review connected devices regularly</li>
+                        <li>Remove unused devices from the network</li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>🚫 Privacy Considerations</h4>
+                    <ul>
+                        <li>Read privacy policies before purchasing</li>
+                        <li>Choose devices that respect your privacy preferences</li>
+                        <li>Review data collection practices</li>
+                        <li>Opt out of data sharing when possible</li>
+                        <li>Understand how your data will be used</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Device Setup Checklist</h3>
+                <div class="highlight-box">
+                    <p><strong>When Setting Up a New Smart Device:</strong></p>
+                    <ol style="padding-left: 1.5rem;">
+                        <li>Change the default password immediately</li>
+                        <li>Update firmware to the latest version</li>
+                        <li>Review and configure privacy settings</li>
+                        <li>Enable two-factor authentication if available</li>
+                        <li>Add to a separate IoT network if possible</li>
+                        <li>Review what permissions the app requests</li>
+                        <li>Test and verify the device is working correctly</li>
+                        <li>Save login credentials in password manager</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Smart Home Network Architecture</h3>
+                <p>For maximum security, consider creating separate networks:</p>
+                <ul>
+                    <li><strong>Main Network:</strong> Personal computers, phones, important devices</li>
+                    <li><strong>IoT Network:</strong> Smart home devices (speakers, cameras, locks)</li>
+                    <li><strong>Guest Network:</strong> For visitors (keeps them isolated)</li>
+                </ul>
+                <p>This prevents a compromised IoT device from accessing your personal data.</p>
+            </div>
+
+            <div class="key-takeaways" style="border-color: #27ae60;">
+                <h3 style="color: #229954;">Quick Checklist</h3>
+                <ul>
+                    <li>☐ Change default passwords on all devices</li>
+                    <li>☐ Update device firmware regularly</li>
+                    <li>☐ Secure your home Wi-Fi network</li>
+                    <li>☐ Use strong, unique passwords for each device</li>
+                    <li>☐ Enable two-factor authentication</li>
+                    <li>☐ Review privacy settings and data collection</li>
+                    <li>☐ Keep a list of all connected devices</li>
+                    <li>☐ Regularly remove unused devices from network</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

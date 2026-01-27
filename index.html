@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click-Safe - Cybersecurity Education</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Click-Safe Logo">
+                <span>Click-Safe</span>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="personal-security/index.html">Personal Security</a></li>
+                <li><a href="family-home/index.html">Family & Home</a></li>
+                <li><a href="business/index.html">Small Business</a></li>
+                <li><a href="resources/index.html">Resources</a></li>
+                <li><a href="ask-expert/index.html">Ask Expert</a></li>
+                <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Stay Safe. Stay Smart. Stay Secure.</h1>
+            <p>Learn cybersecurity best practices for your personal life, family, and business</p>
+            <button class="cta-button">Explore Now</button>
+        </div>
+    </section>
+
+    <!-- Three Paths Section -->
+    <section class="paths">
+        <div class="container">
+            <h2>Choose Your Path</h2>
+            <div class="paths-grid">
+                <!-- Personal Security -->
+                <div class="path-card personal-security">
+                    <div class="path-icon">🔐</div>
+                    <h3>Personal Security</h3>
+                    <p>Protect yourself online with essential security practices</p>
+                    <ul>
+                        <li><a href="personal-security/passwords.html">Passwords 101</a></li>
+                        <li><a href="personal-security/devices.html">Phone & Computer Basics</a></li>
+                        <li><a href="personal-security/social-media.html">Social Media Privacy</a></li>
+                    </ul>
+                    <a href="personal-security/index.html" class="path-button">Learn More →</a>
+                </div>
+
+                <!-- Family & Home -->
+                <div class="path-card family-home">
+                    <div class="path-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family & Home</h3>
+                    <p>Secure your family and smart home devices</p>
+                    <ul>
+                        <li><a href="family-home/parents-guide.html">Parent's Guide</a></li>
+                        <li><a href="family-home/smart-home.html">Smart Home Security</a></li>
+                    </ul>
+                    <a href="family-home/index.html" class="path-button">Learn More →</a>
+                </div>
+
+                <!-- Small Business -->
+                <div class="path-card business">
+                    <div class="path-icon">🏢</div>
+                    <h3>Small Business</h3>
+                    <p>Protect your business and employees from cyber threats</p>
+                    <ul>
+                        <li><a href="business/employee-training.html">Employee Training</a></li>
+                        <li><a href="business/data-protection.html">Data Protection</a></li>
+                    </ul>
+                    <a href="business/index.html" class="path-button">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Get weekly security tips and best practices delivered to your inbox</p>
+            <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles">
+        <div class="container">
+            <h2>📚 Featured Articles</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <span class="article-tag">Popular</span>
+                    <h3>📝 Create Unbreakable Passwords (Actually Simple)</h3>
+                    <p>You don't need to memorize 50 complicated passwords. Learn the simple 3-step system that actually works, plus why you need a password manager.</p>
+                    <div class="article-meta">
+                        <span>8 min read</span> • <span>Passwords</span>
+                    </div>
+                    <a href="personal-security/create-passwords.html" class="article-link">Read Article →</a>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-tag">Quick Guide</span>
+                    <h3>🛡️ Device Security Essentials</h3>
+                    <p>Keep your phone and computer secure with these essential practices: updates, antivirus, device locks, and safe browsing habits.</p>
+                    <div class="article-meta">
+                        <span>6 min read</span> • <span>Device Security</span>
+                    </div>
+                    <a href="personal-security/devices.html" class="article-link">Learn More →</a>
+                </article>
+
+                <article class="article-card">
+                    <span class="article-tag">Family Focus</span>
+                    <h3>👥 Protecting Your Family Online</h3>
+                    <p>A parent's guide to helping your children stay safe online. Includes age-appropriate guidelines, parental controls, and important conversations.</p>
+                    <div class="article-meta">
+                        <span>10 min read</span> • <span>Family Safety</span>
+                    </div>
+                    <a href="family-home/parents-guide.html" class="article-link">Explore Guide →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
