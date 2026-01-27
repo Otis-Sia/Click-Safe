@@ -353,7 +353,7 @@ html.dark-mode .key-takeaways {
 
 @media (max-width: 768px) {
     .page-header h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .tabs {
         gap: 1rem;
@@ -372,7 +372,7 @@ html.dark-mode .key-takeaways {
         padding: 2rem 1rem;
     }
     .section-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .content-section h3 {
         font-size: 1.25rem;
@@ -387,7 +387,7 @@ html.dark-mode .key-takeaways {
         padding: 1.5rem 0.75rem;
     }
     .page-header h1 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
     .page-header p {
         font-size: 0.9rem;
@@ -396,11 +396,15 @@ html.dark-mode .key-takeaways {
         padding: 1.5rem 0.75rem;
     }
     .section-content h2 {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
     }
     .content-section h3 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         padding-left: 0.5rem;
+    }
+    .content-section p, 
+    .content-section li {
+        font-size: 0.9rem;
     }
     .tabs {
         gap: 0.5rem;

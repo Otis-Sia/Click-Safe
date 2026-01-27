@@ -216,7 +216,7 @@ html.dark-mode .question {
         padding: 2rem 1rem;
     }
     .page-header h1 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
     .page-header p {
         font-size: 1rem;
@@ -225,7 +225,7 @@ html.dark-mode .question {
         padding: 2rem 1rem;
     }
     .section-content h2 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         margin-bottom: 1.5rem;
     }
     .qa-item {
@@ -271,7 +271,7 @@ html.dark-mode .question {
 
 @media (max-width: 480px) {
     .page-header h1 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
     .page-header p {
         font-size: 0.9rem;
@@ -280,7 +280,7 @@ html.dark-mode .question {
         padding: 1.5rem 0.75rem;
     }
     .section-content h2 {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
     }
     .qa-container {
         margin: 0 auto 2rem;
@@ -289,7 +289,7 @@ html.dark-mode .question {
         padding: 1rem;
     }
     .question h3 {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
     .answer {
         padding: 1rem;
@@ -300,7 +300,7 @@ html.dark-mode .question {
         border-radius: 8px;
     }
     .submit-question h2 {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         margin-top: 0;
     }
     .form-group input,

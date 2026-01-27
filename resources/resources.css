@@ -235,10 +235,10 @@ html.dark-mode .featured-item:hover {
 
 @media (max-width: 768px) {
     .page-header h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .section-content h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .resources-grid {
         grid-template-columns: 1fr;
@@ -403,8 +403,11 @@ html.dark-mode .featured-item:hover {
     .section-content {
         padding: 1.5rem 0.75rem;
     }
-    .section-content h2 {
+    .page-header h1 {
         font-size: 1.35rem;
+    }
+    .section-content h2 {
+        font-size: 1.25rem;
     }
     .checklist-section {
         padding: 1rem 0.75rem;

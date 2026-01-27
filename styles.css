@@ -710,7 +710,7 @@ gap: 1.5rem;
         min-height: auto;
     }
     .hero-content h1 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         margin-bottom: 0.5rem;
     }
     .hero-content p {
@@ -726,7 +726,7 @@ gap: 1.5rem;
         padding: 2rem 1rem;
     }
     .paths h2 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         margin-bottom: 2rem;
     }
     .paths-grid {
@@ -747,7 +747,7 @@ gap: 1.5rem;
         padding: 2rem 1rem;
     }
     .newsletter h2 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         margin-bottom: 1rem;
     }
     .newsletter p {
@@ -771,7 +771,7 @@ gap: 1.5rem;
         padding: 2rem 1rem;
     }
     .featured-articles h2 {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
         margin-bottom: 2rem;
     }
     .articles-grid {
@@ -796,7 +796,19 @@ gap: 1.5rem;
         padding: 0 15px;
     }
     .hero-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
+    }
+    .paths h2,
+    .newsletter h2,
+    .featured-articles h2 {
+        font-size: 1.35rem;
+    }
+    .path-card h3,
+    .article-card h3 {
+        font-size: 1.1rem;
+    }
+    p, li {
+        font-size: 0.95rem;
     }
     .hero-content p {
         font-size: 0.9rem;
