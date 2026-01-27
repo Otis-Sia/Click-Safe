@@ -116,7 +116,9 @@ body {
 /* Hero Section */
 
 .hero {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero-bg.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 6rem 2rem;
     text-align: center;
@@ -204,9 +206,11 @@ body {
     border-top-color: var(--primary-orange);
 }
 
-.path-icon {
-    font-size: 3rem;
+.path-icon-img {
+    width: 64px;
+    height: 64px;
     margin-bottom: 1rem;
+    object-fit: contain;
 }
 
 .path-card h3 {
