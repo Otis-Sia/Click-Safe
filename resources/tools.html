@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Tools & Templates - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="resources.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="sub-navbar">
+        <div class="container">
+            <ul class="sub-nav-links">
+                <li><a href="index.html">Overview</a></li>`n                <li><a href="topics/index.html">Topics</a></li>
+                <li><a href="checklists.html">Checklists</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="tools.html" class="active">Tools</a></li>
+                <li><a href="external.html">External</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header resources-theme">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Resources</a> / <strong>Tools & Templates</strong>
+            </div>
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Security Tools & Templates</h1>
+            <p>Practical tools and templates for implementing security measures</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <img src="../images/tools-hero.png" alt="Security Tools" class="hero-image">
+
+            <!-- Password Generator -->
+            <div class="tool-section" id="passwordgen">
+                <h3>🔐 Secure Password Generator</h3>
+                <p>Generate strong, random passwords for your accounts. Never reuse passwords across different sites!</p>
+                
+                <div class="password-generator">
+                    <div class="password-result" id="passwordDisplay">
+                        <span id="generatedPassword">Click "Generate" to create a password</span>
+                        <button class="btn btn-secondary btn-padding-custom" onclick="copyPassword()">📋 Copy</button>
+                    </div>
+                    
+                    <div class="password-options">
+                        <div class="option-group">
+                            <label>
+                                Password Length: <span id="lengthValue">16</span>
+                            </label>
+                            <input type="range" id="passwordLength" min="8" max="64" value="16" onchange="updateLength(this.value)">
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>
+                                <input type="checkbox" id="includeUppercase" checked>
+                                Include Uppercase (A-Z)
+                            </label>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>
+                                <input type="checkbox" id="includeLowercase" checked>
+                                Include Lowercase (a-z)
+                            </label>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>
+                                <input type="checkbox" id="includeNumbers" checked>
+                                Include Numbers (0-9)
+                            </label>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>
+                                <input type="checkbox" id="includeSymbols" checked>
+                                Include Symbols (!@#$%^&*)
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn" onclick="generatePassword()">🔄 Generate Password</button>
+                    
+                    <div class="info-tip-box">
+                        <p>
+                            💡 <strong>Tip:</strong> A good password should be at least 16 characters long and include a mix of uppercase, lowercase, numbers, and symbols. Never use the same password on multiple sites. Consider using a password manager to store your passwords securely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Policy Template -->
+            <div class="tool-section" id="policytemplate">
+                <h3>📋 Security Policy Template</h3>
+                <p>A comprehensive template to create your organization's cybersecurity policy. Customize it to fit your business needs.</p>
+                
+                <div class="template-card">
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li>Password requirements and management guidelines</li>
+                        <li>Acceptable use policy for company resources</li>
+                        <li>Data classification and handling procedures</li>
+                        <li>Incident reporting and response protocols</li>
+                        <li>Remote work security guidelines</li>
+                        <li>BYOD (Bring Your Own Device) policy</li>
+                        <li>Email and internet usage guidelines</li>
+                        <li>Physical security requirements</li>
+                    </ul>
+                    <button class="btn" onclick="alert('PDF template download would start here. In production, this would download a customizable PDF template.')">📥 Download Template</button>
+                </div>
+            </div>
+
+            <!-- Risk Assessment Template -->
+            <div class="tool-section" id="riskassessment">
+                <h3>📊 Risk Assessment Template</h3>
+                <p>Identify and evaluate potential cybersecurity risks to your organization.</p>
+                
+                <div class="template-card">
+                    <h4>Interactive Risk Assessment Questionnaire</h4>
+                    <p>Answer these questions to get a basic risk assessment:</p>
+                    
+                    <div class="form-group">
+                        <p><strong>1. Do you use the same password across multiple accounts?</strong></p>
+                        <label><input type="radio" name="q1" value="yes"> Yes</label>
+                        <label class="form-group"><input type="radio" name="q1" value="no"> No</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p><strong>2. Is two-factor authentication enabled on critical accounts?</strong></p>
+                        <label><input type="radio" name="q2" value="yes"> Yes</label>
+                        <label class="form-group"><input type="radio" name="q2" value="no"> No</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p><strong>3. Do you have regular data backups?</strong></p>
+                        <label><input type="radio" name="q3" value="yes"> Yes</label>
+                        <label class="form-group"><input type="radio" name="q3" value="no"> No</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p><strong>4. Are all your software and systems regularly updated?</strong></p>
+                        <label><input type="radio" name="q4" value="yes"> Yes</label>
+                        <label class="form-group"><input type="radio" name="q4" value="no"> No</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p><strong>5. Do employees receive regular security training?</strong></p>
+                        <label><input type="radio" name="q5" value="yes"> Yes</label>
+                        <label class="form-group"><input type="radio" name="q5" value="no"> No</label>
+                    </div>
+                    
+                    <button class="btn" onclick="assessRisk()">📈 Assess Risk Level</button>
+                    <div id="riskResult" class="tool-result-box"></div>
+                    
+                    <button class="btn btn-secondary mt-1" onclick="alert('Full risk assessment template download would start here.')">📥 Download Full Template</button>
+                </div>
+            </div>
+
+            <!-- Incident Response Plan -->
+            <div class="tool-section" id="incidentplan">
+                <h3>🚨 Incident Response Plan Template</h3>
+                <p>A step-by-step guide for responding to cybersecurity incidents.</p>
+                
+                <div class="template-card">
+                    <h4>Plan Components:</h4>
+                    <ul>
+                        <li><strong>Preparation:</strong> Contact lists, communication channels, equipment needs</li>
+                        <li><strong>Detection & Analysis:</strong> How to identify and assess incidents</li>
+                        <li><strong>Containment:</strong> Steps to limit damage and prevent spread</li>
+                        <li><strong>Eradication:</strong> Removing threats from your systems</li>
+                        <li><strong>Recovery:</strong> Restoring systems and normal operations</li>
+                        <li><strong>Post-Incident:</strong> Review, documentation, and lessons learned</li>
+                    </ul>
+                    
+                    <div class="emergency-box">
+                        <p><strong>⚠️ Emergency Contacts Template:</strong></p>
+                        <ul>
+                            <li>IT Security Team: ___________</li>
+                            <li>Management: ___________</li>
+                            <li>Legal Counsel: ___________</li>
+                            <li>Law Enforcement: ___________</li>
+                            <li>Cyber Insurance: ___________</li>
+                            <li>Forensics/IR Firm: ___________</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn" onclick="alert('Incident response plan template download would start here.')">📥 Download Plan Template</button>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="index.html" class="btn btn-secondary">← Back to Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function updateLength(value) {
+            document.getElementById('lengthValue').textContent = value;
+        }
+        
+        function generatePassword() {
+            const length = document.getElementById('passwordLength').value;
+            const includeUppercase = document.getElementById('includeUppercase').checked;
+            const includeLowercase = document.getElementById('includeLowercase').checked;
+            const includeNumbers = document.getElementById('includeNumbers').checked;
+            const includeSymbols = document.getElementById('includeSymbols').checked;
+            
+            let charset = '';
+            if (includeUppercase) charset += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            if (includeLowercase) charset += 'abcdefghijklmnopqrstuvwxyz';
+            if (includeNumbers) charset += '0123456789';
+            if (includeSymbols) charset += '!@#$%^&*()_+-=[]{}|;:,.<>?';
+            
+            if (charset === '') {
+                alert('Please select at least one character type!');
+                return;
+            }
+            
+            let password = '';
+            const array = new Uint32Array(length);
+            crypto.getRandomValues(array);
+            
+            for (let i = 0; i < length; i++) {
+                password += charset[array[i] % charset.length];
+            }
+            
+            document.getElementById('generatedPassword').textContent = password;
+        }
+        
+        function copyPassword() {
+            const password = document.getElementById('generatedPassword').textContent;
+            if (password === 'Click "Generate" to create a password') {
+                alert('Please generate a password first!');
+                return;
+            }
+            navigator.clipboard.writeText(password).then(() => {
+                alert('Password copied to clipboard!');
+            });
+        }
+        
+        function assessRisk() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            const q4 = document.querySelector('input[name="q4"]:checked');
+            const q5 = document.querySelector('input[name="q5"]:checked');
+            
+            if (!q1 || !q2 || !q3 || !q4 || !q5) {
+                alert('Please answer all questions!');
+                return;
+            }
+            
+            let score = 0;
+            if (q1.value === 'no') score++;
+            if (q2.value === 'yes') score++;
+            if (q3.value === 'yes') score++;
+            if (q4.value === 'yes') score++;
+            if (q5.value === 'yes') score++;
+            
+            const resultDiv = document.getElementById('riskResult');
+            resultDiv.style.display = 'block';
+            
+            if (score >= 4) {
+                resultDiv.style.background = 'rgba(0, 255, 0, 0.2)';
+                resultDiv.style.borderLeft = '4px solid green';
+                resultDiv.innerHTML = '<strong>✅ LOW RISK</strong><p>Great job! Your security posture is strong. Keep up the good practices!</p>';
+            } else if (score >= 2) {
+                resultDiv.style.background = 'rgba(255, 165, 0, 0.2)';
+                resultDiv.style.borderLeft = '4px solid orange';
+                resultDiv.innerHTML = '<strong>⚠️ MEDIUM RISK</strong><p>You have some good practices, but there\'s room for improvement. Review our security checklists for guidance.</p>';
+            } else {
+                resultDiv.style.background = 'rgba(255, 0, 0, 0.2)';
+                resultDiv.style.borderLeft = '4px solid red';
+                resultDiv.innerHTML = '<strong>🚨 HIGH RISK</strong><p>Your security needs immediate attention. Start with our basic security checklist and consider reaching out to our experts for guidance.</p>';
+            }
+        }
+    </script>
+</body>
+
+</html>
+

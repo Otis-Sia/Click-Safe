@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Fraud & Social Engineering - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../resources.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../../../family-home/index.html">Family & Home</a></li>
+                <li><a href="../../../business/index.html">Small Business</a></li>
+                <li><a href="../../index.html">Resources</a></li>
+                <li><a href="../../../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../../../about.html">About</a></li>
+                <li><a href="../../../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header resources-theme">
+        <div class="container">
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg> Online Fraud & Social Engineering</h1>
+            <p>Understanding psychological manipulation tactics used by cybercriminals</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div class="container">
+            <h2>The Art of Digital Deception</h2>
+
+            <div class="content-section">
+                <p>Social engineering is the psychological manipulation of people into performing actions or revealing confidential information. On social media, it's one of the most effective attack vectors because it exploits human psychology rather than technical vulnerabilities.</p>
+                
+                <div class="callout-box info">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="12" y1="17" x2="12" y2="3"/><path d="M5 17h14v4H5z"/></svg> What is Social Engineering?</h4>
+                    <p>Social engineering is manipulation that tricks individuals into divulging confidential information, granting access to restricted systems, or performing actions that compromise security. Rather than hacking software, social engineers "hack" human behavior by exploiting trust, fear, helpfulness, or curiosity.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> The Human Factor in Cybersecurity</h3>
+                
+                <div class="stats-grid">
+                    <div class="stat-highlight">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">of cyber attacks rely on social engineering</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">$4.9M</span>
+                        <span class="stat-label">average cost of a social engineering attack</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">82%</span>
+                        <span class="stat-label">of data breaches involve human element</span>
+                    </div>
+                </div>
+
+                <p>Social media amplifies social engineering because attackers can easily research victims, establish credibility through fake profiles, and exploit the informal, trusting nature of social interactions.</p>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Common Social Engineering Tactics</h3>
+
+                <div class="example-box">
+                    <h4>1. Pretexting</h4>
+                    <p><strong>Tactic:</strong> Creating a fabricated scenario to obtain information.</p>
+                    <p><strong>Example:</strong> Impersonating IT support: "We need to verify your account. Can you confirm your password?"</p>
+                    <p><strong>Defense:</strong> Verify identity through official channels before providing any information.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>2. Baiting</h4>
+                    <p><strong>Tactic:</strong> Offering something enticing to lure victims.</p>
+                    <p><strong>Example:</strong> "Free gift card! Just click here and enter your login details to claim."</p>
+                    <p><strong>Psychology:</strong> Exploits greed and curiosity.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>3. Urgency & Scarcity</h4>
+                    <p><strong>Tactic:</strong> Creating artificial time pressure to bypass rational thinking.</p>
+                    <p><strong>Example:</strong> "Your account will be deleted in 24 hours unless you verify immediately!"</p>
+                    <p><strong>Defense:</strong> Take time to verify - legitimate companies don't pressure instant action.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>4. Authority Exploitation</h4>
+                    <p><strong>Tactic:</strong> Impersonating figures of authority to command compliance.</p>
+                    <p><strong>Example:</strong> Fake support accounts, verified-looking profiles of executives.</p>
+                    <p><strong>Note:</strong> People naturally defer to perceived authority.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>5. Reciprocity</h4>
+                    <p><strong>Tactic:</strong> Offering help first to create obligation.</p>
+                    <p><strong>Example:</strong> "I helped you earlier, can you click this link for me?"</p>
+                    <p><strong>Psychology:</strong> Social obligation to return favors.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>6. Social Proof</h4>
+                    <p><strong>Tactic:</strong> "Everyone else is doing it" pressure.</p>
+                    <p><strong>Example:</strong> "10,000 people already claimed this offer!"</p>
+                    <p><strong>Defense:</strong> Popular doesn't equal legitimate.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Types of Social Media Fraud</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li><strong>Romance Scams:</strong> Fake relationships to extract money - $547M lost in 2021</li>
+                        <li><strong>Investment Scams:</strong> Cryptocurrency and get-rich-quick schemes</li>
+                        <li><strong>Prize/Lottery Scams:</strong> "You've won!" but need to pay fees first</li>
+                        <li><strong>Charity Scams:</strong> Fake fundraisers exploiting disasters or emotions</li>
+                        <li><strong>Employment Scams:</strong> Fake job offers requiring upfront payment</li>
+                        <li><strong>Tech Support Scams:</strong> Fake warnings about computer problems</li>
+                        <li><strong>Advance Fee Fraud:</strong> Pay small amount to receive large sum</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Red Flags of Social Engineering</h3>
+
+                <div class="warning-signs">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Warning Signs</h4>
+                    <ul>
+                        <li><strong>Too good to be true</strong> - Unrealistic offers or opportunities</li>
+                        <li><strong>Urgent requests</strong> - Immediate action required</li>
+                        <li><strong>Emotional manipulation</strong> - Appeals to fear, greed, sympathy</li>
+                        <li><strong>Requests for sensitive info</strong> - Passwords, SSN, banking details</li>
+                        <li><strong>Unusual requests from contacts</strong> - Friends acting strangely</li>
+                        <li><strong>Poor grammar/spelling</strong> - Professional organizations proofread</li>
+                        <li><strong>Suspicious links</strong> - Mismatched URLs, shortened links</li>
+                        <li><strong>Pressure tactics</strong> - "Act now or lose opportunity"</li>
+                        <li><strong>Requests for secrecy</strong> - "Don't tell anyone about this"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Defense Strategies</h3>
+
+                <div class="protection-checklist">
+                    <ul>
+                        <li><strong>Verify identities</strong> - Contact people through known channels, not provided links</li>
+                        <li><strong>Think before sharing</strong> - Consider what information reveals about you</li>
+                        <li><strong>Question everything</strong> - Healthy skepticism protects you</li>
+                        <li><strong>Slow down</strong> - Don't let urgency bypass your judgment</li>
+                        <li><strong>Research offers</strong> - Search for scam reports before engaging</li>
+                        <li><strong>Protect personal info</strong> - Never share passwords or financial details via social media</li>
+                        <li><strong>Use privacy settings</strong> - Limit what strangers can see</li>
+                        <li><strong>Verify charities</strong> - Check legitimacy before donating</li>
+                        <li><strong>Trust your instincts</strong> - If something feels wrong, it probably is</li>
+                        <li><strong>Report suspicious activity</strong> - Help protect others</li>
+                        <li><strong>Educate others</strong> - Share knowledge with friends and family</li>
+                        <li><strong>Be especially cautious with money</strong> - Never send money to people you've only met online</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M22 10v6M2 10v6"/><path d="M20 20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> Building Awareness</h3>
+
+                <div class="callout-box tip">
+                    <h4>The STOP Principle</h4>
+                    <ul>
+                        <li><strong>S - Slow down:</strong> Take time to think critically</li>
+                        <li><strong>T - Think:</strong> Consider the request and potential consequences</li>
+                        <li><strong>O - Observe:</strong> Look for red flags and inconsistencies</li>
+                        <li><strong>P - Protect:</strong> Verify before sharing information or taking action</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Key Takeaways</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li>Social engineering exploits human psychology, not technical vulnerabilities</li>
+                        <li>98% of cyber attacks involve some form of social engineering</li>
+                        <li>Attackers use urgency, authority, and emotion to bypass rational thinking</li>
+                        <li>Verification through independent channels is your best defense</li>
+                        <li>If an offer seems too good to be true, it almost certainly is</li>
+                        <li>Awareness and education are the most effective protections</li>
+                        <li>Taking time to think prevents most social engineering attacks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="related-topics">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Related Topics</h3>
+                <div class="topic-links">
+                    <a href="../phishing/phishing-osn.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg> Phishing Attacks</a>
+                    <a href="identity-theft-osn.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Identity Theft</a>
+                    <a href="fake-profiles-socialbots.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><circle cx="12" cy="16" r="1.5"/><line x1="12" y1="2" x2="12" y2="11"/></svg> Fake Profiles</a>
+                    <a href="../phishing/exploitation-social-trust.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg> Exploitation of Trust</a>
+                    <a href="../fundamentals/human-factors-cybersecurity.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Human Factors</a>
+                    <a href="user-profiling-surveillance.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> User Profiling</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+
+</html>

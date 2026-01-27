@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Glossary - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="resources.css">
+    <style>
+        .hero-image {
+            max-width: 500px;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 12px;
+        }
+        
+        .glossary-search {
+            margin: 2rem 0;
+            max-width: 600px;
+        }
+        
+        .glossary-search input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid var(--border-color, #e0e0e0);
+            border-radius: 8px;
+            background: var(--card-background);
+            color: var(--text-color);
+        }
+        
+        .glossary-filter {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1.25rem;
+            background: var(--card-background);
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .glossary-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .glossary-item {
+            background: var(--card-background);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .glossary-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .glossary-item .category {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .glossary-item .definition {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+        
+        .glossary-item .example {
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-top: 0.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid var(--border-color, #e0e0e0);
+        }
+        
+        .breadcrumb {
+            padding: 1rem 0;
+            color: var(--text-secondary);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="sub-navbar">
+        <div class="container">
+            <ul class="sub-nav-links">
+                <li><a href="index.html">Overview</a></li>`n                <li><a href="topics/index.html">Topics</a></li>
+                <li><a href="checklists.html">Checklists</a></li>
+                <li><a href="glossary.html" class="active">Glossary</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="external.html">External</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header resources-theme">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Resources</a> / <strong>Security Glossary</strong>
+            </div>
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Security Glossary</h1>
+            <p>Understanding cybersecurity terms and concepts</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <img src="../images/glossary-hero.png" alt="Security Glossary" class="hero-image">
+
+            <div class="glossary-search">
+                <input type="text" id="searchInput" placeholder="🔍 Search terms..." onkeyup="searchGlossary()">
+            </div>
+
+            <div class="glossary-filter">
+                <button class="filter-btn active" onclick="filterCategory('all')">All Terms</button>
+                <button class="filter-btn" onclick="filterCategory('common')">Common Terms</button>
+                <button class="filter-btn" onclick="filterCategory('threats')">Threat Types</button>
+                <button class="filter-btn" onclick="filterCategory('solutions')">Security Solutions</button>
+            </div>
+
+            <div class="glossary-grid" id="glossary">
+                <!-- Common Terms -->
+                <div class="glossary-item" data-category="common">
+                    <span class="category">Common Term</span>
+                    <h3>Two-Factor Authentication (2FA)</h3>
+                    <p class="definition">A security process requiring two different forms of identification to access an account. Typically combines something you know (password) with something you have (phone) or something you are (fingerprint).</p>
+                    <p class="example">Example: After entering your password, you receive a code on your phone that you must also enter to log in.</p>
+                </div>
+
+                <div class="glossary-item" data-category="common">
+                    <span class="category">Common Term</span>
+                    <h3>Encryption</h3>
+                    <p class="definition">The process of converting information into a code to prevent unauthorized access. Only those with the correct key can decrypt and read the information.</p>
+                    <p class="example">Example: HTTPS encryption protects your credit card details when shopping online.</p>
+                </div>
+
+                <div class="glossary-item" data-category="common">
+                    <span class="category">Common Term</span>
+                    <h3>Firewall</h3>
+                    <p class="definition">A network security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Acts as a barrier between trusted and untrusted networks.</p>
+                    <p class="example">Example: Windows Defender Firewall blocks suspicious connections to your computer.</p>
+                </div>
+
+                <div class="glossary-item" data-category="common">
+                    <span class="category">Common Term</span>
+                    <h3>VPN (Virtual Private Network)</h3>
+                    <p class="definition">A service that creates a secure, encrypted connection over a less secure network, such as the internet. Masks your IP address and encrypts your data.</p>
+                    <p class="example">Example: Using a VPN on public Wi-Fi protects your browsing from eavesdroppers.</p>
+                </div>
+
+                <div class="glossary-item" data-category="common">
+                    <span class="category">Common Term</span>
+                    <h3>Patch</h3>
+                    <p class="definition">A software update designed to fix security vulnerabilities, bugs, or improve functionality. Critical for maintaining system security.</p>
+                    <p class="example">Example: Microsoft releases monthly patches on "Patch Tuesday" to fix Windows vulnerabilities.</p>
+                </div>
+
+                <!-- Threat Types -->
+                <div class="glossary-item" data-category="threats">
+                    <span class="category">Threat Type</span>
+                    <h3>Phishing</h3>
+                    <p class="definition">A cyber attack method where attackers impersonate legitimate organizations to trick individuals into revealing sensitive information like passwords or credit card numbers.</p>
+                    <p class="example">Example: An email that appears to be from your bank asking you to "verify your account" by clicking a link.</p>
+                    <p><a href="topics/phishing/phishing-osn.html" class="info-link">→ Learn more about phishing in social networks</a></p>
+                </div>
+
+                <div class="glossary-item" data-category="threats">
+                    <span class="category">Threat Type</span>
+                    <h3>Ransomware</h3>
+                    <p class="definition">Malicious software that encrypts a victim's files and demands payment (ransom) to restore access. Can cripple businesses and individuals.</p>
+                    <p class="example">Example: WannaCry ransomware attack in 2017 affected over 200,000 computers worldwide.</p>
+                </div>
+
+                <div class="glossary-item" data-category="threats">
+                    <span class="category">Threat Type</span>
+                    <h3>Malware</h3>
+                    <p class="definition">Short for "malicious software." Any software intentionally designed to cause damage to a computer, server, client, or computer network.</p>
+                    <p class="example">Example: Viruses, worms, trojans, spyware, and ransomware are all types of malware.</p>
+                    <p><a href="topics/malware/malware-social-networks.html" class="info-link">→ Learn about malware in social networks</a></p>
+                </div>
+
+                <div class="glossary-item" data-category="threats">
+                    <span class="category">Threat Type</span>
+                    <h3>Social Engineering</h3>
+                    <p class="definition">Manipulation techniques that exploit human psychology to trick people into divulging confidential information or performing actions that compromise security.</p>
+                    <p class="example">Example: A scammer calling and pretending to be IT support asking for your password.</p>
+                </div>
+
+                <div class="glossary-item" data-category="threats">
+                    <span class="category">Threat Type</span>
+                    <h3>Spyware</h3>
+                    <p class="definition">Software that secretly monitors and collects user information without their knowledge. Can track browsing habits, keystrokes, and personal data.</p>
+                    <p class="example">Example: Keyloggers that record everything you type to steal passwords and credit card numbers.</p>
+                </div>
+
+                <div class="glossary-item" data-category="threats">
+                    <span class="category">Threat Type</span>
+                    <h3">Man-in-the-Middle Attack (MITM)</h3>
+                    <p class="definition">An attack where the attacker secretly intercepts and possibly alters communication between two parties who believe they are directly communicating with each other.</p>
+                    <p class="example">Example: Intercepting unencrypted Wi-Fi traffic at a coffee shop to steal login credentials.</p>
+                </div>
+
+                <div class="glossary-item" data-category="threats">
+                    <span class="category">Threat Type</span>
+                    <h3>DDoS Attack (Distributed Denial of Service)</h3>
+                    <p class="definition">An attack that floods a server or network with overwhelming traffic from multiple sources, making it unavailable to legitimate users.</p>
+                    <p class="example">Example: Botnets sending millions of requests to a website, causing it to crash.</p>
+                </div>
+
+                <!-- Security Solutions -->
+                <div class="glossary-item" data-category="solutions">
+                    <span class="category">Security Solution</span>
+                    <h3>Antivirus Software</h3>
+                    <p class="definition">Programs designed to detect, prevent, and remove malicious software from computers and networks. Uses signatures and behavioral analysis to identify threats.</p>
+                    <p class="example">Example: Windows Defender, Norton, McAfee, Malwarebytes.</p>
+                </div>
+
+                <div class="glossary-item" data-category="solutions">
+                    <span class="category">Security Solution</span>
+                    <h3>Password Manager</h3>
+                    <p class="definition">Software that stores and manages passwords in an encrypted database. Generates strong, unique passwords and automatically fills them in when needed.</p>
+                    <p class="example">Example: Bitwarden, 1Password, LastPass, Dashlane.</p>
+                </div>
+
+                <div class="glossary-item" data-category="solutions">
+                    <span class="category">Security Solution</span>
+                    <h3>End-to-End Encryption (E2EE)</h3>
+                    <p class="definition">A communication system where only the communicating users can read the messages. Prevents third parties, including service providers, from accessing the data.</p>
+                    <p class="example">Example: WhatsApp and Signal use E2EE to protect message content.</p>
+                </div>
+
+                <div class="glossary-item" data-category="solutions">
+                    <span class="category">Security Solution</span>
+                    <h3>Multi-Factor Authentication (MFA)</h3>
+                    <p class="definition">Similar to 2FA but may require more than two forms of verification. Can include passwords, biometrics, security tokens, and location factors.</p>
+                    <p class="example">Example: Banking apps requiring password + fingerprint + SMS code.</p>
+                </div>
+
+                <div class="glossary-item" data-category="solutions">
+                    <span class="category">Security Solution</span>
+                    <h3>Backup and Recovery</h3>
+                    <p class="definition">The process of creating copies of data to protect against loss from hardware failure, cyber attacks, or human error. Includes procedures to restore data when needed.</p>
+                    <p class="example">Example: The 3-2-1 rule: 3 copies of data, on 2 different media, with 1 off-site.</p>
+                </div>
+
+                <div class="glossary-item" data-category="solutions">
+                    <span class="category">Security Solution</span>
+                    <h3>Zero Trust Security</h3>
+                    <p class="definition">A security model based on the principle of "never trust, always verify." Requires verification from everyone trying to access resources, regardless of location.</p>
+                    <p class="example">Example: Requiring authentication for each access request, even from within the corporate network.</p>
+                </div>
+
+                <div class="glossary-item" data-category="common">
+                    <span class="category">Common Term</span>
+                    <h3>SSL/TLS Certificate</h3>
+                    <p class="definition">Digital certificates that authenticate a website's identity and enable encrypted connection. Indicated by HTTPS and a padlock icon in browsers.</p>
+                    <p class="example">Example: The padlock you see next to your bank's URL means it has a valid SSL/TLS certificate.</p>
+                </div>
+
+                <div class="glossary-item" data-category="threats">
+                    <span class="category">Threat Type</span>
+                    <h3>Zero-Day Exploit</h3>
+                    <p class="definition">An attack that targets a previously unknown vulnerability in software before the developer has released a patch. "Zero days" to fix it.</p>
+                    <p class="example">Example: Hackers exploiting a vulnerability in software before the vendor knows it exists.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="index.html" class="resource-button">← Back to Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        function filterCategory(category) {
+            const items = document.querySelectorAll('.glossary-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        
+        function searchGlossary() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.glossary-item');
+            
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(input) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>
+
+
+

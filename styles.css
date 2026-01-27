@@ -64,6 +64,14 @@ body {
     gap: 0.5rem;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo img {
     height: 40px;
     width: auto;
@@ -117,6 +125,38 @@ html.dark-mode .navbar {
     height: 24px;
     fill: currentColor;
     vertical-align: middle;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.icon-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-sm {
+    width: 16px;
+    height: 16px;
+}
+
+/* Resource Icons - SVG versions */
+.resource-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+    color: white;
+}
+
+.resource-icon svg {
+    width: 32px;
+    height: 32px;
+    stroke: currentColor;
+    fill: none;
 }
 
 .dark-mode-toggle .icon {
@@ -539,11 +579,17 @@ html.dark-mode .navbar {
     /* Navigation */
     .menu-toggle {
         display: block;
+        padding: 0.75rem;
+        min-width: 44px;
+        min-height: 44px;
     }
+    
     .navbar .container {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
+    
     .nav-links {
         display: none;
         position: absolute;
@@ -565,12 +611,16 @@ html.dark-mode .navbar {
     .nav-links.active {
         display: flex;
     }
+    
     .nav-links a,
     .nav-links button {
         padding: 1rem 1.5rem;
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         text-align: left;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
     }
     
     .nav-links li {
@@ -582,6 +632,77 @@ html.dark-mode .navbar {
         border-left: 4px solid var(--primary-orange);
         padding-left: calc(1.5rem - 4px); /* Adjust padding to keep alignment */
         font-weight: bold;
+    }
+    
+    /* Secondary Navigation - Horizontal Scroll */
+    .sub-navbar {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+    
+    .sub-navbar::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .sub-navbar::-webkit-scrollbar-thumb {
+        background: var(--primary-green);
+        border-radius: 2px;
+    }
+    
+    .sub-nav-links {
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+        white-space: nowrap;
+    }
+    
+    .sub-nav-links li {
+        flex-shrink: 0;
+    }
+    
+    .sub-nav-links a {
+        padding: 0.75rem 1rem;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    /* Touch-friendly buttons and inputs */
+    .btn,
+    .cta-button,
+    .resource-button,
+    button[type="submit"] {
+        min-height: 48px;
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+        touch-action: manipulation;
+    }
+    
+    input,
+    textarea,
+    select {
+        min-height: 48px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Resource Cards */
+    .resources-grid {
+        grid-template-columns: 1fr;
+gap: 1.5rem;
+    }
+    
+    .resource-card {
+        padding: 1.5rem;
+    }
+    
+    .resource-icon {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .resource-icon svg {
+        width: 28px;
+        height: 28px;
     }
     /* Hero Section */
     .hero {
@@ -704,3 +825,192 @@ html.dark-mode .navbar {
         padding: 0.25rem 0.6rem;
     }
 }
+
+/* ==========================================
+   ABOUT PAGE STYLES
+   ========================================== */
+
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/team-meeting.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.mission-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    border-top: 4px solid var(--primary-blue);
+}
+
+.mission-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+}
+
+.team-section {
+    background: var(--bg-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--primary-blue);
+}
+
+/* About page inline styles to classes */
+.about-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about-intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* ==========================================
+   CONTACT PAGE STYLES
+   ========================================== */
+
+.contact-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/contact-hero.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--primary-green);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-green);
+    outline: none;
+}
+
+.submit-btn {
+    background: var(--primary-green);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background: rgba(109, 205, 59, 0.9);
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.info-item h3 {
+    color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.info-item p {
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.form-message {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.success-message {
+    color: var(--primary-green);
+    font-weight: bold;
+}
+

@@ -14,6 +14,14 @@
     </script>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="resources.css" />
+    <style>
+        .hero-image {
+            max-width: 500px;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 12px;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,8 +29,10 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <img src="../images/logo.png" alt="Click-Safe Logo" />
-                <span>Click-Safe</span>
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Click-Safe Logo" />
+                    <span>Click-Safe</span>
+                </a>
             </div>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
                 <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
@@ -47,10 +57,25 @@
         </div>
     </nav>
 
+    <!-- Secondary Navigation -->
+    <nav class="sub-navbar">
+        <div class="container">
+            <ul class="sub-nav-links">
+                <li><a href="index.html">Overview</a></li>`n                <li><a href="topics/index.html">Topics</a></li>
+                <li><a href="checklists.html" class="active">Checklists</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="external.html">External</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Page Header -->
     <section class="page-header resources-theme">
         <div class="container">
-            <h1>✅ Security Checklists</h1>
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Security Checklists</h1>
             <p>Downloadable checklists for implementing security best practices</p>
         </div>
     </section>
@@ -58,6 +83,7 @@
     <!-- Main Content -->
     <section class="section-content">
         <div class="container">
+            <img src="../images/checklists-hero.png" alt="Security Checklists" class="hero-image">
             <h2>Security Implementation Checklists</h2>
 
             <div id="personal" class="checklist-section">

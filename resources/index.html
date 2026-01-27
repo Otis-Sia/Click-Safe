@@ -21,8 +21,10 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <img src="../images/logo.png" alt="Click-Safe Logo">
-                <span>Click-Safe</span>
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
             </div>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
                 <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
@@ -45,6 +47,23 @@
         </div>
     </nav>
 
+    <!-- Secondary Navigation -->
+    <nav class="sub-navbar">
+        <div class="container">
+            <ul class="sub-nav-links">
+                <li><a href="index.html" class="active">Overview</a></li>
+                <li><a href="topics/index.html">Topics</a></li>
+                <li><a href="checklists.html">Checklists</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="external.html">External</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="assessment/index.html">Assessments</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Page Header -->
     <section class="page-header resources-theme">
         <div class="container">
@@ -59,84 +78,80 @@
             <h2>Click-Safe Resources</h2>
 
             <div class="resources-grid">
+                <!-- Cybersecurity Topics -->
+                <div class="resource-card">
+                    <div class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <h3>Cybersecurity Topics</h3>
+                    <p>Explore our comprehensive library of articles covering social network threats, privacy, and security fundamentals.</p>
+                    <p class="text-secondary text-small mt-1">30+ in-depth guides on phishing, malware, identity theft, and more.</p>
+                    <a href="topics/index.html" class="resource-button mt-1">Browse Topics →</a>
+                </div>
+
                 <!-- Checklists -->
                 <div class="resource-card">
-                    <div class="resource-icon">✅</div>
+                    <div class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
                     <h3>Security Checklists</h3>
-                    <p>Downloadable checklists to help you implement security best practices.</p>
-                    <ul class="resource-list">
-                        <li><a href="checklists.html#personal">Personal Security Checklist</a></li>
-                        <li><a href="checklists.html#family">Family Security Checklist</a></li>
-                        <li><a href="checklists.html#business">Business Security Checklist</a></li>
-                        <li><a href="checklists.html#workfromhome">Work from Home Checklist</a></li>
-                    </ul>
+                    <p>Comprehensive, actionable checklists to implement cybersecurity best practices for personal, family, business, and remote work scenarios.</p>
+                    <p class="text-secondary text-small mt-1">Includes interactive checkboxes, detailed explanations, and downloadable PDF versions.</p>
+                    <a href="checklists.html" class="resource-button mt-1">View Checklists →</a>
                 </div>
 
                 <!-- Glossary -->
                 <div class="resource-card">
-                    <div class="resource-icon">📖</div>
+                    <div class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
                     <h3>Security Glossary</h3>
-                    <p>Understand common cybersecurity terms and concepts.</p>
-                    <ul class="resource-list">
-                        <li><a href="glossary.html">Browse Full Glossary</a></li>
-                        <li><a href="glossary.html#common">Common Terms</a></li>
-                        <li><a href="glossary.html#threats">Threat Types</a></li>
-                        <li><a href="glossary.html#solutions">Security Solutions</a></li>
-                    </ul>
+                    <p>Understand common cybersecurity terms and concepts with our comprehensive glossary. Search and filter by category.</p>
+                    <p class="text-secondary text-small mt-1">20+ terms covering threats, solutions, and common terminology with real-world examples.</p>
+                    <a href="glossary.html" class="resource-button mt-1">Browse Glossary →</a>
                 </div>
 
                 <!-- Case Studies -->
                 <div class="resource-card">
-                    <div class="resource-icon">🔍</div>
-                    <h3>Real-World Examples</h3>
-                    <p>Learn from real cyber incidents and successful security implementations.</p>
-                    <ul class="resource-list">
-                        <li><a href="case-studies.html#phishing">Phishing Attack Case Study</a></li>
-                        <li><a href="case-studies.html#ransomware">Ransomware Prevention</a></li>
-                        <li><a href="case-studies.html#breach">Data Breach Response</a></li>
-                        <li><a href="case-studies.html#success">Security Success Stories</a></li>
-                    </ul>
+                    <div class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+                    <h3>Real-World Case Studies</h3>
+                    <p>Learn from real cyber incidents and successful security implementations. Detailed analysis of phishing, ransomware, data breaches, and success stories.</p>
+                    <p class="text-secondary text-small mt-1">Includes impact statistics, lessons learned, and actionable prevention measures.</p>
+                    <a href="case-studies.html" class="resource-button mt-1">Read Case Studies →</a>
                 </div>
 
                 <!-- Tools & Templates -->
                 <div class="resource-card">
-                    <div class="resource-icon">🛠️</div>
+                    <div class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
                     <h3>Tools & Templates</h3>
-                    <p>Practical tools and templates for implementing security measures.</p>
-                    <ul class="resource-list">
-                        <li><a href="tools.html#passwordgen">Password Generator</a></li>
-                        <li><a href="tools.html#policytemplate">Security Policy Template</a></li>
-                        <li><a href="tools.html#riskassessment">Risk Assessment Template</a></li>
-                        <li><a href="tools.html#incidentplan">Incident Response Plan</a></li>
-                    </ul>
+                    <p>Practical tools and templates for implementing security measures. Includes interactive password generator, risk assessment, and downloadable policy templates.</p>
+                    <p class="text-secondary text-small mt-1">Password generator, security policy template, risk assessment tool, incident response plan.</p>
+                    <a href="tools.html" class="resource-button mt-1">Explore Tools →</a>
                 </div>
 
                 <!-- External Resources -->
                 <div class="resource-card">
-                    <div class="resource-icon">🌐</div>
+                    <div class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
                     <h3>External Resources</h3>
-                    <p>Curated links to trusted security resources and organizations.</p>
-                    <ul class="resource-list">
-                        <li><a href="external.html#cisa">CISA Alerts & Advisories</a></li>
-                        <li><a href="external.html#nist">NIST Cybersecurity Framework</a></li>
-                        <li><a href="external.html#owasp">OWASP Top 10</a></li>
-                        <li><a href="external.html#organizations">Security Organizations</a></li>
-                    </ul>
+                    <p>Curated links to trusted security resources and organizations including CISA, NIST, OWASP, and leading cybersecurity communities.</p>
+                    <p class="text-secondary text-small mt-1">Organized by category with descriptions and direct links to official sources.</p>
+                    <a href="external.html" class="resource-button mt-1">View Resources →</a>
                 </div>
 
                 <!-- Video Library -->
                 <div class="resource-card">
-                    <div class="resource-icon">🎥</div>
+                    <div class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
                     <h3>Video Library</h3>
-                    <p>Video tutorials and educational content on cybersecurity topics.</p>
-                    <ul class="resource-list">
-                        <li><a href="videos.html#passwordsecurity">Password Security Videos</a></li>
-                        <li><a href="videos.html#phishing">Phishing Recognition</a></li>
-                        <li><a href="videos.html#devicesetup">Device Setup Guides</a></li>
-                        <li><a href="videos.html#tutorials">How-To Tutorials</a></li>
-                    </ul>
+                    <p>Video tutorials and educational content on cybersecurity topics organized by skill level. From password security to advanced network configuration.</p>
+                    <p class="text-secondary text-small mt-1">18+ tutorials covering password security, phishing, device setup, and how-to guides.</p>
+                    <a href="videos.html" class="resource-button mt-1">Watch Videos →</a>
+                </div>
+
+                <!-- Security Assessments -->
+                <div class="resource-card">
+                    <div class="resource-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+                    <h3>Security Assessments</h3>
+                    <p>Test your cybersecurity knowledge and evaluate your security posture with interactive quizzes, evaluations, and real-time analysis tools.</p>
+                    <p class="text-secondary text-small mt-1">Knowledge quizzes, security evaluations, password analyzer, and scoring calculators.</p>
+                    <a href="assessment/index.html" class="resource-button mt-1">Take Assessments →</a>
                 </div>
             </div>
+
+
 
             <div class="featured-resources">
                 <h2>Featured Resources</h2>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Safety Check - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../resources.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../../../family-home/index.html">Family & Home</a></li>
+                <li><a href="../../../business/index.html">Small Business</a></li>
+                <li><a href="../../index.html">Resources</a></li>
+                <li><a href="../../../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../../../about.html">About</a></li>
+                <li><a href="../../../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header resources-theme">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Resources</a> / <a href="../index.html">Assessments</a> / <strong>Social Media Safety</strong>
+            </div>
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> Social Media Safety Check</h1>
+            <p>Review your social media security and privacy</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div class="container" style="max-width: 900px;">
+            <div class="coming-soon-box">
+                <h2 class="text-center">🚧 Coming Soon</h2>
+                <p class="text-center">The Social Media Safety Check is currently under development. It will assess:</p>
+                <ul class="line-height-relaxed">
+                    <li>Privacy settings across popular platforms</li>
+                    <li>Information sharing habits and risks</li>
+                    <li>Friend/follower management practices</li>
+                    <li>Location sharing and tagging behavior</li>
+                    <li>Protection against social engineering</li>
+                    <li>Account security measures (passwords, 2FA)</li>
+                    <li>Platform-specific recommendations (Facebook, Instagram, LinkedIn, etc.)</li>
+                </ul>
+                <p class="text-center mt-1"><strong>Expected completion: Coming soon</strong></p>
+            </div>
+
+            <div class="text-center mt-1">
+                <a href="../quizzes/beginner-quiz.html" class="btn">📝 Try Beginner Quiz</a>
+                <a href="../index.html" class="btn btn-secondary mt-1">← Back to Assessments</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+</html>

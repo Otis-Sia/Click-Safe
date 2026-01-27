@@ -29,6 +29,44 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Highlight the current section in the main navbar
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".nav-links a");
+    if (!navLinks.length) return;
+
+    // If a link is already marked active in the HTML, respect it
+    const hasExplicitActive = Array.from(navLinks).some(link => link.classList.contains("active"));
+    if (hasExplicitActive) return;
+
+    const path = window.location.pathname.toLowerCase();
+
+    function activateLink(matchFn) {
+        const link = Array.from(navLinks).find(matchFn);
+        if (link) {
+            link.classList.add("active");
+            return true;
+        }
+        return false;
+    }
+
+    // Section-based highlighting for subdirectories
+    if (path.includes("/personal-security/")) {
+        if (activateLink(l => l.textContent.trim().toLowerCase().startsWith("personal security"))) return;
+    } else if (path.includes("/family-home/")) {
+        if (activateLink(l => l.textContent.trim().toLowerCase().startsWith("family & home"))) return;
+    } else if (path.includes("/business/")) {
+        if (activateLink(l => l.textContent.trim().toLowerCase().startsWith("small business"))) return;
+    } else if (path.includes("/resources/")) {
+        if (activateLink(l => l.textContent.trim().toLowerCase().startsWith("resources"))) return;
+    } else if (path.includes("/ask-expert/")) {
+        // Covers both "Ask Expert" and "Ask an Expert"
+        if (activateLink(l => l.textContent.trim().toLowerCase().startsWith("ask"))) return;
+    }
+
+    // Fallback: highlight Home on the main page when nothing else matched
+    activateLink(l => l.textContent.trim().toLowerCase() === "home");
+});
+
 // Newsletter form submission
 function handleNewsletterSubmit(event) {
     event.preventDefault();

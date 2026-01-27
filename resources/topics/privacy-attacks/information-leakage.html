@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Leakage - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../resources.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../../../family-home/index.html">Family & Home</a></li>
+                <li><a href="../../../business/index.html">Small Business</a></li>
+                <li><a href="../../index.html">Resources</a></li>
+                <li><a href="../../../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../../../about.html">About</a></li>
+                <li><a href="../../../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header resources-theme">
+        <div class="container">
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Information Leakage on Social Media</h1>
+            <p>Understanding how personal data escapes your control</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div class="container">
+            <h2>The Unintended Disclosure Epidemic</h2>
+
+            <div class="content-section">
+                <p>Information leakage occurs when personal data is unintentionally exposed through social media activities. This goes beyond what you explicitly share - it includes data inferred from your behavior, accidentally revealed in photos, leaked through third-party apps, and collected through your digital footprint.</p>
+                
+                <div class="callout-box info">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="12" y1="17" x2="12" y2="3"/><path d="M5 17h14v4H5z"/></svg> What is Information Leakage?</h4>
+                    <p>Information leakage refers to the unintentional disclosure of personal, sensitive, or confidential data through social media. This includes direct disclosures (posting sensitive information accidentally), indirect leakage (information revealed through patterns or metadata), and third-party leakage (data exposed through apps, friends, or platform breaches).</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> The Data Exposure Problem</h3>
+                
+                <div class="stats-grid">
+                    <div class="stat-highlight">
+                        <span class="stat-number">60%</span>
+                        <span class="stat-label">of users share more than intended</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">92%</span>
+                        <span class="stat-label">of apps request excessive permissions</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">87%</span>
+                        <span class="stat-label">of profiles contain enough data for identity theft</span>
+                    </div>
+                </div>
+
+                <p>Most users significantly underestimate how much personal information they expose through social media, creating massive privacy and security risks.</p>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Types of Information Leakage</h3>
+
+                <div class="example-box">
+                    <h4>1. Direct Oversharing</h4>
+                    <p><strong>Issue:</strong> Posting sensitive personal details publicly.</p>
+                    <p><strong>Examples:</strong> Full birth date, phone number, address, financial information, passport/license photos.</p>
+                    <p><strong>Risk:</strong> Directly enables identity theft, account hijacking, social engineering.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>2. Photo Metadata Leakage</h4>
+                    <p><strong>Issue:</strong> Images contain hidden EXIF data revealing location, device, time.</p>
+                    <p><strong>Hidden info:</strong> GPS coordinates, camera model, editing software, original capture time.</p>
+                    <p><strong>Exploitation:</strong> Reveals home address, movement patterns, technical setup.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>3. Background Detail Exposure</h4>
+                    <p><strong>Issue:</strong> Unintended information visible in photo/video backgrounds.</p>
+                    <p><strong>Examples:</strong> Documents on desk, computer screens, reflections in mirrors/glasses, credit cards, keys.</p>
+                    <p><strong>Consequences:</strong> Exposed passwords, confidential documents, security vulnerabilities.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>4. Pattern-Based Inference</h4>
+                    <p><strong>Issue:</strong> Behavior patterns reveal information you never explicitly shared.</p>
+                    <p><strong>Inferred data:</strong> Home/work address from post patterns, relationships, income level, health conditions.</p>
+                    <p><strong>Method:</strong> Analyzing when, where, and what you post over time.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>5. Third-Party App Leakage</h4>
+                    <p><strong>Issue:</strong> Apps you authorize access more data than needed.</p>
+                    <p><strong>Scope:</strong> Friend lists, photos, messages, location history, browsing behavior.</p>
+                    <p><strong>Danger:</strong> Data sold to brokers, used for profiling, exposed in breaches.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>6. Friend-Based Leakage</h4>
+                    <p><strong>Issue:</strong> Others posting about you or tagging you.</p>
+                    <p><strong>Examples:</strong> Friends posting your location, tagging you in compromising photos, sharing your information.</p>
+                    <p><strong>Loss of control:</strong> Your privacy depends on others' judgment.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Common Information Leakage Scenarios</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li><strong>Security Question Answers:</strong> Posting about first pet, mother's maiden name, first car</li>
+                        <li><strong>Vacation Announcements:</strong> Broadcasting empty home to potential burglars</li>
+                        <li><strong>Work-Related Posts:</strong> Revealing confidential business information</li>
+                        <li><strong>Medical Information:</strong> Sharing health conditions or treatments</li>
+                        <li><strong>Financial Details:</strong> Posting about salary, purchases, investments</li>
+                        <li><strong>Children's Information:</strong> Exposing kids' names, schools, schedules</li>
+                        <li><strong>Relationship Details:</strong> Revealing conflicts, breakups, new relationships</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Hidden Data Collection</h3>
+
+                <div class="warning-signs">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> What Platforms Collect Beyond Your Posts</h4>
+                    <ul>
+                        <li><strong>Browsing behavior</strong> - Sites visited, time spent, clickpatterns</li>
+                        <li><strong>Device information</strong> - Model, OS, unique identifiers</li>
+                        <li><strong>Network data</strong> - IP address, WiFi networks</li>
+                        <li><strong>Contact lists</strong> - Everyone in your phone (if you granted permission)</li>
+                        <li><strong>App usage</strong> - Which apps you use and when</li>
+                        <li><strong>Purchase history</strong> - Transactions made through platform</li>
+                        <li><strong>Message content</strong> - Even "private" messages are scanned</li>
+                        <li><strong>Facial recognition data</strong> - Biometric analysis of your photos</li>
+                        <li><strong>Voice data</strong> - If you use voice features</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Preventing Information Leakage</h3>
+
+                <div class="protection-checklist">
+                    <ul>
+                        <li><strong>Audit your privacy settings</strong> - Review quarterly, platforms change defaults</li>
+                        <li><strong>Think before posting</strong> - Once shared, it's permanent</li>
+                        <li><strong>Strip metadata</strong> - Remove EXIF data from photos before sharing</li>
+                        <li><strong>Review photos carefully</strong> - Check backgrounds for sensitive information</li>
+                        <li><strong>Limit third-party apps</strong> - Only authorize essential apps with minimal permissions</li>
+                        <li><strong>Use custom security questions</strong> - Don't answer with real information</li>
+                        <li><strong>Control tagging</strong> - Require approval before others tag you</li>
+                        <li><strong>Minimize public information</strong> - Make profiles friends-only</li>
+                        <li><strong>Don't complete profile fields</strong> - Leave non-essential fields blank</li>
+                        <li><strong>Google yourself</strong> - See what information is publicly visible</li>
+                        <li><strong>Download your data</strong> - Review what platforms have on you</li>
+                        <li><strong>Educate family and friends</strong> - Ask them to respect your privacy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg> Damage Control: Information Already Leaked</h3>
+
+                <div class="callout-box danger">
+                    <h4>Mitigation Steps</h4>
+                    <ol>
+                        <li><strong>Delete sensitive posts</strong> - Remove problematic content immediately</li>
+                        <li><strong>Request removal from others</strong> - Ask friends to delete posts about you</li>
+                        <li><strong>Untag yourself</strong> - Remove tags from compromising photos/posts</li>
+                        <li><strong>Change security answers</strong> - If real info was shared, update everywhere</li>
+                        <li><strong>Monitor for misuse</strong> - Watch for identity theft signs</li>
+                        <li><strong>Revoke app permissions</strong> - Remove third-party access</li>
+                        <li><strong>Request data deletion</strong> - Use privacy laws (GDPR, CCPA) to demand removal</li>
+                        <li><strong>Alert affected parties</strong> - If you leaked others' information</li>
+                        <li><strong>Consider professional help</strong> - Reputation management services for severe cases</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Key Takeaways</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li>60% of users accidentally share more information than they intend</li>
+                        <li>Information leakage happens through posts, photos, metadata, apps, and others' posts about you</li>
+                        <li>87% of social media profiles contain sufficient data for identity theft</li>
+                        <li>Platforms collect far more data than just what you explicitly post</li>
+                        <li>Once information leaks, it's nearly impossible to fully retract</li>
+                        <li>Background details in photos frequently expose sensitive information</li>
+                        <li>Prevention through awareness is far more effective than remediation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="related-topics">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Related Topics</h3>
+                <div class="topic-links">
+                    <a href="location-leakage.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Location Leakage</a>
+                    <a href="../fundamentals/osn-privacy.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> OSN Privacy</a>
+                    <a href="../fundamentals/osn-data-collection.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Data Collection</a>
+                    <a href="inference-attacks.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Inference Attacks</a>
+                    <a href="../identity-fraud/user-profiling-surveillance.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> User Profiling</a>
+                    <a href="de-anonymization-attacks.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> De-anonymization</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+
+</html>

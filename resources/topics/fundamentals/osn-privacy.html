@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy in OSNs - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../resources.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../../../family-home/index.html">Family & Home</a></li>
+                <li><a href="../../../business/index.html">Small Business</a></li>
+                <li><a href="../../index.html">Resources</a></li>
+                <li><a href="../../../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../../../about.html">About</a></li>
+                <li><a href="../../../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header resources-theme">
+        <div class="container">
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Privacy in Online Social Networks</h1>
+            <p>Understanding and controlling your digital footprint</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div class="container">
+            <h2>The Privacy Paradox of Social Media</h2>
+
+            <div class="content-section">
+                <p>Social media platforms are built on sharing, yet maintaining privacy is crucial for security and personal safety. Understanding how to balance connectivity with privacy protection is essential in today's digital landscape.</p>
+                
+                <div class="callout-box info">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="12" y1="17" x2="12" y2="3"/><path d="M5 17h14v4H5z"/></svg> What is Digital Privacy?</h4>
+                    <p>Digital privacy refers to your ability to control what information about you is collected, how it's used, who can access it, and how it's shared. On social networks, this includes your posts, photos, location data, connections, browsing behavior, and even data inferred from your activities.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Privacy by the Numbers</h3>
+                
+                <div class="stats-grid">
+                    <div class="stat-highlight">
+                        <span class="stat-number">79%</span>
+                        <span class="stat-label">of users concerned about data usage by companies</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">83%</span>
+                        <span class="stat-label">of adults have adjusted privacy settings</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">52%</span>
+                        <span class="stat-label">don't understand privacy settings</span>
+                    </div>
+                </div>
+
+                <p>While most users are concerned about privacy, many don't take full advantage of available privacy controls or understand how their data is being used and shared.</p>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> What Information is at Risk?</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li><strong>Profile Information:</strong> Name, age, birthday, location, workplace, education</li>
+                        <li><strong>Contact Details:</strong> Phone number, email address, physical address</li>
+                        <li><strong>Social Connections:</strong> Friends, family, colleagues, relationship status</li>
+                        <li><strong>Photo & Video Content:</strong> Your face, home, location, activities</li>
+                        <li><strong>Location Data:</strong> Check-ins, geotagged posts, real-time location</li>
+                        <li><strong>Behavioral Data:</strong> Likes, shares, searches, viewing habits</li>
+                        <li><strong>Private Messages:</strong> Conversations and shared media</li>
+                        <li><strong>Device Information:</strong> IP address, device type, browsing data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Privacy Risks on Social Media</h3>
+
+                <div class="example-box">
+                    <h4>1. Data Harvesting by Platforms</h4>
+                    <p><strong>Issue:</strong> Platforms collect vast amounts of data to build detailed profiles for targeted advertising.</p>
+                    <p><strong>Impact:</strong> Your behavior, preferences, and even psychological traits are analyzed and monetized.</p>
+                    <p><strong>Hidden Aspect:</strong> Data collected includes activity outside the platform through tracking pixels and cookies.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>2. Third-Party Access</h4>
+                    <p><strong>Issue:</strong> Apps, quizzes, and games request access to your profile data.</p>
+                    <p><strong>Impact:</strong> These third parties may share or sell your data without your knowledge.</p>
+                    <p><strong>Remember:</strong> The Cambridge Analytica scandal involved 87 million Facebook users' data.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>3. Public Exposure</h4>
+                    <p><strong>Issue:</strong> Default settings often make profiles more public than users realize.</p>
+                    <p><strong>Impact:</strong> Personal information accessible to strangers, employers, or criminals.</p>
+                    <p><strong>Danger:</strong> Information used for identity theft, stalking, or social engineering attacks.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>4. Permanent Digital Footprint</h4>
+                    <p><strong>Issue:</strong> Deleted content may remain on servers or be saved by others.</p>
+                    <p><strong>Impact:</strong> Past posts can resurface years later, affecting employment or relationships.</p>
+                    <p><strong>Reality:</strong> Screenshots and archives make "delete" not truly permanent.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Taking Control of Your Privacy</h3>
+
+                <div class="protection-checklist">
+                    <ul>
+                        <li><strong>Review privacy settings regularly</strong> - Platforms change defaults, check settings quarterly</li>
+                        <li><strong>Limit public information</strong> - Set profile to friends-only, not public</li>
+                        <li><strong>Control post audience</strong> - Choose who can see each post before sharing</li>
+                        <li><strong>Manage tags and mentions</strong> - Require approval before others can tag you</li>
+                        <li><strong>Disable location services</strong> - Turn off geotagging for photos and check-ins</li>
+                        <li><strong>Review connected apps</strong> - Remove third-party apps you no longer use</li>
+                        <li><strong>Limit data collection</strong> - Opt out of ad personalization where possible</li>
+                        <li><strong>Use two-factor authentication</strong> - Protect against unauthorized access</li>
+                        <li><strong>Be selective with friend requests</strong> - Only connect with people you know</li>
+                        <li><strong>Audit your digital footprint</strong> - Google yourself to see what's public</li>
+                        <li><strong>Think before you share</strong> - Once posted, you lose control</li>
+                        <li><strong>Download your data</strong> - See what platforms know about you</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Platform-Specific Privacy Settings</h3>
+
+                <div class="callout-box tip">
+                    <h4>Essential Settings to Review</h4>
+                    <ul>
+                        <li><strong>Who can see your posts:</strong> Public, Friends, Custom lists</li>
+                        <li><strong>Who can look you up:</strong> By email, phone number, or name</li>
+                        <li><strong>Who can send friend/follow requests:</strong> Everyone or friends of friends</li>
+                        <li><strong>Who can see your friends list:</strong> Often overlooked but important</li>
+                        <li><strong>Search engine visibility:</strong> Whether profile appears in search results</li>
+                        <li><strong>Face recognition:</strong> Automatic tagging in photos</li>
+                        <li><strong>Location tracking:</strong> Real-time location and location history</li>
+                        <li><strong>Ad preferences:</strong> Data used for targeted advertising</li>
+                        <li><strong>Data download:</strong> Request all data the platform has on you</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Understanding the Privacy Policy</h3>
+
+                <div class="example-box">
+                    <h4>What to Look For</h4>
+                    <ul>
+                        <li><strong>Data Collection:</strong> What information is gathered about you</li>
+                        <li><strong>Data Usage:</strong> How your information is used by the platform</li>
+                        <li><strong>Data Sharing:</strong> Who else gets access to your data</li>
+                        <li><strong>Data Retention:</strong> How long information is kept</li>
+                        <li><strong>Your Rights:</strong> Options to access, delete, or export your data</li>
+                        <li><strong>Policy Changes:</strong> How you'll be notified of updates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Key Takeaways</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li>Privacy settings should be reviewed regularly as platforms frequently change defaults</li>
+                        <li>Assume anything you post could become public, even with privacy settings</li>
+                        <li>Data collection extends far beyond what you explicitly share</li>
+                        <li>Third-party apps can access your data - review and remove regularly</li>
+                        <li>Location data reveals patterns about your life - consider disabling it</li>
+                        <li>Download your data periodically to understand what platforms know</li>
+                        <li>The best privacy protection is thinking carefully before posting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="related-topics">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Related Topics</h3>
+                <div class="topic-links">
+                    <a href="osn-data-collection.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Data Collection Practices</a>
+                    <a href="../privacy-attacks/information-leakage.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Information Leakage</a>
+                    <a href="../privacy-attacks/location-leakage.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Location Leakage</a>
+                    <a href="../identity-fraud/user-profiling-surveillance.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> User Profiling</a>
+                    <a href="osn-overview.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> OSN Overview</a>
+                    <a href="../privacy-attacks/inference-attacks.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Inference Attacks</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+
+</html>

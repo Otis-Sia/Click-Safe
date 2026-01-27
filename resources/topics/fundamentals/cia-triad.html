@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CIA Triad - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../resources.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../../../family-home/index.html">Family & Home</a></li>
+                <li><a href="../../../business/index.html">Small Business</a></li>
+                <li><a href="../../index.html">Resources</a></li>
+                <li><a href="../../../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../../../about.html">About</a></li>
+                <li><a href="../../../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header resources-theme">
+        <div class="container">
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> The CIA Triad</h1>
+            <p>Understanding the three pillars of information security</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div class="container">
+            <h2>Foundation of Cybersecurity</h2>
+
+            <div class="content-section">
+                <p>The CIA Triad is the foundational model for information security, representing three core principles: Confidentiality, Integrity, and Availability. Every security measure, policy, and technology aims to protect one or more of these attributes. Understanding the CIA Triad helps evaluate threats and design effective defenses.</p>
+                
+                <div class="callout-box info">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="12" y1="17" x2="12" y2="3"/><path d="M5 17h14v4H5z"/></svg> What is the CIA Triad?</h4>
+                    <p>The CIA Triad is a security model consisting of three fundamental principles: <strong>Confidentiality</strong> (ensuring only authorized access), <strong>Integrity</strong> (maintaining accuracy and trustworthiness), and <strong>Availability</strong> (ensuring authorized users can access resources when needed). All cybersecurity measures aim to protect these three attributes.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Confidentiality</h3>
+
+                <div class="example-box">
+                    <h4>Definition</h4>
+                    <p>Confidentiality ensures that information is accessible only to authorized individuals and protected from unauthorized disclosure.</p>
+                </div>
+
+                <div class="key-points">
+                    <h4>Confidentiality on Social Media</h4>
+                    <ul>
+                        <li><strong>Privacy Settings:</strong> Controlling who can view your posts, photos, and personal information</li>
+                        <li><strong>Private Messages:</strong> End-to-end encryption ensures only sender and recipient can read messages</li>
+                        <li><strong>Personal Data Protection:</strong> Keeping sensitive information (address, phone, SSN) hidden from public view</li>
+                        <li><strong>Account Security:</strong> Strong passwords and 2FA prevent unauthorized access to your account</li>
+                    </ul>
+                </div>
+
+                <div class="warning-signs">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Confidentiality Threats on Social Media</h4>
+                    <ul>
+                        <li><strong>Data Breaches:</strong> Platform hacks exposing user data</li>
+                        <li><strong>Account Hijacking:</strong> Attackers gaining access to view private content</li>
+                        <li><strong>Unauthorized Surveillance:</strong> Tracking and profiling without consent</li>
+                        <li><strong>Oversharing:</strong> Users voluntarily disclosing too much personal information</li>
+                        <li><strong>Third-Party Apps:</strong> Connected services accessing more data than necessary</li>
+                    </ul>
+                </div>
+
+                <div class="protection-checklist">
+                    <h4>Protecting Confidentiality</h4>
+                    <ul>
+                        <li><strong>Use strong, unique passwords</strong> for each platform</li>
+                        <li><strong>Enable two-factor authentication (2FA)</strong></li>
+                        <li><strong>Review and restrict privacy settings</strong></li>
+                        <li><strong>Be selective about friend/follower requests</strong></li>
+                        <li><strong>Avoid sharing sensitive personal information</strong></li>
+                        <li><strong>Review connected apps and revoke unnecessary access</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Integrity</h3>
+
+                <div class="example-box">
+                    <h4>Definition</h4>
+                    <p>Integrity ensures that information is accurate, trustworthy, and has not been modified by unauthorized parties. Data should remain unchanged except through authorized actions.</p>
+                </div>
+
+                <div class="key-points">
+                    <h4>Integrity on Social Media</h4>
+                    <ul>
+                        <li><strong>Content Authenticity:</strong> Ensuring posts are genuine and haven't been altered</li>
+                        <li><strong>Profile Verification:</strong> Certified badges confirming account legitimacy</li>
+                        <li><strong>Tamper Detection:</strong> Identifying deepfakes, doctored images, misinformation</li>
+                        <li><strong>Message Integrity:</strong> Ensuring communications aren't altered in transit</li>
+                    </ul>
+                </div>
+
+                <div class="warning-signs">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Integrity Threats on Social Media</h4>
+                    <ul>
+                        <li><strong>Account Defacement:</strong> Hackers posting false content on compromised accounts</li>
+                        <li><strong>Deepfakes:</strong> AI-generated fake videos and images</li>
+                        <li><strong>Misinformation Campaigns:</strong> Coordinated spread of false narratives</li>
+                        <li><strong>Profile Impersonation:</strong> Fake accounts mimicking real people</li>
+                        <li><strong>Message Tampering:</strong> Altering communications to change meaning</li>
+                        <li><strong>Data Manipulation:</strong> Changing user data without authorization</li>
+                    </ul>
+                </div>
+
+                <div class="protection-checklist">
+                    <h4>Protecting Integrity</h4>
+                    <ul>
+                        <li><strong>Verify sources before trusting information</strong></li>
+                        <li><strong>Look for verified badges on high-profile accounts</strong></li>
+                        <li><strong>Use digital signatures and checksums when available</strong></li>
+                        <li><strong>Cross-reference information across multiple sources</strong></li>
+                        <li><strong>Report fake accounts and misinformation</strong></li>
+                        <li><strong>Be skeptical of sensational or emotionally manipulative content</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Availability</h3>
+
+                <div class="example-box">
+                    <h4>Definition</h4>
+                    <p>Availability ensures that information and services are accessible to authorized users when needed. Systems should be reliable and resilient against disruptions.</p>
+                </div>
+
+                <div class="key-points">
+                    <h4>Availability on Social Media</h4>
+                    <ul>
+                        <li><strong>Platform Uptime:</strong> Social networks remaining accessible 24/7</li>
+                        <li><strong>Account Access:</strong> Ability to log in and use your account when needed</li>
+                        <li><strong>Data Persistence:</strong> Posts, photos, messages remain accessible over time</li>
+                        <li><strong>Service Reliability:</strong> Features functioning as expected</li>
+                    </ul>
+                </div>
+
+                <div class="warning-signs">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Availability Threats on Social Media</h4>
+                    <ul>
+                        <li><strong>DDoS Attacks:</strong> Overwhelming platforms to cause outages</li>
+                        <li><strong>Account Lockouts:</strong> Being locked out due to forgotten passwords or attacks</li>
+                        <li><strong>Platform Bans:</strong> Unjust suspensions preventing access</li>
+                        <li><strong>Ransomware:</strong> Encrypting data and demanding payment for access</li>
+                        <li><strong>Network Disruptions:</strong> Internet outages preventing connectivity</li>
+                        <li><strong>Server Failures:</strong> Technical problems causing platform downtime</li>
+                    </ul>
+                </div>
+
+                <div class="protection-checklist">
+                    <h4>Protecting Availability</h4>
+                    <ul>
+                        <li><strong>Maintain backup access methods</strong> (recovery codes, alternate emails)</li>
+                        <li><strong>Follow platform guidelines</strong> to avoid suspensions</li>
+                        <li><strong>Back up important content locally</strong></li>
+                        <li><strong>Use password managers</strong> to prevent lockouts from forgotten credentials</li>
+                        <li><strong>Keep recovery information up to date</strong></li>
+                        <li><strong>Don't rely on single platform</strong> - diversify your online presence</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Balancing the Triad</h3>
+
+                <div class="callout-box tip">
+                    <h4>Trade-offs and Balance</h4>
+                    <p>The three elements of the CIA Triad sometimes conflict, requiring careful balance:</p>
+                    <ul>
+                        <li><strong>Confidentiality vs. Availability:</strong> Strict access controls (high confidentiality) can make systems harder to access (lower availability)</li>
+                        <li><strong>Integrity vs. Availability:</strong> Extensive verification processes (high integrity) can slow down access (lower availability)</li>
+                        <li><strong>Strong Security vs. Usability:</strong> Maximum protection often reduces ease of use</li>
+                    </ul>
+                    <p><strong>The goal:</strong> Find the right balance for your specific needs and risk profile. High-security accounts (banking) warrant stricter controls than casual social media.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> CIA Triad in Practice</h3>
+
+                <div class="example-box">
+                    <h4>Example: Facebook Message Encryption</h4>
+                    <ul>
+                        <li><strong>Confidentiality:</strong> End-to-end encryption ensures only sender/receiver can read messages</li>
+                        <li><strong>Integrity:</strong> Cryptographic signatures verify messages haven't been altered</li>
+                        <li><strong>Availability:</strong> Messages stored on servers, accessible from any device</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <h4>Example: Account Security</h4>
+                    <ul>
+                        <li><strong>Confidentiality:</strong> Password protects account from unauthorized access</li>
+                        <li><strong>Integrity:</strong> Login verification ensures you're accessing your actual account, not a phishing site</li>
+                        <li><strong>Availability:</strong> Password reset options ensure you can recover access if locked out</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Key Takeaways</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li>CIA Triad (Confidentiality, Integrity, Availability) is the foundation of all security measures</li>
+                        <li>Every threat violates at least one element of the CIA Triad</li>
+                        <li>Effective security requires protecting all three elements simultaneously</li>
+                        <li>The three pillars sometimes conflict - balance based on your specific needs</li>
+                        <li>Understanding CIA Triad helps evaluate security risks and choose appropriate protections</li>
+                        <li>Social media platforms must protect CIA Triad for billions of users simultaneously</li>
+                        <li>Your actions (privacy settings, backups, verification) directly impact CIA Triad protection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="related-topics">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Related Topics</h3>
+                <div class="topic-links">
+                    <a href="osn-privacy.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> OSN Privacy</a>
+                    <a href="osn-overview.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> OSN Overview</a>
+                    <a href="osn-data-collection.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Data Collection</a>
+                    <a href="human-factors-cybersecurity.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Human Factors</a>
+                    <a href="../identity-fraud/identity-theft-osn.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Identity Theft</a>
+                    <a href="../privacy-attacks/inference-attacks.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Inference Attacks</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+
+</html>

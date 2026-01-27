@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Topics - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../resources.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="../../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../../family-home/index.html">Family & Home</a></li>
+                <li><a href="../../business/index.html">Small Business</a></li>
+                <li><a href="../index.html">Resources</a></li>
+                <li><a href="../../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../../about.html">About</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="sub-navbar">
+        <div class="container">
+            <ul class="sub-nav-links">
+                <li><a href="../index.html">Overview</a></li>
+                <li><a href="index.html" class="active">Topics</a></li>
+                <li><a href="../checklists.html">Checklists</a></li>
+                <li><a href="../glossary.html">Glossary</a></li>
+                <li><a href="../case-studies.html">Case Studies</a></li>
+                <li><a href="../tools.html">Tools</a></li>
+                <li><a href="../external.html">External</a></li>
+                <li><a href="../videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header resources-theme">
+        <div class="container">
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Cybersecurity Topics</h1>
+            <p>In-depth articles giving you expertise on social network security threats and best practices</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <div class="resources-grid">
+                
+                <div class="resource-card">
+                    <h3 class="small-heading">🌐 OSN Fundamentals</h3>
+                    <ul class="resource-list">
+                        <li><a href="fundamentals/osn-overview.html">Online Social Networks Overview</a></li>
+                        <li><a href="fundamentals/osn-privacy.html">Privacy in OSNs</a></li>
+                        <li><a href="fundamentals/osn-data-collection.html">Data Collection Practices</a></li>
+                        <li><a href="fundamentals/human-factors-cybersecurity.html">Human Factors</a></li>
+                        <li><a href="fundamentals/cia-triad.html">CIA Triad</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3 class="small-heading">🆔 Identity & Fraud</h3>
+                    <ul class="resource-list">
+                        <li><a href="identity-fraud/identity-theft-osn.html">Identity Theft</a></li>
+                        <li><a href="identity-fraud/online-fraud-social-engineering.html">Online Fraud & Social Engineering</a></li>
+                        <li><a href="identity-fraud/fake-profiles-socialbots.html">Fake Profiles & Socialbots</a></li>
+                        <li><a href="identity-fraud/user-profiling-surveillance.html">User Profiling & Surveillance</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3 class="small-heading">🦠 Malware & Technical Attacks</h3>
+                    <ul class="resource-list">
+                        <li><a href="malware/malware-social-networks.html">Malware on Social Networks</a></li>
+                        <li><a href="malware/chain-exploitation.html">Chain Exploitation</a></li>
+                        <li><a href="malware/drive-by-downloads.html">Drive-by Downloads</a></li>
+                        <li><a href="malware/xss-attacks-osn.html">XSS Attacks</a></li>
+                        <li><a href="malware/clickjacking-likejacking.html">Clickjacking & Likejacking</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3 class="small-heading">🎣 Phishing & Spam</h3>
+                    <ul class="resource-list">
+                        <li><a href="phishing/phishing-osn.html">Phishing Attacks</a></li>
+                        <li><a href="phishing/spam-social-networks.html">Spam on Social Networks</a></li>
+                        <li><a href="phishing/exploitation-social-trust.html">Exploitation of Social Trust</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3 class="small-heading">🕵️ Privacy Attacks</h3>
+                    <ul class="resource-list">
+                        <li><a href="privacy-attacks/inference-attacks.html">Inference Attacks</a></li>
+                        <li><a href="privacy-attacks/de-anonymization-attacks.html">De-anonymization Attacks</a></li>
+                        <li><a href="privacy-attacks/information-leakage.html">Information Leakage</a></li>
+                        <li><a href="privacy-attacks/location-leakage.html">Location Leakage</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3 class="small-heading">🚫 Harassment & Social Issues</h3>
+                    <ul class="resource-list">
+                        <li><a href="harassment/cyberstalking-online-harassment.html">Cyberstalking & Harassment</a></li>
+                        <li><a href="harassment/cyberbullying.html">Cyberbullying</a></li>
+                        <li><a href="harassment/cybersecurity-risk-factors.html">Cybersecurity Risk Factors</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

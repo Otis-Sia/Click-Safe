@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="resources.css">
+    <style>
+        .hero-image {
+            max-width: 500px;
+            margin: 2rem auto;
+            display: block;
+            border-radius: 12px;
+        }
+        
+        .case-study {
+            background: var(--card-background);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .case-study h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .case-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+        
+        .case-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .case-section h4 {
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .case-section p, .case-section ul {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .lessons-learned {
+            background: var(--background-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        
+        .lessons-learned ul {
+            margin-left: 1.5rem;
+        }
+        
+        .lessons-learned li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .breadcrumb {
+            padding: 1rem 0;
+            color: var(--text-secondary);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .stat-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .stat {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat .number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="sub-navbar">
+        <div class="container">
+            <ul class="sub-nav-links">
+                <li><a href="index.html">Overview</a></li>`n                <li><a href="topics/index.html">Topics</a></li>
+                <li><a href="checklists.html">Checklists</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="case-studies.html" class="active">Case Studies</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="external.html">External</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header resources-theme">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Resources</a> / <strong>Real-World Case Studies</strong>
+            </div>
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Real-World Case Studies</h1>
+            <p>Learn from real cyber incidents and successful security implementations</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <img src="../images/case-studies-hero.png" alt="Case Studies" class="hero-image">
+
+            <!-- Phishing Attack Case Study -->
+            <div class="case-study" id="phishing">
+                <span class="case-badge">Phishing Attack</span>
+                <h3>The CEO Email Scam: A $2.3M Lesson</h3>
+                
+                <div class="case-section">
+                    <h4>🎯 Background</h4>
+                    <p>In 2019, a mid-sized manufacturing company with 450 employees fell victim to a sophisticated phishing attack known as "CEO fraud" or "whaling."</p>
+                </div>
+
+                <div class="case-section">
+                    <h4>📉 What Happened</h4>
+                    <p>The company's CFO received an email that appeared to be from the CEO, who was traveling overseas. The email requested an urgent wire transfer of $2.3 million for a "confidential acquisition." The email:</p>
+                    <ul>
+                        <li>Used the CEO's name and email signature</li>
+                        <li>Had a spoofed sender address that looked nearly identical to the real one</li>
+                        <li>Referenced internal projects and used company jargon</li>
+                        <li>Created urgency by claiming the deal would fall through without immediate action</li>
+                    </ul>
+                    <p>The CFO, wanting to help close the deal, initiated the wire transfer without secondary verification. By the time the fraud was discovered 48 hours later, the money had been moved through multiple international accounts and was unrecoverable.</p>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat">
+                        <span class="number">$2.3M</span>
+                        <span class="label">Lost</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">48hrs</span>
+                        <span class="label">Detection Time</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">0%</span>
+                        <span class="label">Recovered</span>
+                    </div>
+                </div>
+
+                <div class="case-section">
+                    <h4>💡 Impact</h4>
+                    <p>Beyond the financial loss, the company faced insurance complications, damaged reputation, delayed expansion plans, and significant employee morale issues. The CFO resigned under pressure.</p>
+                </div>
+
+                <div class="lessons-learned">
+                    <h4>✅ Lessons Learned & Prevention</h4>
+                    <ul>
+                        <li><strong>Implement dual authorization:</strong> Require two people to approve wire transfers above a certain threshold</li>
+                        <li><strong>Verify unusual requests:</strong> Always confirm financial requests via phone or in-person, especially if they seem urgent</li>
+                        <li><strong>Email authentication:</strong> Use DMARC, DKIM, and SPF to prevent email spoofing</li>
+                        <li><strong>Security awareness training:</strong> Regular phishing simulations and training sessions</li>
+                        <li><strong>Establish protocols:</strong> Create clear procedures for financial transactions that cannot be bypassed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ransomware Case Study -->
+            <div class="case-study" id="ransomware">
+                <span class="case-badge">Ransomware Prevention</span>
+                <h3>How a Hospital Avoided Disaster: Ransomware Defense Success Story</h3>
+                
+                <div class="case-section">
+                    <h4>🎯 Background</h4>
+                    <p>A 200-bed community hospital implemented comprehensive cyber security measures in 2020 after several healthcare facilities in their region fell victim to ransomware attacks.</p>
+                </div>
+
+                <div class="case-section">
+                    <h4>⚔️ The Attack</h4>
+                    <p>In early 2021, the hospital's security systems detected and blocked a ransomware attack attempt. The attack vector was a phishing email sent to 45 employees with a malicious PDF attachment disguised as a patient transfer request.</p>
+                </div>
+
+                <div class="case-section">
+                    <h4>🛡️ Defense Measures That Worked</h4>
+                    <ul>
+                        <li><strong>Email filtering:</strong> Advanced threat protection flagged the suspicious attachment</li>
+                        <li><strong>Segmented network:</strong> Critical systems were isolated, limiting potential spread</li>
+                        <li><strong>Regular backups:</strong> Daily automated backups with offline copies</li>
+                        <li><strong>Endpoint protection:</strong> Modern antivirus with behavioral analysis</li>
+                        <li><strong>Staff training:</strong> Quarterly security awareness training; 3 employees reported the suspicious email</li>
+                        <li><strong>Incident response plan:</strong> Clear procedures enabled rapid response</li>
+                    </ul>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat">
+                        <span class="number">45</span>
+                        <span class="label">Targeted Employees</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">0</span>
+                        <span class="label">Systems Compromised</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">15min</span>
+                        <span class="label">Response Time</span>
+                    </div>
+                </div>
+
+                <div class="lessons-learned">
+                    <h4>✅ Key Takeaways</h4>
+                    <ul>
+                        <li><strong>Layered security works:</strong> Multiple security layers prevented a single point of failure</li>
+                        <li><strong>Training pays off:</strong> Educated employees are your first line of defense</li>
+                        <li><strong>Backups are essential:</strong> Even if attacked, good backups mean no ransom payment needed</li>
+                        <li><strong>Proactive > Reactive:</strong> Initial investment in security prevented millions in potential losses</li>
+                        <li><strong>Regular testing:</strong> Monthly drills ensured the team knew how to respond</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Data Breach Case Study -->
+            <div class="case-study" id="breach">
+                <span class="case-badge">Data Breach Response</span>
+                <h3>Retail Chain's Data Breach: 90-Day Recovery</h3>
+                
+                <div class="case-section">
+                    <h4>🎯 Background</h4>
+                    <p>A regional retail chain with 75 stores discovered unauthorized access to their customer database containing payment card information for approximately 500,000 customers.</p>
+                </div>
+
+                <div class="case-section">
+                    <h4>⚠️ The Breach</h4>
+                    <p>Attackers exploited an unpatched vulnerability in the point-of-sale system. They had access for approximately 6 weeks before detection, during which time they:</p>
+                    <ul>
+                        <li>Installed malware on POS terminals</li>
+                        <li>Captured credit card data during transactions</li>
+                        <li>Exfiltrated customer personal information</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>🚨 Response Actions</h4>
+                    <p><strong>Immediate (0-48 hours):</strong></p>
+                    <ul>
+                        <li>Engaged cybersecurity forensics firm</li>
+                        <li>Notified law enforcement and payment card brands</li>
+                        <li>Isolated affected systems</li>
+                        <li>Assembled crisis management team</li>
+                    </ul>
+                    <p><strong>Short-term (1-2 weeks):</strong></p>
+                    <ul>
+                        <li>Notified affected customers via email and direct mail</li>
+                        <li>Offered free credit monitoring for 2 years</li>
+                        <li>Set up dedicated call center for customer questions</li>
+                        <li>Patched all systems and replaced compromised POS terminals</li>
+                    </ul>
+                    <p><strong>Long-term (90 days+):</strong></p>
+                    <ul>
+                        <li>Implemented end-to-end encryption for payment processing</li>
+                        <li>Upgraded to P2PE (Point-to-Point Encryption) compliant systems</li>
+                        <li>Established regular security audits</li>
+                        <li>Created comprehensive incident response plan</li>
+                    </ul>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat">
+                        <span class="number">500K</span>
+                        <span class="label">Affected Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">$12M</span>
+                        <span class="label">Total Cost</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">90 days</span>
+                        <span class="label">Recovery Time</span>
+                    </div>
+                </div>
+
+                <div class="lessons-learned">
+                    <h4>✅ Critical Lessons</h4>
+                    <ul>
+                        <li><strong>Patch management is crucial:</strong> The vulnerability was known and patched 6 months prior</li>
+                        <li><strong>Transparent communication:</strong> Honest, timely customer notification helped preserve trust</li>
+                        <li><strong>Have an incident response plan:</strong> Pre-established procedures enabled faster response</li>
+                        <li><strong>Invest in proper encryption:</strong> P2PE would have prevented the data theft entirely</li>
+                        <li><strong>Regular security audits:</strong> External audits could have caught the vulnerability earlier</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Success Story -->
+            <div class="case-study" id="success">
+                <span class="case-badge">Success Story</span>
+                <h3>Small Business Security Transformation: From Vulnerable to Secure</h3>
+                
+                <div class="case-section">
+                    <h4>🎯 Background</h4>
+                    <p>A 15-person digital marketing agency had minimal security measures in place. After a close call with a phishing attack, they decided to prioritize cybersecurity.</p>
+                </div>
+
+                <div class="case-section">
+                    <h4>📋 Implementation Plan (6 Months)</h4>
+                    <p><strong>Month 1-2: Foundation</strong></p>
+                    <ul>
+                        <li>Deployed password manager (Bitwarden) company-wide</li>
+                        <li>Enabled 2FA on all business accounts</li>
+                        <li>Implemented email filtering and anti-phishing tools</li>
+                    </ul>
+                    <p><strong>Month 3-4: Enhancement</strong></p>
+                    <ul>
+                        <li>Set up automated cloud backups (3-2-1 rule)</li>
+                        <li>Conducted security awareness training</li>
+                        <li>Implemented endpoint protection on all devices</li>
+                    </ul>
+                    <p><strong>Month 5-6: Advanced Measures</strong></p>
+                    <ul>
+                        <li>Deployed VPN for remote work</li>
+                        <li>Created incident response procedures</li>
+                        <li>Established regular security reviews</li>
+                    </ul>
+                </div>
+
+                <div class="stat-box">
+                    <div class="stat">
+                        <span class="number">$8K</span>
+                        <span class="label">Total Investment</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">0</span>
+                        <span class="label">Incidents Since</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">100%</span>
+                        <span class="label">Employee Adoption</span>
+                    </div>
+                </div>
+
+                <div class="case-section">
+                    <h4>🎉 Results After 1 Year</h4>
+                    <ul>
+                        <li>Blocked 1,200+ phishing attempts</li>
+                        <li>Zero security incidents</li>
+                        <li>Improved client confidence and landed larger contracts</li>
+                        <li>Employees reported feeling more secure and confident</li>
+                        <li>Achieved cyber insurance with favorable rates</li>
+                    </ul>
+                </div>
+
+                <div class="lessons-learned">
+                    <h4>✅ Success Factors</h4>
+                    <ul>
+                        <li><strong>Start with basics:</strong> Password manager and 2FA provided immediate improvement</li>
+                        <li><strong>Incremental approach:</strong> Phased implementation prevented overwhelming staff</li>
+                        <li><strong>Employee buy-in:</strong> Clear communication about "why" increased adoption</li>
+                        <li><strong>Affordable security:</strong> Effective protection doesn't require huge budgets</li>
+                        <li><strong>Culture change:</strong> Security became everyone's responsibility, not just IT</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="index.html" class="case-badge" style="background: var(--secondary-color); padding: 0.75rem 1.5rem; cursor: pointer;">← Back to Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
+

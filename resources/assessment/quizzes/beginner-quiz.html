@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Security Quiz - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../resources.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../../../family-home/index.html">Family & Home</a></li>
+                <li><a href="../../../business/index.html">Small Business</a></li>
+                <li><a href="../../index.html">Resources</a></li>
+                <li><a href="../../../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../../../about.html">About</a></li>
+                <li><a href="../../../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header resources-theme">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../../index.html">Resources</a> / <a href="../index.html">Assessments</a> / <strong>Beginner Quiz</strong>
+            </div>
+            <h1>📝 Beginner Security Quiz</h1>
+            <p>Test your basic cybersecurity knowledge</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div class="container" style="max-width: 900px;">
+            
+            <div id="quizIntro" class="tool-section">
+                <h2 class="text-center">Welcome to the Beginner Security Quiz!</h2>
+                <p class="text-center text-secondary">This quiz covers fundamental cybersecurity concepts including passwords, phishing, safe browsing, and basic security practices.</p>
+                
+                <div class="info-tip-box mt-1">
+                    <p><strong>📋 Quiz Details:</strong></p>
+                    <ul>
+                        <li>10 multiple-choice questions</li>
+                        <li>Estimated time: 5-7 minutes</li>
+                        <li>Instant feedback on each answer</li>
+                        <li>Pass score: 70% (7/10 questions)</li>
+                        <li>You can retake the quiz as many times as you like</li>
+                    </ul>
+                </div>
+
+                <div class="text-center mt-1">
+                    <button class="btn" onclick="startQuiz()"><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Start Quiz</button>
+                </div>
+            </div>
+
+            <div id="quizContent" style="display: none;">
+                <div class="tool-section">
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <span id="questionNumber" style="font-weight: bold; color: var(--primary-color);">Question 1 of 10</span>
+                            <span id="score" style="color: var(--text-secondary);">Score: 0/0</span>
+                        </div>
+                        <div style="background: var(--border-color, #e0e0e0); height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div id="progressBar" style="background: var(--primary-color); height: 100%; width: 0%; transition: width 0.3s ease;"></div>
+                        </div>
+                    </div>
+
+                    <div id="questionContainer">
+                        <h3 id="questionText" style="margin-bottom: 1.5rem; color: var(--text-color);"></h3>
+                        <div id="answersContainer"></div>
+                    </div>
+
+                    <div id="feedback" style="display: none; margin-top: 1.5rem; padding: 1rem; border-radius: 8px;"></div>
+
+                    <div class="text-center mt-1">
+                        <button id="nextBtn" class="btn" onclick="nextQuestion()" style="display: none;">Next Question →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quizResults" style="display: none;">
+                <div class="tool-section">
+                    <h2 class="text-center">🎉 Quiz Complete!</h2>
+                    
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <div id="scoreCircle" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; color: white;"></div>
+                        <h3 id="resultTitle" style="margin-top: 1.5rem;"></h3>
+                        <p id="resultMessage" class="text-secondary"></p>
+                    </div>
+
+                    <div id="detailedResults" class="coming-soon-box"></div>
+
+                    <div class="text-center mt-1">
+                        <button class="btn" onclick="location.reload()">🔄 Retake Quiz</button>
+                        <a href="../index.html" class="btn btn-secondary mt-1">← Back to Assessments</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-1">
+                <a href="../index.html" class="resource-button">← Back to Assessments</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Click-Safe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+    <script>
+        const quizData = [
+            {
+                question: "What makes a password strong?",
+                answers: [
+                    "Using your name and birthdate",
+                    "At least 12 characters with a mix of letters, numbers, and symbols",
+                    "A simple word that's easy to remember",
+                    "The same password for all accounts"
+                ],
+                correct: 1,
+                explanation: "Strong passwords should be at least 12 characters long and include a mix of uppercase and lowercase letters, numbers, and special characters. Avoid personal information that can be easily guessed."
+            },
+            {
+                question: "What is phishing?",
+                answers: [
+                    "A type of malware that encrypts your files",
+                    "A technique to improve internet speed",
+                    "A scam where attackers trick you into revealing sensitive information",
+                    "A legitimate email from your bank"
+                ],
+                correct: 2,
+                explanation: "Phishing is a cyberattack where criminals impersonate trusted organizations to trick you into providing passwords, credit card numbers, or other sensitive data."
+            },
+            {
+                question: "What should you do if you receive a suspicious email asking for your password?",
+                answers: [
+                    "Reply with your password immediately",
+                    "Click the link and enter your credentials",
+                    "Delete the email and report it as phishing",
+                    "Forward it to all your contacts"
+                ],
+                correct: 2,
+                explanation: "Never provide your password via email. Legitimate organizations will never ask for your password by email. Delete suspicious emails and report them to your IT department or email provider."
+            },
+            {
+                question: "What is two-factor authentication (2FA)?",
+                answers: [
+                    "Using two different passwords",
+                    "An extra security layer requiring a second verification method",
+                    "Logging in twice to the same account",
+                    "Having two email accounts"
+                ],
+                correct: 1,
+                explanation: "Two-factor authentication (2FA) adds an extra layer of security by requiring a second form of verification beyond your password, such as a code sent to your phone or generated by an app."
+            },
+            {
+                question: "Which of these is a safe browsing practice?",
+                answers: [
+                    "Using public Wi-Fi for online banking",
+                    "Clicking on pop-up ads for free prizes",
+                    "Checking that websites use HTTPS before entering personal information",
+                    "Downloading software from any website"
+                ],
+                correct: 2,
+                explanation: "Always look for HTTPS in the URL before entering sensitive information. HTTPS encrypts the data between your browser and the website, protecting it from interception."
+            },
+            {
+                question: "How often should you update your software and operating system?",
+                answers: [
+                    "Never - it works fine as is",
+                    "Once a year",
+                    "As soon as updates are available",
+                    "Only when your computer stops working"
+                ],
+                correct: 2,
+                explanation: "Install software updates as soon as they're available. Updates often include critical security patches that protect against newly discovered vulnerabilities."
+            },
+            {
+                question: "What is malware?",
+                answers: [
+                    "A type of hardware component",
+                    "Malicious software designed to harm your computer or steal data",
+                    "A security feature in antivirus programs",
+                    "A faster internet connection"
+                ],
+                correct: 1,
+                explanation: "Malware is malicious software designed to damage, disrupt, or gain unauthorized access to computer systems. It includes viruses, trojans, spyware, and ransomware."
+            },
+            {
+                question: "What should you do before clicking on a link in an email?",
+                answers: [
+                    "Always click immediately",
+                    "Hover over the link to check where it actually leads",
+                    "Close your eyes and hope for the best",
+                    "Never check links"
+                ],
+                correct: 1,
+                explanation: "Always hover over links to see the actual URL before clicking. Attackers often disguise malicious links to look legitimate. If you're unsure, go directly to the website instead of clicking the link."
+            },
+            {
+                question: "What is the best way to secure your home Wi-Fi network?",
+                answers: [
+                    "Leave it open for neighbors to use",
+                    "Use WPA3 or WPA2 encryption with a strong password",
+                    "Hide your router in a closet",
+                    "Use the default password that came with the router"
+                ],
+                correct: 1,
+                explanation: "Secure your Wi-Fi with WPA3 (or WPA2 if WPA3 isn't available) encryption and a strong, unique password. Never use the default password that came with your router."
+            },
+            {
+                question: "How should you handle sensitive data when disposing of an old device?",
+                answers: [
+                    "Just delete the files",
+                    "Throw it in the trash",
+                    "Wipe the device completely using specialized software, then reset to factory settings",
+                    "Give it away with all your data still on it"
+                ],
+                correct: 2,
+                explanation: "Before disposing of any device, wipe it completely using data erasure software, then perform a factory reset. Simply deleting files isn't enough—data can often be recovered."
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let answeredQuestions = 0;
+
+        function startQuiz() {
+            document.getElementById('quizIntro').style.display = 'none';
+            document.getElementById('quizContent').style.display = 'block';
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            const question = quizData[currentQuestion];
+            document.getElementById('questionNumber').textContent = `Question ${currentQuestion + 1} of ${quizData.length}`;
+            document.getElementById('questionText').textContent = question.question;
+            document.getElementById('progressBar').style.width = `${((currentQuestion + 1) / quizData.length) * 100}%`;
+            
+            const answersContainer = document.getElementById('answersContainer');
+            answersContainer.innerHTML = '';
+            
+            question.answers.forEach((answer, index) => {
+                const div = document.createElement('div');
+                div.className = 'template-card';
+                div.style.cursor = 'pointer';
+                div.style.marginBottom = '1rem';
+                div.style.transition = 'all 0.3s ease';
+                div.innerHTML = `
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 30px; height: 30px; border: 2px solid var(--border-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; font-weight: bold;">
+                            ${String.fromCharCode(65 + index)}
+                        </div>
+                        <span>${answer}</span>
+                    </div>
+                `;
+                div.onclick = () => selectAnswer(index);
+                answersContainer.appendChild(div);
+            });
+
+            document.getElementById('feedback').style.display = 'none';
+            document.getElementById('nextBtn').style.display = 'none';
+        }
+
+        function selectAnswer(selected) {
+            const question = quizData[currentQuestion];
+            const isCorrect = selected === question.correct;
+            
+            if (isCorrect) {
+                score++;
+            }
+            answeredQuestions++;
+            
+            document.getElementById('score').textContent = `Score: ${score}/${answeredQuestions}`;
+            
+            const feedback = document.getElementById('feedback');
+            feedback.style.display = 'block';
+            feedback.style.background = isCorrect ? 'rgba(76, 175, 80, 0.1)' : 'rgba(244, 67, 54, 0.1)';
+            feedback.style.borderLeft = `4px solid ${isCorrect ? '#4CAF50' : '#F44336'}`;
+            feedback.innerHTML = `
+                <div style="font-weight: bold; margin-bottom: 0.5rem; color: ${isCorrect ? '#4CAF50' : '#F44336'};">
+                    ${isCorrect ? '<svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Correct!' : '<svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Incorrect'}
+                </div>
+                <div style="color: var(--text-color);">${question.explanation}</div>
+            `;
+            
+            const answers = document.getElementById('answersContainer').children;
+            for (let i = 0; i < answers.length; i++) {
+                answers[i].onclick = null;
+                answers[i].style.cursor = 'default';
+                if (i === question.correct) {
+                    answers[i].style.background = 'rgba(76, 175, 80, 0.2)';
+                    answers[i].style.borderColor = '#4CAF50';
+                } else if (i === selected && !isCorrect) {
+                    answers[i].style.background = 'rgba(244, 67, 54, 0.2)';
+                    answers[i].style.borderColor = '#F44336';
+                }
+            }
+            
+            document.getElementById('nextBtn').style.display = 'inline-block';
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            if (currentQuestion < quizData.length) {
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quizContent').style.display = 'none';
+            document.getElementById('quizResults').style.display = 'block';
+            
+            const percentage = Math.round((score / quizData.length) * 100);
+            const passed = percentage >= 70;
+            
+            const scoreCircle = document.getElementById('scoreCircle');
+            scoreCircle.textContent = `${percentage}%`;
+            scoreCircle.style.background = passed ? 
+                'linear-gradient(135deg, #4CAF50 0%, #45a049 100%)' : 
+                'linear-gradient(135deg, #FF9800 0%, #F57C00 100%)';
+            
+            const resultTitle = document.getElementById('resultTitle');
+            const resultMessage = document.getElementById('resultMessage');
+            
+            if (percentage >= 90) {
+                resultTitle.textContent = '🌟 Excellent! Outstanding Performance!';
+                resultMessage.textContent = 'You have a solid understanding of basic cybersecurity concepts!';
+            } else if (percentage >= 70) {
+                resultTitle.textContent = '👍 Good Job! You Passed!';
+                resultMessage.textContent = 'You have a good grasp of cybersecurity fundamentals. Keep learning!';
+            } else {
+                resultTitle.innerHTML = '<svg style="width:32px;height:32px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Keep Learning!';
+                resultMessage.textContent = 'Review the concepts and try again. Every expert was once a beginner!';
+            }
+            
+            document.getElementById('detailedResults').innerHTML = `
+                <h4><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Your Results</h4>
+                <ul class="line-height-relaxed">
+                    <li><strong>Score:</strong> ${score} out of ${quizData.length} (${percentage}%)</li>
+                    <li><strong>Status:</strong> ${passed ? '✅ Passed' : '❌ Not Passed (70% required)'}</li>
+                    <li><strong>Correct Answers:</strong> ${score}</li>
+                    <li><strong>Incorrect Answers:</strong> ${quizData.length - score}</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>💡 Next Steps:</strong> ${passed ? 
+                    'Try the Intermediate Quiz to challenge yourself further!' : 
+                    'Review the explanations and retake the quiz to improve your score.'}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

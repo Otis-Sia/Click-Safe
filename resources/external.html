@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Resources - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="resources.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../family-home/index.html">Family & Home</a></li>
+                <li><a href="../business/index.html">Small Business</a></li>
+                <li><a href="index.html">Resources</a></li>
+                <li><a href="../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="sub-navbar">
+        <div class="container">
+            <ul class="sub-nav-links">
+                <li><a href="index.html">Overview</a></li>`n                <li><a href="topics/index.html">Topics</a></li>
+                <li><a href="checklists.html">Checklists</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="external.html" class="active">External</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header resources-theme">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Resources</a> / <strong>External Resources</strong>
+            </div>
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>External Resources</h1>
+            <p>Curated links to trusted security resources and organizations</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-content">
+        <div class="container">
+            <img src="../images/external-hero.png" alt="External Resources" class="hero-image">
+
+            <!-- CISA Resources -->
+            <div class="resource-category" id="cisa">
+                <h3>🏛️ CISA (Cybersecurity & Infrastructure Security Agency)</h3>
+                
+                <div class="external-resource">
+                    <h4>CISA Alerts & Advisories</h4>
+                    <p>Official alerts about current cybersecurity threats, vulnerabilities, and exploits affecting critical infrastructure.</p>
+                    <p><a href="https://www.cisa.gov/news-events/cybersecurity-advisories" target="_blank">🔗 Visit: cisa.gov/cybersecurity-advisories</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Government</span>
+                        <span class="tag">Threat Intelligence</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>Cybersecurity Awareness Resources</h4>
+                    <p>Educational materials, toolkits, and training resources for organizations and individuals to improve security awareness.</p>
+                    <p><a href="https://www.cisa.gov/resources-tools/resources" target="_blank">🔗 Visit: cisa.gov/resources</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Education</span>
+                        <span class="tag">Training</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>Stop Ransomware Campaign</h4>
+                    <p>Comprehensive resources to help organizations understand, prepare for, and respond to ransomware threats.</p>
+                    <p><a href="https://www.cisa.gov/stopransomware" target="_blank">🔗 Visit: cisa.gov/stopransomware</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Ransomware</span>
+                        <span class="tag">Prevention</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NIST Resources -->
+            <div class="resource-category" id="nist">
+                <h3>📚 NIST (National Institute of Standards and Technology)</h3>
+                
+                <div class="external-resource">
+                    <h4>NIST Cybersecurity Framework (CSF)</h4>
+                    <p>A voluntary framework consisting of standards, guidelines, and best practices to manage cybersecurity risk. Widely adopted by organizations of all sizes.</p>
+                    <p><a href="https://www.nist.gov/cyberframework" target="_blank">🔗 Visit: nist.gov/cyberframework</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Framework</span>
+                        <span class="tag">Best Practices</span>
+                        <span class="tag">Enterprise</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>Small Business Cybersecurity Corner</h4>
+                    <p>Practical resources specifically designed for small businesses to improve their cybersecurity posture.</p>
+                    <p><a href="https://www.nist.gov/itl/smallbusinesscyber" target="_blank">🔗 Visit: nist.gov/smallbusinesscyber</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Small Business</span>
+                        <span class="tag">Practical</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>Cybersecurity Publications</h4>
+                    <p>Technical guidelines, special publications, and research on various cybersecurity topics.</p>
+                    <p><a href="https://csrc.nist.gov/publications" target="_blank">🔗 Visit: csrc.nist.gov/publications</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Technical</span>
+                        <span class="tag">Research</span>
+                        <span class="tag">Advanced</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OWASP Resources -->
+            <div class="resource-category" id="owasp">
+                <h3>🔓 OWASP (Open Web Application Security Project)</h3>
+                
+                <div class="external-resource">
+                    <h4>OWASP Top 10</h4>
+                    <p>The most critical web application security risks, updated regularly. Essential reading for developers and security professionals.</p>
+                    <p><a href="https://owasp.org/www-project-top-ten/" target="_blank">🔗 Visit: owasp.org/top-ten</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Web Security</span>
+                        <span class="tag">Development</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>OWASP Cheat Sheet Series</h4>
+                    <p>Concise collection of high-value information on specific application security topics.</p>
+                    <p><a href="https://cheatsheetseries.owasp.org/" target="_blank">🔗 Visit: cheatsheetseries.owasp.org</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Development</span>
+                        <span class="tag">Quick Reference</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>OWASP Security Knowledge Framework</h4>
+                    <p>Tool to learn about security by design and integrate security into software development lifecycle.</p>
+                    <p><a href="https://www.securityknowledgeframework.org/" target="_blank">🔗 Visit: securityknowledgeframework.org</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Training</span>
+                        <span class="tag">Development</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Organizations -->
+            <div class="resource-category" id="organizations">
+                <h3>🛡️ Security Organizations & Communities</h3>
+                
+                <div class="external-resource">
+                    <h4>SANS Internet Storm Center</h4>
+                    <p>Free cyber threat intelligence feeds, daily handler diaries, and security news.</p>
+                    <p><a href="https://isc.sans.edu/" target="_blank">🔗 Visit: isc.sans.edu</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Threat Intelligence</span>
+                        <span class="tag">News</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>US-CERT (United States Computer Emergency Readiness Team)</h4>
+                    <p>National coordination center for cybersecurity incident response and vulnerability management.</p>
+                    <p><a href="https://www.cisa.gov/about-cisa" target="_blank">🔗 Visit: cisa.gov (US-CERT is now part of CISA)</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Government</span>
+                        <span class="tag">Incident Response</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>Krebs on Security</h4>
+                    <p>In-depth security news and investigation by renowned journalist Brian Krebs.</p>
+                    <p><a href="https://krebsonsecurity.com/" target="_blank">🔗 Visit: krebsonsecurity.com</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">News</span>
+                        <span class="tag">Investigation</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>Electronic Frontier Foundation (EFF)</h4>
+                    <p>Leading nonprofit defending digital privacy, free speech, and innovation.</p>
+                    <p><a href="https://www.eff.org/" target="_blank">🔗 Visit: eff.org</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Privacy</span>
+                        <span class="tag">Advocacy</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>HaveIBeenPwned</h4>
+                    <p>Check if your email or password has been compromised in a data breach.</p>
+                    <p><a href="https://haveibeenpwned.com/" target="_blank">🔗 Visit: haveibeenpwned.com</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Breach Check</span>
+                        <span class="tag">Tool</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>r/cybersecurity (Reddit Community)</h4>
+                    <p>Active community discussing cybersecurity news, careers, and best practices.</p>
+                    <p><a href="https://www.reddit.com/r/cybersecurity/" target="_blank">🔗 Visit: reddit.com/r/cybersecurity</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Community</span>
+                        <span class="tag">Discussion</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+
+                <div class="external-resource">
+                    <h4>National Cyber Security Centre (NCSC UK)</h4>
+                    <p>UK's technical authority on cyber security, providing guidance for organizations and individuals.</p>
+                    <p><a href="https://www.ncsc.gov.uk/" target="_blank">🔗 Visit: ncsc.gov.uk</a></p>
+                    <div class="resource-tags">
+                        <span class="tag">Government</span>
+                        <span class="tag">UK</span>
+                        <span class="tag">Free</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coming-soon-box">
+                <h3>📌 Important Notes</h3>
+                <ul class="line-height-relaxed">
+                    <li>All resources listed are reputable and widely recognized in the cybersecurity community</li>
+                    <li>Most resources are free to access and use</li>
+                    <li>Links marked with "Government" are official government resources</li>
+                    <li>Always verify you're on the correct website by checking the URL carefully</li>
+                    <li>These resources are regularly updated - bookmark them for ongoing reference</li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="index.html" class="resource-button">← Back to Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSN Data Collection - Click-Safe</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../../resources.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img src="../../../images/logo.png" alt="Click-Safe Logo">
+                    <span>Click-Safe</span>
+                </a>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../personal-security/index.html">Personal Security</a></li>
+                <li><a href="../../../family-home/index.html">Family & Home</a></li>
+                <li><a href="../../../business/index.html">Small Business</a></li>
+                <li><a href="../../index.html">Resources</a></li>
+                <li><a href="../../../ask-expert/index.html">Ask Expert</a></li>
+                <li><a href="../../../about.html">About</a></li>
+                <li><a href="../../../contact.html">Contact</a></li>
+                <li>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header resources-theme">
+        <div class="container">
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> OSN Data Collection</h1>
+            <p>Understanding what social media platforms track and why</p>
+        </div>
+    </section>
+
+    <section class="section-content">
+        <div class="container">
+            <h2>The Data Behind Social Media</h2>
+
+            <div class="content-section">
+                <p>Social media platforms collect vast amounts of user data to fund their "free" services through targeted advertising. Understanding what data is collected, how it's used, and who has access is essential for protecting your privacy and making informed decisions about your online presence.</p>
+                
+                <div class="callout-box info">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="12" y1="17" x2="12" y2="3"/><path d="M5 17h14v4H5z"/></svg> What is OSN Data Collection?</h4>
+                    <p>Online Social Network (OSN) data collection refers to the systematic gathering, storage, and analysis of user information by social media platforms. This includes data you explicitly provide (profile information, posts), implicitly generate (likes, clicks, time spent), and data collected from external sources (browsing history, location, purchases). This data fuels the $300+ billion social media advertising industry.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> The Scale of Data Collection</h3>
+                
+                <div class="stats-grid">
+                    <div class="stat-highlight">
+                        <span class="stat-number">52,000</span>
+                        <span class="stat-label">data points Facebook has on average user</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">of Facebook revenue from targeted advertising</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">$350</span>
+                        <span class="stat-label">average annual value per user (US)</span>
+                    </div>
+                </div>
+
+                <p>You are not the customer of free social media platforms - you are the product being sold to advertisers.</p>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg> Types of Data Collected</h3>
+
+                <div class="example-box">
+                    <h4>1. Explicit Data (User-Provided)</h4>
+                    <ul>
+                        <li><strong>Profile Information:</strong> Name, age, gender, location, education, workplace</li>
+                        <li><strong>Content You Post:</strong> Text, photos, videos, links, stories</li>
+                        <li><strong>Relationships:</strong> Friends, followers, family members, colleagues</li>
+                        <li><strong>Interests:</strong> Pages you like, groups you join, topics you follow</li>
+                        <li><strong>Communications:</strong> Messages, comments, reactions</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <h4>2. Behavioral Data (Implicit)</h4>
+                    <ul>
+                        <li><strong>Engagement Patterns:</strong> What you click, like, share, comment on</li>
+                        <li><strong>Time Metrics:</strong> When you're online, how long you scroll, time spent on content</li>
+                        <li><strong>Search Queries:</strong> What you search for within the platform</li>
+                        <li><strong>Video Watching:</strong> What you watch, for how long, playback actions</li>
+                        <li><strong>Navigation:</strong> Which profiles you visit, how you move through the platform</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <h4>3. Technical/Metadata</h4>
+                    <ul>
+                        <li><strong>Device Information:</strong> Type, OS, browser, screen resolution</li>
+                        <li><strong>IP Address & Location:</strong> GPS coordinates, WiFi networks, cell towers</li>
+                        <li><strong>Photo Metadata (EXIF):</strong> Camera model, location where photo taken, timestamp</li>
+                        <li><strong>Cookies & Pixels:</strong> Tracking across websites via embedded code</li>
+                        <li><strong>Network Information:</strong> ISP, connection speed, network type</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <h4>4. Inferred/Derived Data</h4>
+                    <ul>
+                        <li><strong>Predicted Demographics:</strong> Income level, education, ethnicity (when not provided)</li>
+                        <li><strong>Psychological Profile:</strong> Personality traits, political leanings, values</li>
+                        <li><strong>Purchase Intent:</strong> Likelihood to buy specific products</li>
+                        <li><strong>Life Events:</strong> Upcoming milestones (weddings, pregnancies, job changes)</li>
+                        <li><strong>Relationship Status:</strong> Romantic partners, breakups from behavior patterns</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <h4>5. External/Third-Party Data</h4>
+                    <ul>
+                        <li><strong>Browsing History:</strong> Websites visited with Facebook/Twitter pixels</li>
+                        <li><strong>Purchase History:</strong> From data brokers and partner companies</li>
+                        <li><strong>Public Records:</strong> Property ownership, voter registration, court records</li>
+                        <li><strong>App Activity:</strong> Data from apps connected to social accounts</li>
+                        <li><strong>Offline Activity:</strong> Store purchases tracked via loyalty cards</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> How Your Data is Used</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li><strong>Targeted Advertising:</strong> Serving ads based on your profile and behavior (98% of revenue)</li>
+                        <li><strong>Content Personalization:</strong> Curating your feed to maximize engagement</li>
+                        <li><strong>Platform Improvement:</strong> Testing features, optimizing algorithms</li>
+                        <li><strong>Sold to Data Brokers:</strong> Your profile sold to third-party aggregators</li>
+                        <li><strong>Shared with Partners:</strong> Provided to business partners and advertisers</li>
+                        <li><strong>Political Targeting:</strong> Microtargeting ads for elections and causes</li>
+                        <li><strong>Price Discrimination:</strong> Charging different prices based on your profile</li>
+                        <li><strong>Credit & Insurance:</strong> Some industries evaluate risk using social data</li>
+                        <li><strong>Employment Screening:</strong> Employers reviewing your profile during hiring</li>
+                        <li><strong>Law Enforcement:</strong> Government requests for user data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Hidden Tracking Methods</h3>
+
+                <div class="warning-signs">
+                    <h4><svg style="width:20px;height:20px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> How Platforms Track You Beyond the Platform</h4>
+                    <ul>
+                        <li><strong>Tracking Pixels:</strong> Invisible 1x1 images on external websites reporting back</li>
+                        <li><strong>Social Plugins:</strong> Like/Share buttons track you even if you don't click</li>
+                        <li><strong>Shadow Profiles:</strong> Profiles on non-users built from friends' contact lists</li>
+                        <li><strong>Browser Fingerprinting:</strong> Identifying you by unique browser configuration</li>
+                        <li><strong>Cross-Device Tracking:</strong> Linking your phone, laptop, tablet activity</li>
+                        <li><strong>Beacon Technology:</strong> In-store tracking via Bluetooth/WiFi</li>
+                        <li><strong>Partner Data Sharing:</strong> Instagram, WhatsApp, Oculus sharing with Facebook</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Real-World Examples</h3>
+
+                <div class="example-box">
+                    <h4>Cambridge Analytica Scandal</h4>
+                    <p>Data firm improperly accessed data of 87 million Facebook users through a personality quiz app. Data was used to build psychological profiles for political microtargeting in 2016 elections without users' knowledge or consent, demonstrating how third-party access can be misused at massive scale.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>Target Pregnancy Prediction</h4>
+                    <p>Retailer Target used purchase data to predict customer pregnancies and send maternity ads before family members knew. Famously sent baby product coupons to a teenager, revealing her pregnancy to her father. Shows power of data analytics to infer sensitive life events.</p>
+                </div>
+
+                <div class="example-box">
+                    <h4>TikTok Data Collection</h4>
+                    <p>Research revealed TikTok collected device identifiers, location data, browsing history, and biometric data including faceprints and voiceprints. Data potentially accessible to Chinese government under national security laws, raising national security concerns globally.</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Limiting Data Collection</h3>
+
+                <div class="protection-checklist">
+                    <ul>
+                        <li><strong>Review privacy settings</strong> - Minimize what's collected and who sees it</li>
+                        <li><strong>Disable location services</strong> - Turn off for social apps when not needed</li>
+                        <li><strong>Clear cookies regularly</strong> - Limits long-term tracking</li>
+                        <li><strong>Use browser privacy extensions</strong> - Privacy Badger, uBlock Origin block trackers</li>
+                        <li><strong>Opt out of ad personalization</strong> - Available in settings of major platforms</li>
+                        <li><strong>Revoke unnecessary app permissions</strong> - Don't give access to contacts, photos, etc.</li>
+                        <li><strong>Use VPN</strong> - Hides IP address and location</li>
+                        <li><strong>Don't use social login (Sign in with Facebook)</strong> - Links activity across platforms</li>
+                        <li><strong>Remove metadata from photos</strong> - Strip EXIF data before uploading</li>
+                        <li><strong>Limit friend list visibility</strong> - Prevents network-based profiling</li>
+                        <li><strong>Use container tabs (Firefox)</strong> - Isolates social media from other browsing</li>
+                        <li><strong>Download your data periodically</strong> - See what platforms know about you</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Advanced Privacy Measures</h3>
+
+                <div class="callout-box tip">
+                    <h4>Tools for Privacy Protection</h4>
+                    <ul>
+                        <li><strong>Pi-hole:</strong> Network-wide ad and tracker blocker</li>
+                        <li><strong>Firefox Multi-Account Containers:</strong> Isolates social media cookies</li>
+                        <li><strong>DuckDuckGo Browser:</strong> Built-in tracker blocking</li>
+                        <li><strong>Tor Browser:</strong> Anonymous browsing (for extreme privacy needs)</li>
+                        <li><strong>Virtual Machines:</strong> Completely isolate social media usage</li>
+                        <li><strong>Privacy.com:</strong> Virtual credit cards prevent purchase tracking</li>
+                        <li><strong>Proton VPN:</strong> No-log VPN service</li>
+                        <li><strong>Signal:</strong> Encrypted messaging alternative to Facebook Messenger/WhatsApp</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Key Takeaways</h3>
+
+                <div class="key-points">
+                    <ul>
+                        <li>Social media platforms collect 52,000+ data points on average users</li>
+                        <li>You are tracked not just on the platform,but across the entire web</li>
+                        <li>98% of Facebook revenue comes from selling access to you via targeted ads</li>
+                        <li>Data collection includes explicit, behavioral, inferred, and third-party data</li>
+                        <li>Your data is used for advertising, political targeting, pricing, and more</li>
+                        <li>Privacy settings help but don't completely stop data collection</li>
+                        <li>Understanding data collection empowers informed decisions about platform use</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="related-topics">
+                <h3><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Related Topics</h3>
+                <div class="topic-links">
+                    <a href="osn-privacy.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> OSN Privacy</a>
+                    <a href="osn-overview.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> OSN Overview</a>
+                    <a href="../identity-fraud/user-profiling-surveillance.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> User Profiling</a>
+                    <a href="../privacy-attacks/inference-attacks.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg> Inference Attacks</a>
+                    <a href="../privacy-attacks/information-leakage.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Information Leakage</a>
+                    <a href="cia-triad.html"><svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> CIA Triad</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+
+</html>
