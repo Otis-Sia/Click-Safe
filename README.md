@@ -102,10 +102,12 @@ Click-Safe/
 - **Personal Security**: Password security, device safety, social media privacy (4 pages)
 - **Family & Home**: Parenting guide, smart home security (3 pages)
 - **Small Business**: Employee training, data protection (3 pages)
-- **Resources**: Checklists, glossary, case studies (5+ pages)
+- **Resources**: Checklists, glossary, case studies, in-depth cybersecurity topics (30+ pages)
+  - **Topics**: OSN fundamentals, identity fraud, malware, phishing, privacy attacks, harassment, AI threats
+  - **AI Threats**: Deepfakes, synthetic media, AI-powered misinformation and disinformation
 - **Ask Expert**: FAQ with 10+ expert answers (1 page)
 
-**Total: 20+ pages**
+**Total: 40+ pages**
 
 ## Key Features
 
