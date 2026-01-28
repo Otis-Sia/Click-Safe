@@ -773,6 +773,12 @@ html.dark-mode .warning-signs {
     position: relative;
 }
 
+.video-thumbnail iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
 .play-icon {
     width: 60px;
     height: 60px;

@@ -1,5 +1,8 @@
 # Click-Safe - Cybersecurity Education Website
 
+**A community cybersecurity education initiative by University of Nairobi Kili Rovers Crew**  
+_Kenya Scouts Association_
+
 A comprehensive cybersecurity education website designed to teach individuals, families, and small businesses about online safety and security best practices.
 
 ## Project Structure
@@ -41,9 +44,27 @@ Click-Safe/
 └── README.md                           # This file
 ```
 
+## About This Project
+
+Click-Safe is a cybersecurity education initiative developed by members of the **University of Nairobi Kili Rovers Crew**, affiliated with the **Kenya Scouts Association**. This project represents our commitment to community service and leadership by addressing the critical need for accessible cybersecurity education.
+
+### Our Purpose
+
+As Rovers, we believe in serving our communities and empowering others through knowledge and skills. In recognition of the increasing digital threats faced by Kenyans—from individuals to small businesses—we developed this comprehensive educational platform to make cybersecurity simple, practical, and accessible to everyone.
+
+### Scout Values in Action
+
+This initiative embodies the Scout principles of:
+
+- **Service**: Providing free, comprehensive cybersecurity education to our community
+- **Integrity**: Offering verified, tested information without technical jargon or fear tactics
+- **Leadership**: Taking initiative to address a critical community need
+- **Excellence**: Creating professional, accessible content that empowers users
+
 ## Features
 
 ### Home Page
+
 - **Hero Section**: Eye-catching introduction with call-to-action
 - **Three Learning Paths**: Personal Security, Family & Home, Small Business
 - **Newsletter Signup**: Email subscription form
@@ -52,24 +73,29 @@ Click-Safe/
 ### Content Sections
 
 #### 🔐 Personal Security (Blue Theme)
+
 - **Passwords 101**: Creating strong passwords and using password managers
 - **Phone & Computer Basics**: Device security and safe browsing habits
 - **Social Media Privacy**: Privacy settings, phishing detection, account security
 
 #### 👨‍👩‍👧‍👦 Family & Home (Green Theme)
+
 - **Parent's Guide**: Age-appropriate online safety for children
 - **Smart Home Security**: Securing IoT devices and home networks
 
 #### 🏢 Small Business (Purple Theme)
+
 - **Employee Training**: Security awareness training programs
 - **Data Protection**: Data classification, encryption, backups, compliance
 
 #### 📚 Resources (Teal Theme)
+
 - **Security Checklists**: Interactive, downloadable checklists
 - **Security Glossary**: Definitions of common cybersecurity terms
 - **Tools & References**: External security resources
 
 #### ❓ Ask an Expert (Red Theme)
+
 - **FAQ Section**: 10+ frequently asked questions with detailed answers
 - **Question Submission Form**: Users can submit their own questions
 
