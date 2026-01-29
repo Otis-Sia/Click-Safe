@@ -160,3 +160,44 @@ const observer = new IntersectionObserver(function(entries) {
 document.querySelectorAll(".path-card").forEach((card) => {
     observer.observe(card);
 });
+
+// Contact Form Handler with WhatsApp Integration
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value || "Not provided";
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Format the message
+            const whatsappMessage = 
+                `*New Contact Request from Click-Safe*` +
+                `%0a*Name:* ${name}` +
+                `%0a*Email:* ${email}` +
+                `%0a*Subject:* ${subject}` +
+                `%0a*Message:* ${message}`;
+            
+            // WhatsApp API URL (Phone: 254726681949)
+            const whatsappUrl = `https://wa.me/254726681949?text=${whatsappMessage}`;
+            
+            // Show success message briefly then redirect
+            const formMessage = document.getElementById('formMessage');
+            if (formMessage) {
+                formMessage.innerHTML = '<span class="success-message" style="color: #4CAF50;">Redirecting to WhatsApp...</span>';
+            }
+            
+            // Open WhatsApp in new tab
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+                contactForm.reset();
+                if (formMessage) formMessage.innerHTML = '';
+            }, 1000);
+        });
+    }
+});
