@@ -1,8 +1,8 @@
-# Click-Safe Website - Quick Start Guide
+# SafeByte Website - Quick Start Guide
 
 ## Project Created Successfully! ✅
 
-Your complete Click-Safe cybersecurity education website has been created with 27 files organized across 6 main sections.
+Your complete SafeByte cybersecurity education website has been created with 27 files organized across 6 main sections.
 
 ## How to View the Website
 

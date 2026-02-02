@@ -1,7 +1,7 @@
 # AI Threats Content Update - Summary
 
 ## Overview
-Added comprehensive content about the misuse of AI technologies, including deepfakes, synthetic media, and AI-powered misinformation to the Click-Safe cybersecurity education website.
+Added comprehensive content about the misuse of AI technologies, including deepfakes, synthetic media, and AI-powered misinformation to the SafeByte cybersecurity education website.
 
 ## New Content Added
 
@@ -63,7 +63,7 @@ Added four new AI-related terms to the Security Glossary:
 - Protection strategies for both individuals and organizations
 
 ### User Experience
-- Consistent design matching existing Click-Safe pages
+- Consistent design matching existing SafeByte pages
 - Interactive elements (stats grids, callout boxes, warning signs)
 - Visual icons for better navigation and scanning
 - Related topics links for deeper learning

@@ -1,4 +1,4 @@
-# Click-Safe - Cybersecurity Education Website
+# SafeByte - Cybersecurity Education Website
 
 **A community cybersecurity education initiative by University of Nairobi Kili Rovers Crew**  
 _Kenya Scouts Association_
@@ -8,7 +8,7 @@ A comprehensive cybersecurity education website designed to teach individuals, f
 ## Project Structure
 
 ```
-Click-Safe/
+SafeByte/
 ├── index.html                          # Home page with hero, paths, newsletter
 ├── styles.css                          # Main stylesheet for home page
 ├── script.js                           # JavaScript for interactivity
@@ -46,7 +46,7 @@ Click-Safe/
 
 ## About This Project
 
-Click-Safe is a cybersecurity education initiative developed by members of the **University of Nairobi Kili Rovers Crew**, affiliated with the **Kenya Scouts Association**. This project represents our commitment to community service and leadership by addressing the critical need for accessible cybersecurity education.
+SafeByte is a cybersecurity education initiative developed by members of the **University of Nairobi Kili Rovers Crew**, affiliated with the **Kenya Scouts Association**. This project represents our commitment to community service and leadership by addressing the critical need for accessible cybersecurity education.
 
 ### Our Purpose
 
@@ -161,7 +161,7 @@ This initiative embodies the Scout principles of:
 
 ## License
 
-© 2026 Click-Safe. All rights reserved.
+© 2026 SafeByte. All rights reserved.
 
 ---
 

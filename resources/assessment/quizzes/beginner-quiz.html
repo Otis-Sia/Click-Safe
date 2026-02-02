@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginner Security Quiz - Click-Safe</title>
+    <title>Beginner Security Quiz - SafeByte</title>
     <script>
         (function() {
             if (localStorage.getItem('darkMode') === 'true') {
@@ -20,8 +20,8 @@
         <div class="container">
             <div class="logo">
                 <a href="../../../index.html">
-                    <img src="../../../images/logo.png" alt="Click-Safe Logo">
-                    <span>Click-Safe</span>
+                    <img src="../../../images/logo.png" alt="SafeByte Logo">
+                    <span>SafeByte</span>
                 </a>
             </div>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
@@ -50,7 +50,7 @@
             <div class="breadcrumb">
                 <a href="../../index.html">Resources</a> / <a href="../index.html">Assessments</a> / <strong>Beginner Quiz</strong>
             </div>
-            <h1>📝 Beginner Security Quiz</h1>
+            <h1>ðŸ“ Beginner Security Quiz</h1>
             <p>Test your basic cybersecurity knowledge</p>
         </div>
     </section>
@@ -63,7 +63,7 @@
                 <p class="text-center text-secondary">This quiz covers fundamental cybersecurity concepts including passwords, phishing, safe browsing, and basic security practices.</p>
                 
                 <div class="info-tip-box mt-1">
-                    <p><strong>📋 Quiz Details:</strong></p>
+                    <p><strong>ðŸ“‹ Quiz Details:</strong></p>
                     <ul>
                         <li>10 multiple-choice questions</li>
                         <li>Estimated time: 5-7 minutes</li>
@@ -98,14 +98,14 @@
                     <div id="feedback" style="display: none; margin-top: 1.5rem; padding: 1rem; border-radius: 8px;"></div>
 
                     <div class="text-center mt-1">
-                        <button id="nextBtn" class="btn" onclick="nextQuestion()" style="display: none;">Next Question →</button>
+                        <button id="nextBtn" class="btn" onclick="nextQuestion()" style="display: none;">Next Question â†’</button>
                     </div>
                 </div>
             </div>
 
             <div id="quizResults" style="display: none;">
                 <div class="tool-section">
-                    <h2 class="text-center">🎉 Quiz Complete!</h2>
+                    <h2 class="text-center">ðŸŽ‰ Quiz Complete!</h2>
                     
                     <div style="text-align: center; margin: 2rem 0;">
                         <div id="scoreCircle" style="width: 150px; height: 150px; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; color: white;"></div>
@@ -116,14 +116,14 @@
                     <div id="detailedResults" class="coming-soon-box"></div>
 
                     <div class="text-center mt-1">
-                        <button class="btn" onclick="location.reload()">🔄 Retake Quiz</button>
-                        <a href="../index.html" class="btn btn-secondary mt-1">← Back to Assessments</a>
+                        <button class="btn" onclick="location.reload()">ðŸ”„ Retake Quiz</button>
+                        <a href="../index.html" class="btn btn-secondary mt-1">â† Back to Assessments</a>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mt-1">
-                <a href="../index.html" class="resource-button">← Back to Assessments</a>
+                <a href="../index.html" class="resource-button">â† Back to Assessments</a>
             </div>
         </div>
     </section>
@@ -150,7 +150,7 @@
                 <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 0.5rem;">Kenya Scouts Association</p>
                 <p style="font-size: 0.85rem; opacity: 0.8;">A community cybersecurity education initiative</p>
             </div>
-            <p style="margin-top: 1rem;">&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p style="margin-top: 1rem;">&copy; 2026 SafeByte. All rights reserved. | <a href="../../../terms-privacy.html">Privacy Policy</a> | <a href="../../../terms-privacy.html">Terms of Service</a></p>
         </div>
     </footer>
 
@@ -265,7 +265,7 @@
                     "Give it away with all your data still on it"
                 ],
                 correct: 2,
-                explanation: "Before disposing of any device, wipe it completely using data erasure software, then perform a factory reset. Simply deleting files isn't enough—data can often be recovered."
+                explanation: "Before disposing of any device, wipe it completely using data erasure software, then perform a factory reset. Simply deleting files isn't enoughâ€”data can often be recovered."
             }
         ];
 
@@ -374,10 +374,10 @@
             const resultMessage = document.getElementById('resultMessage');
             
             if (percentage >= 90) {
-                resultTitle.textContent = '🌟 Excellent! Outstanding Performance!';
+                resultTitle.textContent = 'ðŸŒŸ Excellent! Outstanding Performance!';
                 resultMessage.textContent = 'You have a solid understanding of basic cybersecurity concepts!';
             } else if (percentage >= 70) {
-                resultTitle.textContent = '👍 Good Job! You Passed!';
+                resultTitle.textContent = 'ðŸ‘ Good Job! You Passed!';
                 resultMessage.textContent = 'You have a good grasp of cybersecurity fundamentals. Keep learning!';
             } else {
                 resultTitle.innerHTML = '<svg style="width:32px;height:32px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Keep Learning!';
@@ -388,11 +388,11 @@
                 <h4><svg style="width:24px;height:24px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Your Results</h4>
                 <ul class="line-height-relaxed">
                     <li><strong>Score:</strong> ${score} out of ${quizData.length} (${percentage}%)</li>
-                    <li><strong>Status:</strong> ${passed ? '✅ Passed' : '❌ Not Passed (70% required)'}</li>
+                    <li><strong>Status:</strong> ${passed ? 'âœ… Passed' : 'âŒ Not Passed (70% required)'}</li>
                     <li><strong>Correct Answers:</strong> ${score}</li>
                     <li><strong>Incorrect Answers:</strong> ${quizData.length - score}</li>
                 </ul>
-                <p style="margin-top: 1rem;"><strong>💡 Next Steps:</strong> ${passed ? 
+                <p style="margin-top: 1rem;"><strong>ðŸ’¡ Next Steps:</strong> ${passed ? 
                     'Try the Intermediate Quiz to challenge yourself further!' : 
                     'Review the explanations and retake the quiz to improve your score.'}</p>
             `;
@@ -400,5 +400,6 @@
     </script>
 </body>
 </html>
+
 
 

@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // Format the message
             const whatsappMessage = 
-                `*New Contact Request from Click-Safe*` +
+                `*New Contact Request from SafeByte*` +
                 `%0a*Name:* ${name}` +
                 `%0a*Email:* ${email}` +
                 `%0a*Subject:* ${subject}` +

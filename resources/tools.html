@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Tools & Templates - Click-Safe</title>
+    <title>Security Tools & Templates - SafeByte</title>
     <script>
         (function() {
             if (localStorage.getItem('darkMode') === 'true') {
@@ -22,8 +22,8 @@
         <div class="container">
             <div class="logo">
                 <a href="../index.html">
-                    <img src="../images/logo.png" alt="Click-Safe Logo">
-                    <span>Click-Safe</span>
+                    <img src="../images/logo.png" alt="SafeByte Logo">
+                    <span>SafeByte</span>
                 </a>
             </div>
             <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
@@ -80,13 +80,13 @@
 
             <!-- Password Generator -->
             <div class="tool-section" id="passwordgen">
-                <h3>🔐 Secure Password Generator</h3>
+                <h3>ðŸ” Secure Password Generator</h3>
                 <p>Generate strong, random passwords for your accounts. Never reuse passwords across different sites!</p>
                 
                 <div class="password-generator">
                     <div class="password-result" id="passwordDisplay">
                         <span id="generatedPassword">Click "Generate" to create a password</span>
-                        <button class="btn btn-secondary btn-padding-custom" onclick="copyPassword()">📋 Copy</button>
+                        <button class="btn btn-secondary btn-padding-custom" onclick="copyPassword()">ðŸ“‹ Copy</button>
                     </div>
                     
                     <div class="password-options">
@@ -126,11 +126,11 @@
                         </div>
                     </div>
                     
-                    <button class="btn" onclick="generatePassword()">🔄 Generate Password</button>
+                    <button class="btn" onclick="generatePassword()">ðŸ”„ Generate Password</button>
                     
                     <div class="info-tip-box">
                         <p>
-                            💡 <strong>Tip:</strong> A good password should be at least 16 characters long and include a mix of uppercase, lowercase, numbers, and symbols. Never use the same password on multiple sites. Consider using a password manager to store your passwords securely.
+                            ðŸ’¡ <strong>Tip:</strong> A good password should be at least 16 characters long and include a mix of uppercase, lowercase, numbers, and symbols. Never use the same password on multiple sites. Consider using a password manager to store your passwords securely.
                         </p>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
 
             <!-- Security Policy Template -->
             <div class="tool-section" id="policytemplate">
-                <h3>📋 Security Policy Template</h3>
+                <h3>ðŸ“‹ Security Policy Template</h3>
                 <p>A comprehensive template to create your organization's cybersecurity policy. Customize it to fit your business needs.</p>
                 
                 <div class="template-card">
@@ -153,13 +153,13 @@
                         <li>Email and internet usage guidelines</li>
                         <li>Physical security requirements</li>
                     </ul>
-                    <button class="btn" onclick="alert('PDF template download would start here. In production, this would download a customizable PDF template.')">📥 Download Template</button>
+                    <button class="btn" onclick="alert('PDF template download would start here. In production, this would download a customizable PDF template.')">ðŸ“¥ Download Template</button>
                 </div>
             </div>
 
             <!-- Risk Assessment Template -->
             <div class="tool-section" id="riskassessment">
-                <h3>📊 Risk Assessment Template</h3>
+                <h3>ðŸ“Š Risk Assessment Template</h3>
                 <p>Identify and evaluate potential cybersecurity risks to your organization.</p>
                 
                 <div class="template-card">
@@ -196,16 +196,16 @@
                         <label class="form-group"><input type="radio" name="q5" value="no"> No</label>
                     </div>
                     
-                    <button class="btn" onclick="assessRisk()">📈 Assess Risk Level</button>
+                    <button class="btn" onclick="assessRisk()">ðŸ“ˆ Assess Risk Level</button>
                     <div id="riskResult" class="tool-result-box"></div>
                     
-                    <button class="btn btn-secondary mt-1" onclick="alert('Full risk assessment template download would start here.')">📥 Download Full Template</button>
+                    <button class="btn btn-secondary mt-1" onclick="alert('Full risk assessment template download would start here.')">ðŸ“¥ Download Full Template</button>
                 </div>
             </div>
 
             <!-- Incident Response Plan -->
             <div class="tool-section" id="incidentplan">
-                <h3>🚨 Incident Response Plan Template</h3>
+                <h3>ðŸš¨ Incident Response Plan Template</h3>
                 <p>A step-by-step guide for responding to cybersecurity incidents.</p>
                 
                 <div class="template-card">
@@ -220,7 +220,7 @@
                     </ul>
                     
                     <div class="emergency-box">
-                        <p><strong>⚠️ Emergency Contacts Template:</strong></p>
+                        <p><strong>âš ï¸ Emergency Contacts Template:</strong></p>
                         <ul>
                             <li>IT Security Team: ___________</li>
                             <li>Management: ___________</li>
@@ -231,12 +231,12 @@
                         </ul>
                     </div>
                     
-                    <button class="btn" onclick="alert('Incident response plan template download would start here.')">📥 Download Plan Template</button>
+                    <button class="btn" onclick="alert('Incident response plan template download would start here.')">ðŸ“¥ Download Plan Template</button>
                 </div>
             </div>
 
             <div class="text-center mt-3">
-                <a href="index.html" class="btn btn-secondary">← Back to Resources</a>
+                <a href="index.html" class="btn btn-secondary">â† Back to Resources</a>
             </div>
         </div>
     </section>
@@ -264,7 +264,7 @@
                 <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 0.5rem;">Kenya Scouts Association</p>
                 <p style="font-size: 0.85rem; opacity: 0.8;">A community cybersecurity education initiative</p>
             </div>
-            <p style="margin-top: 1rem;">&copy; 2026 Click-Safe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p style="margin-top: 1rem;">&copy; 2026 SafeByte. All rights reserved. | <a href="../terms-privacy.html">Privacy Policy</a> | <a href="../terms-privacy.html">Terms of Service</a></p>
         </div>
     </footer>
 
@@ -339,21 +339,22 @@
             if (score >= 4) {
                 resultDiv.style.background = 'rgba(0, 255, 0, 0.2)';
                 resultDiv.style.borderLeft = '4px solid green';
-                resultDiv.innerHTML = '<strong>✅ LOW RISK</strong><p>Great job! Your security posture is strong. Keep up the good practices!</p>';
+                resultDiv.innerHTML = '<strong>âœ… LOW RISK</strong><p>Great job! Your security posture is strong. Keep up the good practices!</p>';
             } else if (score >= 2) {
                 resultDiv.style.background = 'rgba(255, 165, 0, 0.2)';
                 resultDiv.style.borderLeft = '4px solid orange';
-                resultDiv.innerHTML = '<strong>⚠️ MEDIUM RISK</strong><p>You have some good practices, but there\'s room for improvement. Review our security checklists for guidance.</p>';
+                resultDiv.innerHTML = '<strong>âš ï¸ MEDIUM RISK</strong><p>You have some good practices, but there\'s room for improvement. Review our security checklists for guidance.</p>';
             } else {
                 resultDiv.style.background = 'rgba(255, 0, 0, 0.2)';
                 resultDiv.style.borderLeft = '4px solid red';
-                resultDiv.innerHTML = '<strong>🚨 HIGH RISK</strong><p>Your security needs immediate attention. Start with our basic security checklist and consider reaching out to our experts for guidance.</p>';
+                resultDiv.innerHTML = '<strong>ðŸš¨ HIGH RISK</strong><p>Your security needs immediate attention. Start with our basic security checklist and consider reaching out to our experts for guidance.</p>';
             }
         }
     </script>
 </body>
 
 </html>
+
 
 
 
