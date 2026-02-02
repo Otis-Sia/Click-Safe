@@ -158,22 +158,6 @@ html.dark-mode .featured-item:hover {
     opacity: 0.85;
 }
 
-.resource-button {
-    display: inline-block;
-    background: rgba(24, 71, 138, 1);
-    color: white;
-    padding: 0.8rem 1.8rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s;
-}
-
-.resource-button:hover {
-    background: rgba(109, 205, 59, 1);
-    transform: translateX(3px);
-}
-
 
 /* Helpful Tips */
 
@@ -225,33 +209,9 @@ html.dark-mode .featured-item:hover {
 /* Container */
 
 .container {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
-    padding: 0 20px;
-}
-
-
-/* Responsive */
-
-@media (max-width: 768px) {
-    .page-header h1 {
-        font-size: 1.6rem;
-    }
-    .section-content h2 {
-        font-size: 1.5rem;
-    }
-    .resources-grid {
-        grid-template-columns: 1fr;
-    }
-    .tips-grid {
-        grid-template-columns: 1fr;
-    }
-    .featured-resources {
-        padding: 2rem;
-    }
-    .featured-item {
-        padding: 1.5rem;
-    }
+    padding: 0 5%;
 }
 
 
@@ -295,8 +255,8 @@ html.dark-mode .featured-item:hover {
 }
 
 .checklist-item input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     cursor: pointer;
 }
 
@@ -342,9 +302,12 @@ html.dark-mode .featured-item:hover {
 }
 
 
-/* Mobile Responsive Styles */
+/* Responsive */
 
 @media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 1.6rem;
+    }
     .section-content {
         padding: 2rem 1rem;
     }
@@ -355,6 +318,18 @@ html.dark-mode .featured-item:hover {
     .section-content h3 {
         font-size: 1.25rem;
         margin-bottom: 1rem;
+    }
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    .featured-resources {
+        padding: 2rem;
+    }
+    .featured-item {
+        padding: 1.5rem;
     }
     .tabs {
         gap: 1rem;
@@ -378,8 +353,8 @@ html.dark-mode .featured-item:hover {
         gap: 0.6rem;
     }
     .checklist-item input[type="checkbox"] {
-        min-width: 18px;
-        min-height: 18px;
+        min-width: 1.125rem;
+        min-height: 1.125rem;
     }
     .checklist-item span {
         font-size: 0.95rem;
@@ -417,8 +392,8 @@ html.dark-mode .featured-item:hover {
         flex-wrap: wrap;
     }
     .checklist-item input[type="checkbox"] {
-        min-width: 16px;
-        min-height: 16px;
+        min-width: 1rem;
+        min-height: 1rem;
     }
     .checklist-item span {
         font-size: 0.9rem;
@@ -556,7 +531,7 @@ html.dark-mode .callout-box.danger {
     background: linear-gradient(135deg, rgba(24, 71, 138, 0.1) 0%, rgba(109, 205, 59, 0.1) 100%);
     border-radius: 10px;
     margin: 1rem 0;
-    min-width: 150px;
+    min-width: 40%;
 }
 
 .stat-number {
@@ -726,14 +701,14 @@ html.dark-mode .warning-signs {
    ========================================== */
 
 .hero-image {
-    max-width: 500px;
+    max-width: 90%;
     margin: 2rem auto;
     display: block;
     border-radius: 12px;
 }
 
 .video-category {
-    background: var(--card-background);
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 12px;
     margin-bottom: 2rem;
@@ -741,7 +716,7 @@ html.dark-mode .warning-signs {
 }
 
 .video-category h3 {
-    color: var(--primary-color);
+    color: var(--primary-blue);
     margin-bottom: 1.5rem;
 }
 
@@ -752,7 +727,7 @@ html.dark-mode .warning-signs {
 }
 
 .video-card {
-    background: var(--background-color);
+    background: var(--bg-color);
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -765,8 +740,9 @@ html.dark-mode .warning-signs {
 
 .video-thumbnail {
     width: 100%;
-    height: 180px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -780,14 +756,15 @@ html.dark-mode .warning-signs {
 }
 
 .play-icon {
-    width: 60px;
-    height: 60px;
+    width: 15%;
+    height: auto;
+    aspect-ratio: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
+    color: var(--primary-blue);
     font-size: 2rem;
 }
 
@@ -863,7 +840,7 @@ html.dark-mode .warning-signs {
    ========================================== */
 
 .coming-soon-box {
-    background: var(--card-background);
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 12px;
     margin-top: 2rem;
@@ -919,10 +896,11 @@ html.dark-mode .warning-signs {
     font-size: 1rem;
     text-decoration: none;
     display: inline-block;
-    background: var(--secondary-color);
+    background: var(--primary-green);
     color: white;
     border-radius: 8px;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 .resource-button:hover {
@@ -1025,7 +1003,7 @@ html.dark-mode .warning-signs {
    ========================================== */
 
 .tool-section {
-    background: var(--card-background);
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 12px;
     margin-bottom: 2rem;
@@ -1033,12 +1011,12 @@ html.dark-mode .warning-signs {
 }
 
 .tool-section h3 {
-    color: var(--primary-color);
+    color: var(--primary-blue);
     margin-bottom: 1rem;
 }
 
 .password-generator {
-    background: var(--background-color);
+    background: var(--bg-color);
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 1rem;
@@ -1053,7 +1031,7 @@ html.dark-mode .warning-signs {
     font-size: 1.2rem;
     margin: 1rem 0;
     word-break: break-all;
-    min-height: 50px;
+    min-height: 3.125rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1073,20 +1051,21 @@ html.dark-mode .warning-signs {
 }
 
 .option-group input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .option-group input[type="number"], .option-group input[type="range"] {
     padding: 0.5rem;
     border: 2px solid var(--border-color, #e0e0e0);
     border-radius: 8px;
-    width: 100px;
+    width: 30%;
+    min-width: 80px;
 }
 
 .btn {
     padding: 0.75rem 1.5rem;
-    background: var(--primary-color);
+    background: var(--primary-blue);
     color: white;
     border: none;
     border-radius: 8px;
@@ -1095,20 +1074,20 @@ html.dark-mode .warning-signs {
 }
 
 .btn:hover {
-    background: var(--secondary-color);
+    background: var(--primary-green);
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background: var(--secondary-color);
+    background: var(--primary-green);
 }
 
 .template-card {
-    background: var(--background-color);
+    background: var(--bg-color);
     padding: 1.5rem;
     border-radius: 8px;
     margin-top: 1rem;
-    border-left: 4px solid var(--secondary-color);
+    border-left: 4px solid var(--primary-green);
 }
 
 .template-card h4 {
@@ -1121,7 +1100,7 @@ html.dark-mode .warning-signs {
    ========================================== */
 
 .resource-category {
-    background: var(--card-background);
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 12px;
     margin-bottom: 2rem;
@@ -1129,16 +1108,16 @@ html.dark-mode .warning-signs {
 }
 
 .resource-category h3 {
-    color: var(--primary-color);
+    color: var(--primary-blue);
     margin-bottom: 1.5rem;
 }
 
 .external-resource {
-    background: var(--background-color);
+    background: var(--bg-color);
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1rem;
-    border-left: 4px solid var(--secondary-color);
+    border-left: 4px solid var(--primary-green);
 }
 
 .external-resource h4 {
@@ -1153,7 +1132,7 @@ html.dark-mode .warning-signs {
 }
 
 .external-resource a {
-    color: var(--primary-color);
+    color: var(--primary-blue);
     text-decoration: none;
     font-weight: 500;
 }
@@ -1171,7 +1150,7 @@ html.dark-mode .warning-signs {
 
 .tag {
     padding: 0.25rem 0.75rem;
-    background: var(--primary-color);
+    background: var(--primary-blue);
     color: white;
     border-radius: 12px;
     font-size: 0.75rem;
