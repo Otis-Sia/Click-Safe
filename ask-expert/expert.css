@@ -1,44 +1,8 @@
 /* Ask an Expert Section Styling */
-
-.page-header {
-    padding: 3rem 2rem;
-    color: white;
-    text-align: center;
-}
-
-.page-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.page-header p {
-    font-size: 1.1rem;
-    opacity: 0.95;
-}
+/* Note: Page header and section content base styles are in styles.css */
 
 .expert-theme {
     background: linear-gradient(135deg, rgba(247, 117, 18, 1) 0%, rgba(24, 71, 138, 1) 100%);
-}
-
-.section-content {
-    padding: 4rem 2rem;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.section-content h2 {
-    font-size: 2.5rem;
-    margin: 3rem 0 2rem;
-    color: var(--text-color);
-    text-align: center;
-}
-
-.section-content h2:first-child {
-    margin-top: 0;
 }
 
 
@@ -127,8 +91,7 @@ html.dark-mode .question {
     color: var(--text-color);
 }
 
-
-/* Submit Question Section */
+/* Submit Question Section - Expert-specific form customization */
 
 .submit-question {
     background: var(--card-bg);
@@ -159,33 +122,15 @@ html.dark-mode .question {
     gap: 1rem;
 }
 
-.form-group {
-    display: flex;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-    background: var(--card-bg);
-    color: var(--text-color);
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.question-form input:focus,
+.question-form select:focus,
+.question-form textarea:focus {
     outline: none;
     border-color: rgba(247, 117, 18, 1);
     box-shadow: 0 0 0 3px rgba(247, 117, 18, 0.1);
 }
 
-.form-group textarea {
+.question-form textarea {
     resize: vertical;
     min-height: 150px;
 }
@@ -208,26 +153,9 @@ html.dark-mode .question {
     box-shadow: 0 4px 10px rgba(247, 117, 18, 0.3);
 }
 
-
-/* Responsive */
+/* Expert-specific Responsive */
 
 @media (max-width: 768px) {
-    .page-header {
-        padding: 2rem 1rem;
-    }
-    .page-header h1 {
-        font-size: 1.6rem;
-    }
-    .page-header p {
-        font-size: 1rem;
-    }
-    .section-content {
-        padding: 2rem 1rem;
-    }
-    .section-content h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1.5rem;
-    }
     .qa-item {
         margin-bottom: 1.25rem;
         border-radius: 6px;

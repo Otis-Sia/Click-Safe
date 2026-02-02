@@ -1,66 +1,11 @@
-/* Family & Home Section CSS - Uses same base as personal-security */
-
-
-/* Import the common section styles by duplicating them with green theme colors */
-
-
-/* Page Header */
-
-.page-header {
-    padding: 3rem 2rem;
-    color: white;
-    text-align: center;
-}
-
-.page-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.page-header p {
-    font-size: 1.1rem;
-    opacity: 0.95;
-}
+/* Family & Home Section CSS */
+/* Note: Shared section styles (page header, tabs, content sections, boxes, grids) are in styles.css */
 
 .family-home-theme {
     background: linear-gradient(135deg, rgba(109, 205, 59, 1) 0%, rgba(109, 205, 59, 0.7) 100%);
 }
 
-
-/* Section Navigation */
-
-.section-nav {
-    background: var(--bg-color);
-    border-bottom: 2px solid var(--border-color);
-    padding: 1rem 0;
-    position: sticky;
-    top: 58px;
-    z-index: 100;
-}
-
-.tabs {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 0.5rem;
-}
-
-.tabs a {
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 0.5rem 0;
-    border-bottom: 3px solid transparent;
-    transition: all 0.3s;
-    font-weight: 500;
-    opacity: 0.7;
-}
-
-.tabs a:hover {
-    color: var(--text-color);
-    opacity: 1;
-}
-
+/* Family-home-specific tab active color */
 .tabs .tab-active {
     color: rgba(109, 205, 59, 1);
     border-bottom-color: rgba(109, 205, 59, 1);
@@ -72,238 +17,67 @@ html.dark-mode .tabs .tab-active {
     border-bottom-color: rgba(109, 205, 59, 1);
 }
 
-
-/* Section Content */
-
-.section-content {
-    padding: 4rem 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.section-content h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--text-color);
-}
-
-.content-section {
-    margin-bottom: 3rem;
-}
-
+/* Family-home green theme color overrides */
 .content-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
     border-left: 4px solid rgba(109, 205, 59, 1);
-    padding-left: 1rem;
-}
-
-.content-section h4 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.8rem;
-    color: var(--text-color);
-}
-
-.content-section h5 {
-    font-size: 1.05rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-    font-weight: 600;
-}
-
-.content-section p {
-    margin-bottom: 1rem;
-    line-height: 1.8;
-    color: var(--text-color);
-    opacity: 0.85;
-}
-
-.content-section ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.content-section ul li {
-    padding: 0.5rem 0 0.5rem 1.5rem;
-    position: relative;
-    line-height: 1.6;
 }
 
 .content-section ul li:before {
     content: "▸";
-    position: absolute;
-    left: 0;
     color: rgba(109, 205, 59, 1);
-    font-weight: bold;
-}
-
-.content-section ol {
-    list-style: none;
-    counter-reset: step-counter;
-    padding-left: 0;
-}
-
-.content-section ol li {
-    padding: 0.5rem 0 0.5rem 2rem;
-    position: relative;
-    line-height: 1.6;
-    counter-increment: step-counter;
 }
 
 .content-section ol li:before {
-    content: counter(step-counter);
-    position: absolute;
-    left: 0;
     background: rgba(109, 205, 59, 1);
-    color: white;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 0.8rem;
 }
 
 .subsection {
-    background: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
     border-left: 4px solid rgba(109, 205, 59, 1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Highlight Box */
-
+/* Family-home color overrides for boxes */
 .highlight-box {
     background: rgba(109, 205, 59, 0.05);
     border-left: 4px solid rgba(109, 205, 59, 1);
-    padding: 1.5rem;
-    border-radius: 5px;
-    margin: 1rem 0;
 }
 
 html.dark-mode .highlight-box {
     background: rgba(109, 205, 59, 0.1);
 }
 
-.highlight-box p {
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-}
-
 .highlight-box ul li:before {
-    content: "✓";
     color: rgba(109, 205, 59, 1);
 }
-
-
-/* Warning Box */
 
 .warning-box {
     background: rgba(247, 117, 18, 0.05);
     border-left: 4px solid rgba(247, 117, 18, 1);
-    padding: 1.5rem;
-    border-radius: 5px;
-    margin: 1rem 0;
 }
 
 html.dark-mode .warning-box {
     background: rgba(247, 117, 18, 0.1);
 }
 
-.warning-box p {
-    margin-bottom: 1rem;
-    color: var(--text-color);
-}
-
-.warning-box ol {
-    padding-left: 1.5rem;
-    margin: 0;
-}
-
-.warning-box ol li {
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
-    color: var(--text-color);
-}
-
-.warning-box ul {
-    list-style: none;
-    padding-left: 1.5rem;
-}
-
-.warning-box ul li {
-    padding: 0.5rem 0 0.5rem 1rem;
-    position: relative;
-    color: var(--text-color);
-}
-
 .warning-box ul li:before {
     content: "⚠";
-    position: absolute;
-    left: -1rem;
     color: rgba(247, 117, 18, 1);
 }
 
-
-/* Content Grid */
-
-.content-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
+/* Family-home content card color overrides */
 .content-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.3s;
     border-top: 4px solid rgba(109, 205, 59, 1);
 }
 
 .content-card:hover {
     box-shadow: 0 4px 12px rgba(109, 205, 59, 0.15);
-    transform: translateY(-5px);
 }
 
 html.dark-mode .content-card:hover {
     box-shadow: 0 4px 12px rgba(109, 205, 59, 0.15);
 }
 
-.content-card h3 {
-    font-size: 1.2rem;
-    margin-top: 0;
-    margin-bottom: 0.8rem;
-    border: none;
-    padding-left: 0;
-    color: var(--text-color);
-}
-
-.content-card p {
-    margin-bottom: 1rem;
-    color: var(--text-color);
-    font-size: 0.95rem;
-    opacity: 0.85;
-}
-
 .card-link {
-    display: inline-block;
     color: rgba(109, 205, 59, 1);
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s;
-    margin-top: 0.5rem;
 }
 
 html.dark-mode .card-link {
@@ -312,18 +86,12 @@ html.dark-mode .card-link {
 
 .card-link:hover {
     color: rgba(247, 117, 18, 1);
-    margin-right: -5px;
 }
 
-
-/* Key Takeaways */
-
+/* Family-home key takeaways color override */
 .key-takeaways {
     background: rgba(109, 205, 59, 0.05);
     border: 2px solid rgba(109, 205, 59, 1);
-    border-radius: 8px;
-    padding: 2rem;
-    margin: 3rem 0;
 }
 
 html.dark-mode .key-takeaways {
@@ -333,86 +101,10 @@ html.dark-mode .key-takeaways {
 .key-takeaways h3 {
     color: rgba(109, 205, 59, 1);
     border-left: 4px solid rgba(109, 205, 59, 1);
-    margin-top: 0;
-}
-
-.key-takeaways ul li {
-    margin-bottom: 0.8rem;
-    color: var(--text-color);
 }
 
 .key-takeaways ul li:before {
-    content: "✓";
     color: rgba(109, 205, 59, 1);
-    font-weight: bold;
-    margin-right: 0.5rem;
 }
 
-
-/* Responsive */
-
-@media (max-width: 768px) {
-    .page-header h1 {
-        font-size: 1.6rem;
-    }
-    .tabs {
-        gap: 1rem;
-        overflow-x: auto;
-        padding-bottom: 0;
-    }
-    .tabs a {
-        white-space: nowrap;
-        padding: 0.5rem 0.5rem;
-        font-size: 0.9rem;
-    }
-    .content-grid {
-        grid-template-columns: 1fr;
-    }
-    .section-content {
-        padding: 2rem 1rem;
-    }
-    .section-content h2 {
-        font-size: 1.4rem;
-    }
-    .content-section h3 {
-        font-size: 1.25rem;
-    }
-    .subsection {
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .page-header {
-        padding: 1.5rem 0.75rem;
-    }
-    .page-header h1 {
-        font-size: 1.35rem;
-    }
-    .page-header p {
-        font-size: 0.9rem;
-    }
-    .section-content {
-        padding: 1.5rem 0.75rem;
-    }
-    .section-content h2 {
-        font-size: 1.25rem;
-    }
-    .content-section h3 {
-        font-size: 1.05rem;
-        padding-left: 0.5rem;
-    }
-    .content-section p, 
-    .content-section li {
-        font-size: 0.9rem;
-    }
-    .tabs {
-        gap: 0.5rem;
-    }
-    .tabs a {
-        font-size: 0.8rem;
-    }
-    .content-grid {
-        grid-template-columns: 1fr;
-    }
-}
+/* Family-home responsive overrides - minimal, most responsive styles are in styles.css */

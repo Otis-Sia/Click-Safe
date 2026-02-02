@@ -1,38 +1,8 @@
 /* Resources Section Styling */
-
-.page-header {
-    padding: 3rem 2rem;
-    color: white;
-    text-align: center;
-}
-
-.page-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.page-header p {
-    font-size: 1.1rem;
-    opacity: 0.95;
-}
+/* Note: Page header, section navigation, and content section base styles are in styles.css */
 
 .resources-theme {
     background: linear-gradient( 135deg, rgba(24, 71, 138, 1) 0%, rgba(109, 205, 59, 1) 100%);
-}
-
-.section-content {
-    padding: 4rem 2rem;
-}
-
-.section-content h2 {
-    font-size: 2.5rem;
-    margin: 3rem 0 2rem;
-    color: var(--text-color);
-    text-align: center;
-}
-
-.section-content h2:first-child {
-    margin-top: 0;
 }
 
 
@@ -206,15 +176,6 @@ html.dark-mode .featured-item:hover {
 }
 
 
-/* Container */
-
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 0 5%;
-}
-
-
 /* Checklist Styles */
 
 .checklist-section {
@@ -302,7 +263,7 @@ html.dark-mode .featured-item:hover {
 }
 
 
-/* Responsive */
+/* Responsive - Resources-specific only */
 
 @media (max-width: 768px) {
     .page-header h1 {
