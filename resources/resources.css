@@ -1,4 +1,6 @@
 /* Resources Section Styling */
+
+
 /* Note: Page header, section navigation, and content section base styles are in styles.css */
 
 .resources-theme {
@@ -381,7 +383,8 @@ html.dark-mode .featured-item:hover {
     border-bottom: 1px solid #ddd;
     padding: 0.5rem 0;
     position: sticky;
-    top: 72px; /* Adjusted below main navbar */
+    top: 72px;
+    /* Adjusted below main navbar */
     z-index: 900;
 }
 
@@ -405,7 +408,8 @@ html.dark-mode .featured-item:hover {
     font-size: 0.95rem;
 }
 
-.sub-nav-links a:hover, .sub-nav-links a.active {
+.sub-nav-links a:hover,
+.sub-nav-links a.active {
     background: rgba(24, 71, 138, 1);
     color: white;
 }
@@ -431,9 +435,12 @@ html.dark-mode .sub-navbar {
     }
 }
 
+
 /* Enhanced Topic Page Styles */
 
+
 /* Callout Boxes */
+
 .callout-box {
     padding: 1.5rem;
     border-radius: 8px;
@@ -483,7 +490,9 @@ html.dark-mode .callout-box.danger {
     background: rgba(244, 67, 54, 0.2);
 }
 
+
 /* Statistics Highlight */
+
 .stat-highlight {
     display: inline-flex;
     flex-direction: column;
@@ -520,7 +529,9 @@ html.dark-mode .stat-number {
     margin: 2rem 0;
 }
 
+
 /* Example Box */
+
 .example-box {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -538,7 +549,9 @@ html.dark-mode .example-box h4 {
     color: rgba(109, 205, 59, 1);
 }
 
+
 /* Protection Checklist */
+
 .protection-checklist {
     background: var(--card-bg);
     border-radius: 8px;
@@ -572,7 +585,9 @@ html.dark-mode .example-box h4 {
     font-size: 1.2rem;
 }
 
+
 /* Related Topics */
+
 .related-topics {
     background: var(--card-bg);
     border-radius: 10px;
@@ -618,7 +633,9 @@ html.dark-mode .topic-links a:hover {
     border-color: rgba(109, 205, 59, 1);
 }
 
+
 /* Key Points List */
+
 .key-points {
     background: linear-gradient(135deg, rgba(24, 71, 138, 0.05) 0%, rgba(109, 205, 59, 0.05) 100%);
     border-radius: 10px;
@@ -635,7 +652,9 @@ html.dark-mode .topic-links a:hover {
     padding: 0.5rem 0;
 }
 
+
 /* Warning Signs */
+
 .warning-signs {
     background: rgba(255, 152, 0, 0.05);
     border-left: 4px solid #ff9800;
@@ -656,6 +675,7 @@ html.dark-mode .topic-links a:hover {
 html.dark-mode .warning-signs {
     background: rgba(255, 152, 0, 0.1);
 }
+
 
 /* ==========================================
    VIDEO LIBRARY STYLES
@@ -702,7 +722,8 @@ html.dark-mode .warning-signs {
 .video-thumbnail {
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
     display: flex;
     align-items: center;
@@ -711,6 +732,9 @@ html.dark-mode .warning-signs {
 }
 
 .video-thumbnail iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 0;
@@ -796,6 +820,7 @@ html.dark-mode .warning-signs {
     text-decoration: underline;
 }
 
+
 /* ==========================================
    COMING SOON BOX
    ========================================== */
@@ -822,6 +847,7 @@ html.dark-mode .warning-signs {
     line-height: 1.8;
     margin-top: 0.5rem;
 }
+
 
 /* ==========================================
    UTILITY CLASSES
@@ -869,12 +895,16 @@ html.dark-mode .warning-signs {
     transform: translateY(-2px);
 }
 
+
 /* Category heading override for topics/index.html */
+
 .category-card h3.small-heading {
     font-size: 1.1rem;
 }
 
+
 /* Info box with colored link */
+
 .info-link {
     color: var(--primary-color);
     font-weight: 500;
@@ -884,9 +914,11 @@ html.dark-mode .warning-signs {
     text-decoration: underline;
 }
 
+
 /* Emergency box styling */
+
 .emergency-box {
-    margin:  1.5rem 0;
+    margin: 1.5rem 0;
     padding: 1rem;
     background: rgba(255, 0, 0, 0.1);
     border-left: 4px solid #ff0000;
@@ -906,7 +938,9 @@ html.dark-mode .warning-signs {
     font-weight: 600;
 }
 
+
 /* Tool result box */
+
 .tool-result-box {
     margin-top: 1rem;
     padding: 1rem;
@@ -914,7 +948,9 @@ html.dark-mode .warning-signs {
     display: none;
 }
 
+
 /* Info tip box */
+
 .info-tip-box {
     margin-top: 1.5rem;
     padding: 1rem;
@@ -928,7 +964,9 @@ html.dark-mode .warning-signs {
     font-size: 0.9rem;
 }
 
+
 /* Form spacing utilities */
+
 .form-group {
     margin: 1rem 0;
 }
@@ -937,12 +975,16 @@ html.dark-mode .warning-signs {
     margin-left: 1rem;
 }
 
+
 /* Button padding override */
+
 .btn-padding-custom {
     padding: 0.5rem 1rem;
 }
 
+
 /* Secondary text color */
+
 .text-secondary {
     color: var(--text-secondary);
 }
@@ -958,6 +1000,7 @@ html.dark-mode .warning-signs {
 .line-height-relaxed {
     line-height: 1.8;
 }
+
 
 /* ==========================================
    TOOLS & TEMPLATES STYLES
@@ -1016,7 +1059,8 @@ html.dark-mode .warning-signs {
     height: 1.25rem;
 }
 
-.option-group input[type="number"], .option-group input[type="range"] {
+.option-group input[type="number"],
+.option-group input[type="range"] {
     padding: 0.5rem;
     border: 2px solid var(--border-color, #e0e0e0);
     border-radius: 8px;
@@ -1055,6 +1099,7 @@ html.dark-mode .warning-signs {
     color: var(--text-color);
     margin-bottom: 0.75rem;
 }
+
 
 /* ==========================================
    EXTERNAL RESOURCES STYLES
@@ -1116,4 +1161,3 @@ html.dark-mode .warning-signs {
     border-radius: 12px;
     font-size: 0.75rem;
 }
-
