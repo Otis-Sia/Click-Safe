@@ -54,7 +54,8 @@
             transition: all 0.3s ease;
         }
         
-        .filter-btn:hover, .filter-btn.active {
+        .filter-btn:hover,
+        .filter-btn.active {
             background: var(--primary-color);
             color: white;
         }
@@ -152,7 +153,8 @@
     <nav class="sub-navbar">
         <div class="container">
             <ul class="sub-nav-links">
-                <li><a href="index.html">Overview</a></li>`n                <li><a href="topics/index.html">Topics</a></li>
+                <li><a href="index.html">Overview</a></li>`n
+                <li><a href="topics/index.html">Topics</a></li>
                 <li><a href="checklists.html">Checklists</a></li>
                 <li><a href="glossary.html" class="active">Glossary</a></li>
                 <li><a href="case-studies.html">Case Studies</a></li>
@@ -169,7 +171,8 @@
             <div class="breadcrumb">
                 <a href="index.html">Resources</a> / <strong>Security Glossary</strong>
             </div>
-            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Security Glossary</h1>
+            <h1><svg style="width:48px;height:48px;display:inline-block;vertical-align:middle;margin-right:0.5rem;stroke:currentColor;fill:none" viewBox="0 0 24 24" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Security
+                Glossary</h1>
             <p>Understanding cybersecurity terms and concepts</p>
         </div>
     </section>
@@ -180,7 +183,7 @@
             <img src="../images/glossary-hero.png" alt="Security Glossary" class="hero-image">
 
             <div class="glossary-search">
-                <input type="text" id="searchInput" placeholder="ðŸ” Search terms..." onkeyup="searchGlossary()">
+                <input type="text" id="searchInput" placeholder="Search terms..." onkeyup="searchGlossary()" style="padding-left: 2.5rem; background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%23666%27 stroke-width=%272%27%3E%3Ccircle cx=%2711%27 cy=%2711%27 r=%278%27/%3E%3Cpath d=%27m21 21-4.35-4.35%27/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: 0.75rem center;">
             </div>
 
             <div class="glossary-filter">
@@ -233,7 +236,7 @@
                     <h3>Phishing</h3>
                     <p class="definition">A cyber attack method where attackers impersonate legitimate organizations to trick individuals into revealing sensitive information like passwords or credit card numbers.</p>
                     <p class="example">Example: An email that appears to be from your bank asking you to "verify your account" by clicking a link.</p>
-                    <p><a href="topics/phishing/phishing-osn.html" class="info-link">â†’ Learn more about phishing in social networks</a></p>
+                    <p><a href="topics/phishing/phishing-osn.html" class="info-link">Learn more about phishing in social networks<svg style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-left:0.25rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></p>
                 </div>
 
                 <div class="glossary-item" data-category="threats">
@@ -248,7 +251,7 @@
                     <h3>Malware</h3>
                     <p class="definition">Short for "malicious software." Any software intentionally designed to cause damage to a computer, server, client, or computer network.</p>
                     <p class="example">Example: Viruses, worms, trojans, spyware, and ransomware are all types of malware.</p>
-                    <p><a href="topics/malware/malware-social-networks.html" class="info-link">â†’ Learn about malware in social networks</a></p>
+                    <p><a href="topics/malware/malware-social-networks.html" class="info-link">Learn about malware in social networks<svg style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-left:0.25rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></p>
                 </div>
 
                 <div class="glossary-item" data-category="threats">
@@ -267,140 +270,149 @@
 
                 <div class="glossary-item" data-category="threats">
                     <span class="category">Threat Type</span>
-                    <h3">Man-in-the-Middle Attack (MITM)</h3>
-                    <p class="definition">An attack where the attacker secretly intercepts and possibly alters communication between two parties who believe they are directly communicating with each other.</p>
-                    <p class="example">Example: Intercepting unencrypted Wi-Fi traffic at a coffee shop to steal login credentials.</p>
+                    <h3 ">Man-in-the-Middle Attack (MITM)</h3>
+                    <p class="definition ">An attack where the attacker secretly intercepts and possibly alters communication between two parties who believe they are directly communicating with each other.</p>
+                    <p class="example ">Example: Intercepting unencrypted Wi-Fi traffic at a coffee shop to steal login credentials.</p>
                 </div>
 
-                <div class="glossary-item" data-category="threats">
-                    <span class="category">Threat Type</span>
+                <div class="glossary-item " data-category="threats ">
+                    <span class="category ">Threat Type</span>
                     <h3>DDoS Attack (Distributed Denial of Service)</h3>
-                    <p class="definition">An attack that floods a server or network with overwhelming traffic from multiple sources, making it unavailable to legitimate users.</p>
-                    <p class="example">Example: Botnets sending millions of requests to a website, causing it to crash.</p>
+                    <p class="definition ">An attack that floods a server or network with overwhelming traffic from multiple sources, making it unavailable to legitimate users.</p>
+                    <p class="example ">Example: Botnets sending millions of requests to a website, causing it to crash.</p>
                 </div>
 
-                <div class="glossary-item" data-category="threats">
-                    <span class="category">Threat Type</span>
+                <div class="glossary-item " data-category="threats ">
+                    <span class="category ">Threat Type</span>
                     <h3>Deepfake</h3>
-                    <p class="definition">AI-generated synthetic media that uses deep learning to create highly realistic fake videos, images, or audio that convincingly replace or manipulate someone's likeness, voice, or actions. The term combines "deep learning" and "fake."</p>
-                    <p class="example">Example: A fake video showing a CEO making statements they never made, or AI-generated audio impersonating someone's voice in a phone scam.</p>
-                    <p><a href="topics/ai-threats/deepfakes-synthetic-media.html" class="info-link">â†’ Learn more about deepfakes and synthetic media</a></p>
+                    <p class="definition
+                        ">AI-generated synthetic media that uses deep learning to create highly realistic fake videos, images, or audio that convincingly replace or manipulate someone's likeness, voice, or actions. The term combines "deep learning " and "fake. "</p>
+                    <p class="example ">Example: A fake video showing a CEO making statements they never made, or AI-generated audio impersonating someone's voice in a phone scam.</p>
+                    <p><a href="topics/ai-threats/deepfakes-synthetic-media.html " class="info-link ">Learn more about deepfakes and synthetic media<svg style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-left:0.25rem
+                        " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2 "><line x1="5 " y1="12 " x2="19 " y2="12 "></line><polyline points="12 5 19 12 12 19 "></polyline></svg></a></p>
                 </div>
 
-                <div class="glossary-item" data-category="threats">
-                    <span class="category">Threat Type</span>
+                <div class="glossary-item " data-category="threats ">
+                    <span class="category ">Threat Type</span>
                     <h3>AI-Generated Misinformation</h3>
-                    <p class="definition">False or misleading information created or amplified using artificial intelligence technologies. Includes AI-written fake news articles, bot-generated social media posts, and automated disinformation campaigns that spread at scale.</p>
-                    <p class="example">Example: Thousands of AI-generated fake reviews for a product, or bot networks spreading false political information during elections.</p>
-                    <p><a href="topics/ai-threats/ai-misinformation.html" class="info-link">â†’ Learn about AI-powered misinformation</a></p>
+                    <p class="definition ">False or misleading information created or amplified using artificial intelligence technologies. Includes AI-written fake news articles, bot-generated social media posts, and automated disinformation campaigns that spread at scale.</p>
+                    <p class="example ">Example: Thousands of AI-generated fake reviews for a product, or bot networks spreading false political information during elections.</p>
+                    <p><a href="topics/ai-threats/ai-misinformation.html " class="info-link ">Learn about AI-powered misinformation<svg style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-left:0.25rem " viewBox="0 0 24 24
+                        " fill="none " stroke="currentColor " stroke-width="2 "><line x1="5 " y1="12 " x2="19 " y2="12 "></line><polyline points="12 5 19 12 12 19 "></polyline></svg></a></p>
                 </div>
 
-                <div class="glossary-item" data-category="threats">
-                    <span class="category">Threat Type</span>
+                <div class="glossary-item " data-category="threats ">
+                    <span class="category ">Threat Type</span>
                     <h3>Synthetic Media</h3>
-                    <p class="definition">Content that has been generated or significantly altered using artificial intelligence and machine learning. Includes AI-generated faces, voices, text, images, and videos that may not correspond to real people or events.</p>
-                    <p class="example">Example: AI-generated profile pictures for fake social media accounts, or completely fabricated "news footage" of events that never happened.</p>
+                    <p class="definition ">Content that has been generated or significantly altered using artificial intelligence and machine learning. Includes AI-generated faces, voices, text, images, and videos that may not correspond to real people or events.</p>
+                    <p class="example ">Example: AI-generated profile pictures for fake social media accounts, or completely fabricated "news footage " of events that never happened.</p>
                 </div>
 
-                <div class="glossary-item" data-category="threats">
-                    <span class="category">Threat Type</span>
+                <div class="glossary-item " data-category="threats ">
+                    <span class="category ">Threat Type</span>
                     <h3>Voice Cloning</h3>
-                    <p class="definition">An AI technology that can replicate someone's voice from audio samples, creating synthetic speech that sounds like the target person. Can be used for fraud, impersonation, and unauthorized content creation.</p>
-                    <p class="example">Example: Scammers using AI voice cloning to impersonate a company executive and authorize fraudulent financial transactions over the phone.</p>
+                    <p class="definition ">An AI technology that can replicate someone's voice from audio samples, creating synthetic speech that sounds like the target person. Can be used for fraud, impersonation, and unauthorized content creation.</p>
+                    <p class="example ">Example: Scammers using AI voice cloning to impersonate a company executive and authorize fraudulent financial transactions over the phone.</p>
                 </div>
 
                 <!-- Security Solutions -->
-                <div class="glossary-item" data-category="solutions">
-                    <span class="category">Security Solution</span>
+                <div class="glossary-item " data-category="solutions ">
+                    <span class="category ">Security Solution</span>
                     <h3>Antivirus Software</h3>
-                    <p class="definition">Programs designed to detect, prevent, and remove malicious software from computers and networks. Uses signatures and behavioral analysis to identify threats.</p>
-                    <p class="example">Example: Windows Defender, Norton, McAfee, Malwarebytes.</p>
+                    <p class="definition ">Programs designed to detect, prevent, and remove malicious software from computers and networks. Uses signatures and behavioral analysis to identify threats.</p>
+                    <p class="example ">Example: Windows Defender, Norton, McAfee, Malwarebytes.</p>
                 </div>
 
-                <div class="glossary-item" data-category="solutions">
-                    <span class="category">Security Solution</span>
+                <div class="glossary-item " data-category="solutions ">
+                    <span class="category ">Security Solution</span>
                     <h3>Password Manager</h3>
-                    <p class="definition">Software that stores and manages passwords in an encrypted database. Generates strong, unique passwords and automatically fills them in when needed.</p>
-                    <p class="example">Example: Bitwarden, 1Password, LastPass, Dashlane.</p>
+                    <p class="definition ">Software that stores and manages passwords in an encrypted database. Generates strong, unique passwords and automatically fills them in when needed.</p>
+                    <p class="example ">Example: Bitwarden, 1Password, LastPass, Dashlane.</p>
                 </div>
 
-                <div class="glossary-item" data-category="solutions">
-                    <span class="category">Security Solution</span>
+                <div class="glossary-item " data-category="solutions ">
+                    <span class="category ">Security Solution</span>
                     <h3>End-to-End Encryption (E2EE)</h3>
-                    <p class="definition">A communication system where only the communicating users can read the messages. Prevents third parties, including service providers, from accessing the data.</p>
-                    <p class="example">Example: WhatsApp and Signal use E2EE to protect message content.</p>
+                    <p class="definition ">A communication system where only the communicating users can read the messages. Prevents third parties, including service providers, from accessing the data.</p>
+                    <p class="example ">Example: WhatsApp and Signal use E2EE to protect message content.</p>
                 </div>
 
-                <div class="glossary-item" data-category="solutions">
-                    <span class="category">Security Solution</span>
+                <div class="glossary-item " data-category="solutions ">
+                    <span class="category ">Security Solution</span>
                     <h3>Multi-Factor Authentication (MFA)</h3>
-                    <p class="definition">Similar to 2FA but may require more than two forms of verification. Can include passwords, biometrics, security tokens, and location factors.</p>
-                    <p class="example">Example: Banking apps requiring password + fingerprint + SMS code.</p>
+                    <p class="definition ">Similar to 2FA but may require more than two forms of verification. Can include passwords, biometrics, security tokens, and location factors.</p>
+                    <p class="example ">Example: Banking apps requiring password + fingerprint + SMS code.</p>
                 </div>
 
-                <div class="glossary-item" data-category="solutions">
-                    <span class="category">Security Solution</span>
+                <div class="glossary-item " data-category="solutions ">
+                    <span class="category ">Security Solution</span>
                     <h3>Backup and Recovery</h3>
-                    <p class="definition">The process of creating copies of data to protect against loss from hardware failure, cyber attacks, or human error. Includes procedures to restore data when needed.</p>
-                    <p class="example">Example: The 3-2-1 rule: 3 copies of data, on 2 different media, with 1 off-site.</p>
+                    <p class="definition ">The process of creating copies of data to protect against loss from hardware failure, cyber attacks, or human error. Includes procedures to restore data when needed.</p>
+                    <p class="example ">Example: The 3-2-1 rule: 3 copies of data, on 2 different media, with 1 off-site.</p>
                 </div>
 
-                <div class="glossary-item" data-category="solutions">
-                    <span class="category">Security Solution</span>
+                <div class="glossary-item " data-category="solutions ">
+                    <span class="category ">Security Solution</span>
                     <h3>Zero Trust Security</h3>
-                    <p class="definition">A security model based on the principle of "never trust, always verify." Requires verification from everyone trying to access resources, regardless of location.</p>
-                    <p class="example">Example: Requiring authentication for each access request, even from within the corporate network.</p>
+                    <p class="definition ">A security model based on the principle of "never trust, always verify. " Requires verification from everyone trying to access resources, regardless of location.</p>
+                    <p class="example ">Example: Requiring authentication for each access request, even from within the corporate network.</p>
                 </div>
 
-                <div class="glossary-item" data-category="common">
-                    <span class="category">Common Term</span>
+                <div class="glossary-item " data-category="common ">
+                    <span class="category ">Common Term</span>
                     <h3>SSL/TLS Certificate</h3>
-                    <p class="definition">Digital certificates that authenticate a website's identity and enable encrypted connection. Indicated by HTTPS and a padlock icon in browsers.</p>
-                    <p class="example">Example: The padlock you see next to your bank's URL means it has a valid SSL/TLS certificate.</p>
+                    <p class="definition ">Digital certificates that authenticate a website's identity and enable encrypted connection. Indicated by HTTPS and a padlock icon in browsers.</p>
+                    <p class="example ">Example: The padlock you see next to your bank's URL means it has a valid SSL/TLS certificate.</p>
                 </div>
 
-                <div class="glossary-item" data-category="threats">
-                    <span class="category">Threat Type</span>
+                <div class="glossary-item " data-category="threats ">
+                    <span class="category ">Threat Type</span>
                     <h3>Zero-Day Exploit</h3>
-                    <p class="definition">An attack that targets a previously unknown vulnerability in software before the developer has released a patch. "Zero days" to fix it.</p>
-                    <p class="example">Example: Hackers exploiting a vulnerability in software before the vendor knows it exists.</p>
+                    <p class="definition ">An attack that targets a previously unknown vulnerability in software before the developer has released a patch. "Zero days " to fix it.</p>
+                    <p class="example ">Example: Hackers exploiting a vulnerability in software before the vendor knows it exists.</p>
                 </div>
             </div>
 
-            <div class="text-center mt-3">
-                <a href="index.html" class="resource-button">â† Back to Resources</a>
+            <div class="text-center mt-3 ">
+                <a href="index.html " class="resource-button "><svg style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:0.35rem " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2 "><line x1="19
+                        " y1="12 " x2="5 " y2="12 "></line><polyline points="12 5 5 12 12 19 "></polyline></svg>Back to Resources</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-            <footer class="footer">
-        <div class="container">
-            <div class="social-links">
+            <footer class="footer ">
+        <div class="container ">
+            <div class="social-links ">
                 
-                <a href="https://wa.me/254726681949" class="social-link" aria-label="WhatsApp">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                </a><a href="https://www.facebook.com/share/17pMFjycTV/" class="social-link" aria-label="Facebook">
-                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                <a href="https://wa.me/254726681949 " class="social-link " aria-label="WhatsApp ">
+                    <svg class="icon " viewBox="0 0 24 24 " fill="currentColor "><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198
+                        0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421
+                        7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815
+                        11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z "/></svg>
+                </a><a href="https://www.facebook.com/share/17pMFjycTV/ " class="social-link " aria-label="Facebook ">
+                    <svg class="icon " viewBox="0 0 24 24 "><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z "></path></svg>
                 </a>
-                <a href="https://www.tiktok.com/@clic.safe" class="social-link" aria-label="TikTok">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                <a href="https://www.tiktok.com/@clic.safe " class="social-link " aria-label="TikTok ">
+                    <svg class="icon " viewBox="0 0 24 24 " fill="currentColor "><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33
+                        0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z "/></svg>
                 </a>
-                <a href="https://www.instagram.com/clic.safe/" class="social-link" aria-label="Instagram">
-                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <a href="https://www.instagram.com/clic.safe/ " class="social-link " aria-label="Instagram ">
+                    <svg class="icon " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round "><rect x="2 " y="2 " width="20 " height="20 " rx="5 " ry="5 "></rect><path d="M16 11.37A4
+                        4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z "></path><line x1="17.5 " y1="6.5 " x2="17.51 " y2="6.5 "></line></svg>
                 </a>
                 
             </div>
-            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
-                <p style="font-weight: bold; margin-bottom: 0.5rem;">University of Nairobi Kili Rovers Crew</p>
-                <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 0.5rem;">Kenya Scouts Association</p>
-                <p style="font-size: 0.85rem; opacity: 0.8;">A community cybersecurity education initiative</p>
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2); ">
+                <p style="font-weight: bold; margin-bottom: 0.5rem; ">University of Nairobi Kili Rovers Crew</p>
+                <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 0.5rem; ">Kenya Scouts Association</p>
+                <p style="font-size: 0.85rem; opacity: 0.8; ">A community cybersecurity education initiative</p>
             </div>
-            <p style="margin-top: 1rem;">&copy; 2026 SafeByte. All rights reserved. | <a href="../terms-privacy.html">Privacy Policy</a> | <a href="../terms-privacy.html">Terms of Service</a></p>
+            <p style="margin-top: 1rem; ">&copy; 2026 SafeByte. All rights reserved. | <a href="../terms-privacy.html ">Privacy Policy</a> | <a href="../terms-privacy.html ">Terms of Service</a></p>
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../script.js "></script>
     <script>
         function filterCategory(category) {
             const items = document.querySelectorAll('.glossary-item');
@@ -431,9 +443,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
