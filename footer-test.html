@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Test</title>
+    <script>
+        (function() {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Footer Loading Test</h1>
+    <p>This is a test page to verify the footer loads correctly.</p>
+    
+    <!-- Footer -->
+    <footer class="footer"></footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Debug script to check footer loading -->
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const footer = document.querySelector('footer');
+                console.log('Footer element:', footer);
+                console.log('Footer innerHTML length:', footer.innerHTML.length);
+                console.log('Footer innerHTML:', footer.innerHTML);
+                
+                // Check if social links are present
+                const socialLinks = footer.querySelectorAll('.social-link');
+                console.log('Number of social links found:', socialLinks.length);
+                
+                // Check if text content is present
+                const textContent = footer.textContent;
+                console.log('Footer text content:', textContent);
+            }, 2000); // Wait 2 seconds for the footer to load
+        });
+    </script>
+</body>
+</html>
